@@ -22,6 +22,7 @@ custom_target(
         '--repo='+join_paths(meson.current_build_dir(), 'repo'),
         '--ccache'
     ],
+    console: true,
     output: 'io.elementary.Sdk',
     build_by_default: true
 )

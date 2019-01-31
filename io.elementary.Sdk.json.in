@@ -50,7 +50,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "5.0"
+                    "tag": "5.2.2"
                 }
             ]
         },
@@ -94,6 +94,38 @@
                             "type": "file",
                             "url": "https://files.pythonhosted.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz",
                             "sha256": "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "libunity",
+            "buildsystem": "autotools",
+            "sources": [
+                {
+                    "type": "bzr",
+                    "url": "https://code.launchpad.net/~unity-team/libunity/trunk"
+                }
+            ],
+            "modules": [
+                {
+                    "name": "libdbusmenu",
+                    "buildsystem": "autotools",
+                    "sources": [
+                        {
+                            "type": "bzr",
+                            "url": "https://code.launchpad.net/~dbusmenu-team/libdbusmenu/trunk.16.10"
+                        }
+                    ]
+                },
+                {
+                    "name": "dee",
+                    "buildsystem": "autotools",
+                    "sources": [
+                        {
+                            "type": "bzr",
+                            "url": "https://code.launchpad.net/~unity-team/dee/trunk"
                         }
                     ]
                 }
