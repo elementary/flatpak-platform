@@ -112,6 +112,7 @@
                 {
                     "name": "libdbusmenu",
                     "buildsystem": "autotools",
+                    "config-opts": [ "--disable-dumper" ],
                     "sources": [
                         {
                             "type": "bzr",
