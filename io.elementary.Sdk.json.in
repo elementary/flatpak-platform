@@ -39,18 +39,18 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libgee.git",
-                    "tag": "0.20.1"
+                    "tag": "0.20.2"
                 }
             ]
         },
         {
             "name": "granite",
-            "buildsystem": "cmake-ninja",
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "5.2.2"
+                    "tag": "5.2.4"
                 }
             ]
         },
