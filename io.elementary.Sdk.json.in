@@ -33,17 +33,6 @@
     },
     "modules": [
         {
-            "name": "libgee",
-            "config-opts": [ "--disable-static" ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libgee.git",
-                    "tag": "0.20.2"
-                }
-            ]
-        },
-        {
             "name": "granite",
             "buildsystem": "meson",
             "sources": [
