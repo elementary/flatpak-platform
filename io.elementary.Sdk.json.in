@@ -32,14 +32,25 @@
         }
     },
     "modules": [
-        {
-            "name": "libgee",
-            "config-opts": [ "--disable-static" ],
+         {
+            "name": "icons",
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libgee.git",
-                    "tag": "0.20.2"
+                    "url": "https://github.com/elementary/icons.git",
+                    "tag": "5.1.0"
+                }
+            ]
+        },
+        {
+            "name": "stylesheet",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/elementary/stylesheet.git",
+                    "tag": "5.3.0"
                 }
             ]
         },
@@ -50,7 +61,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "5.2.4"
+                    "tag": "5.2.5"
                 }
             ]
         },
@@ -94,39 +105,6 @@
                             "type": "file",
                             "url": "https://files.pythonhosted.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz",
                             "sha256": "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "libunity",
-            "buildsystem": "autotools",
-            "sources": [
-                {
-                    "type": "bzr",
-                    "url": "https://code.launchpad.net/~unity-team/libunity/trunk"
-                }
-            ],
-            "modules": [
-                {
-                    "name": "libdbusmenu",
-                    "buildsystem": "autotools",
-                    "config-opts": [ "--disable-dumper" ],
-                    "sources": [
-                        {
-                            "type": "bzr",
-                            "url": "https://code.launchpad.net/~dbusmenu-team/libdbusmenu/trunk.16.10"
-                        }
-                    ]
-                },
-                {
-                    "name": "dee",
-                    "buildsystem": "autotools",
-                    "sources": [
-                        {
-                            "type": "bzr",
-                            "url": "https://code.launchpad.net/~unity-team/dee/trunk"
                         }
                     ]
                 }
