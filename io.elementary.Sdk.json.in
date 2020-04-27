@@ -6,9 +6,6 @@
     "runtime-version": "@GNOME_VERSION@",
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
-    "inherit-extensions": [
-        "org.gtk.Gtk3theme"
-    ],
     "sdk-extensions": ["org.gnome.Sdk.Debug", "org.gnome.Sdk.Locale", "org.gnome.Sdk.Docs"],
     "platform-extensions": [ "org.gnome.Platform.Locale"],
     "finish-args": [
@@ -39,7 +36,11 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/icons.git",
-                    "tag": "5.1.0"
+                    "tag": "5.2.0"
+                },
+                {
+                    "type": "patch",
+                    "path": inkscape-dep.patch
                 }
             ]
         },
@@ -50,7 +51,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/stylesheet.git",
-                    "tag": "5.3.0"
+                    "tag": "5.4.2"
                 }
             ]
         },
@@ -61,7 +62,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "5.2.5"
+                    "tag": "5.3.1"
                 }
             ]
         },
