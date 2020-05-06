@@ -4,12 +4,6 @@ data = configuration_data()
 data.set('SDK_BRANCH', meson.project_version())
 data.set('GNOME_VERSION', '3.34')
 
-patch_file = configure_file(
-    input: 'inkscape-dep.patch',
-    output: 'inkscape-dep.patch',
-    copy: true
-)
-
 sdk_json = configure_file(
     input: 'io.elementary.Sdk.json.in',
     output: '@BASENAME@',
