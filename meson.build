@@ -2,7 +2,7 @@ project('io.elementary.Sdk', version: '0.1.0')
 
 data = configuration_data()
 data.set('SDK_BRANCH', meson.project_version())
-data.set('GNOME_VERSION', '3.34')
+data.set('GNOME_VERSION', '3.36')
 
 sdk_json = configure_file(
     input: 'io.elementary.Sdk.json.in',
