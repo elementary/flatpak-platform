@@ -1,0 +1,19 @@
+on:
+  push:
+  pull_request:
+name: CI
+jobs:
+  flatpak-builder:
+    name: "Flatpak Builder"
+    runs-on: ubuntu-latest
+    container:
+      image: docker.io/bilelmoussaoui/flatpak-github-actions
+      options: --privileged
+    steps:
+    - uses: actions/checkout@v2
+    - run: sed 's/@GNOME_VERSION@/3.38/g' io.elementary.Sdk.json.in > io.elementary.Sdk.json
+    - run: sed -i 's/@SDK_BRANCH@/0.1.0/g' io.elementary.Sdk.json
+    - uses: bilelmoussaoui/flatpak-github-actions@v1
+      with:
+        bundle: "io.elementary.Sdk.Nightly"
+        manifest-path: "io.elementary.Sdk.json"
