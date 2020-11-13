@@ -35,8 +35,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/elementary/icons.git",
-                    "tag": "5.3.1"
+                    "url": "https://github.com/elementary/icons.git"
                 }
             ],
             "modules": [
@@ -59,8 +58,43 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/elementary/stylesheet.git",
-                    "tag": "5.4.2"
+                    "url": "https://github.com/elementary/stylesheet.git"
+                }
+            ],
+            "modules": [
+                {
+                    "name": "sassc",
+                    "cleanup": [ "*" ],
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/sass/sassc.git",
+                            "tag": "3.6.1"
+                        },
+                        {
+                            "type": "script",
+                            "dest-filename": "autogen.sh",
+                            "commands": [ "autoreconf -si" ]
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "name": "libsass",
+                            "cleanup": [ "*" ],
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/sass/libsass.git",
+                                    "tag": "3.6.4"
+                                },
+                                {
+                                    "type": "script",
+                                    "dest-filename": "autogen.sh",
+                                    "commands": [ "autoreconf -si" ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -70,8 +104,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/elementary/granite.git",
-                    "tag": "5.3.1"
+                    "url": "https://github.com/elementary/granite.git"
                 }
             ]
         },
