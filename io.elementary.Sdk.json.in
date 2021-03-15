@@ -160,6 +160,24 @@
                     ]
                 }
             ]
+        },
+        {
+            "name" : "libhandy",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dintrospection=enabled",
+                "-Dvapi=true",
+                "-Dgtk_doc=true",
+                "-Dtests=false",
+                "-Dexamples=false"
+            ],
+            "sources" : [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/libhandy.git",
+                    "tag": "1.2.0"
+                }
+            ]
         }
     ]
 }
