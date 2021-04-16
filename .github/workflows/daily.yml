@@ -3,19 +3,12 @@
 name: Daily
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
+  push:
+    branches:
+      - main
 
-# on:
-#   push:
-#     branches:
-#       - main
-#
-#   schedule:
-#     - cron: "10 2 * * *"
+  schedule:
+    - cron: "10 2 * * *"
 
 jobs:
   publish:
