@@ -1,0 +1,73 @@
+---
+
+name: Daily
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+# on:
+#   push:
+#     branches:
+#       - main
+#
+#   schedule:
+#     - cron: "10 2 * * *"
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clean
+        uses: easimon/maximize-build-space@v4
+        with:
+          root-reserve-mb: 8192
+          swap-size-mb: 1024
+          remove-dotnet: 'true'
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup
+        run: |
+          sudo apt update
+          sudo apt install -y ccache flatpak flatpak-builder python3-aiohttp python3-gi python3-tenacity xvfb zstd
+          sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
+
+          sudo wget https://raw.githubusercontent.com/flatpak/flat-manager/0.3.7/flat-manager-client /usr/bin/flat-manager-client
+          sudo chmod +x /usr/bin/flat-manager-client
+
+          sudo flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: builddir
+          key: build-${{ hashFiles('io.elementary.Sdk.json') }}
+
+      # - name: Build
+      #   run: |
+      #     sudo xvfb-run --auto-servernum flatpak-builder --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
+
+      - name: Create Build
+        env:
+          REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}
+        run: |
+          BUILD_ID=`flat-manager-client create https://flatpak-api.elementary.io elementary`
+          echo "build_id=$BUILD_ID" >> $GITHUB_ENV
+
+      - name: Test
+        run: |
+          blablablacrashnowhereplease
+
+      - name: Purge Build
+        if: ${{ always() && env.build_id }}
+        env:
+          REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}
+        run: |
+          flat-manager-client purge ${{ env.build_id }}
