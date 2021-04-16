@@ -50,7 +50,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: builddir
-          key: build-${{ hashFiles('io.elementary.Sdk.json') }}
+          key: builddir
 
       - name: Build
         env:
