@@ -36,7 +36,7 @@ jobs:
       - name: Setup
         run: |
           sudo apt update
-          sudo apt install -y ccache flatpak flatpak-builder libostree-1-1 ostree python3-aiohttp python3-gi python3-tenacity xvfb zstd
+          sudo apt install -y ccache flatpak flatpak-builder gir1.2-ostree-1.0 python3-aiohttp python3-gi python3-tenacity xvfb zstd
           sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
 
           curl https://raw.githubusercontent.com/flatpak/flat-manager/0.3.7/flat-manager-client > ./flat-manager-client
