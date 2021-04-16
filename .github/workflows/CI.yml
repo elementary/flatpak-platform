@@ -34,7 +34,5 @@ jobs:
           sudo flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
       - name: Build
-        uses: bilelmoussaoui/flatpak-github-actions@master
-        with:
-          bundle: "io.elementary.Sdk.Daily"
-          manifest-path: "io.elementary.Sdk.json"
+        run: |
+          sudo xvfb-run --auto-servernum flatpak-builder --disable-rofiles-fuse --force-clean --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
