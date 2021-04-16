@@ -19,8 +19,8 @@
     "finish-args": [
         "--env=GI_TYPELIB_PATH=/app/lib/girepository-1.0",
         "--env=XDG_DATA_DIRS=/app/share:/usr/share:/usr/share/runtime/share:/run/host/share",
-        "--sdk=io.elementary.Sdk//3.38",
-        "--runtime=io.elementary.Platform//3.38"
+        "--sdk=io.elementary.Sdk//daily",
+        "--runtime=io.elementary.Platform//daily"
     ],
     "cleanup-platform": [
         "/share/runtime/docs",
