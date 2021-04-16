@@ -13,15 +13,16 @@
 
 ## Building
 
-If you want to build this flatpak platform locally, you will need:
+If you want to build this flatpak platform locally, you will need the flathub flatpak repository installed. You can
+follow instructions for that [here](https://flatpak.org/setup/).
 
-- flatpak-builder
-- git
+Next you will need:
 
-Next, you will need the flathub flatpak repository installed locally. You can follow
-instructions for that [here](https://flatpak.org/setup/).
+- A lot of space (~ 15 Gb)
+- `flatpak-builder`
+- `git`
 
-Next, you can run this command to build:
+And finally, you can run this command to build and install:
 
 ```sh
 flatpak-builder --force-clean --install-deps-from=flathub --ccache --repo=elementary --install builddir ./io.elementary.Sdk.json
