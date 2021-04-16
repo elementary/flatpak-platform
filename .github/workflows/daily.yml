@@ -39,8 +39,9 @@ jobs:
           sudo apt install -y ccache flatpak flatpak-builder python3-aiohttp python3-gi python3-tenacity xvfb zstd
           sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
 
-          sudo wget https://raw.githubusercontent.com/flatpak/flat-manager/0.3.7/flat-manager-client /usr/bin/
-          sudo chmod +x /usr/bin/flat-manager-client
+          curl https://raw.githubusercontent.com/flatpak/flat-manager/0.3.7/flat-manager-client > flat-manager-client
+          sudo install -m +x ./flat-manager-client /usr/bin/flat-manager-client
+          rm flat-manager-client
 
           sudo flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
