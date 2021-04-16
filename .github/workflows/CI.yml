@@ -1,0 +1,40 @@
+---
+
+name: CI
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clean
+        uses: easimon/maximize-build-space@master
+        with:
+          root-reserve-mb: 512
+          swap-size-mb: 1024
+          remove-dotnet: 'true'
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup
+        run: |
+          sudo apt update
+          sudo apt install -y ccache flatpak flatpak-builder python3-aiohttp python3-gi python3-tenacity xvfb zstd
+          sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
+
+          flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+      - name: Build
+        uses: bilelmoussaoui/flatpak-github-actions@master
+        with:
+          bundle: "io.elementary.Sdk.Daily"
+          manifest-path: "io.elementary.Sdk.json"
