@@ -42,3 +42,5 @@ jobs:
       - name: Build
         run: |
           sudo xvfb-run --auto-servernum flatpak-builder --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
+        env:
+          DISPLAY: "0:0"
