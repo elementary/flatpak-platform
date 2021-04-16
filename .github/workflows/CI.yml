@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Clean
-        uses: easimon/maximize-build-space@master
+        uses: easimon/maximize-build-space@v4
         with:
           root-reserve-mb: 512
           swap-size-mb: 1024
@@ -31,7 +31,7 @@ jobs:
           sudo apt install -y ccache flatpak flatpak-builder python3-aiohttp python3-gi python3-tenacity xvfb zstd
           sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
 
-          flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+          sudo flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
       - name: Build
         uses: bilelmoussaoui/flatpak-github-actions@master
