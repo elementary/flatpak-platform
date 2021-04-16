@@ -2,8 +2,8 @@
     "build-runtime": true,
     "id": "io.elementary.Sdk",
     "id-platform": "io.elementary.Platform",
-    "branch": "@SDK_BRANCH@",
-    "runtime-version": "@GNOME_VERSION@",
+    "branch": "daily",
+    "runtime-version": "3.38",
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": ["org.gnome.Sdk.Debug", "org.gnome.Sdk.Locale", "org.gnome.Sdk.Docs"],
@@ -19,8 +19,8 @@
     "finish-args": [
         "--env=GI_TYPELIB_PATH=/app/lib/girepository-1.0",
         "--env=XDG_DATA_DIRS=/app/share:/usr/share:/usr/share/runtime/share:/run/host/share",
-        "--sdk=io.elementary.Sdk//@SDK_BRANCH@",
-        "--runtime=io.elementary.Platform//@SDK_BRANCH@"
+        "--sdk=io.elementary.Sdk//3.38",
+        "--runtime=io.elementary.Platform//3.38"
     ],
     "cleanup-platform": [
         "/share/runtime/docs",
