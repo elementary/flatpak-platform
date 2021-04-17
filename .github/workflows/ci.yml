@@ -15,6 +15,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Debug
+        run: |
+          whoami
+          echo $UID
+          echo $GID
+          cd .. && ls -hal
+
       - name: Clean
         uses: easimon/maximize-build-space@v4
         with:
