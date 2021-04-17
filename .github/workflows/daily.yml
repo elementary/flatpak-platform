@@ -51,6 +51,10 @@ jobs:
         run: |
           sudo xvfb-run --auto-servernum flatpak-builder --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
 
+
+      - name: Fix Permissions
+        run: sudo chown -R runner:docker .
+
       - name: Create Build
         env:
           REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}

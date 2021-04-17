@@ -15,13 +15,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Debug
-        run: |
-          whoami
-          echo $UID
-          echo $GID
-          cd .. && ls -hal
-
       - name: Clean
         uses: easimon/maximize-build-space@v4
         with:
@@ -51,3 +44,6 @@ jobs:
           DISPLAY: "0:0"
         run: |
           sudo xvfb-run --auto-servernum flatpak-builder --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
+
+      - name: Fix Permissions
+        run: sudo chown -R runner:docker .
