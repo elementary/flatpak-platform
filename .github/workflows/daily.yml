@@ -19,7 +19,7 @@ jobs:
       - name: Clean
         uses: easimon/maximize-build-space@v4
         with:
-          root-reserve-mb: 20480
+          root-reserve-mb: 25600
           swap-size-mb: 1024
           remove-dotnet: 'true'
 
@@ -42,7 +42,7 @@ jobs:
       - name: Cache
         uses: actions/cache@v2
         with:
-          path: .flatpak-builder
+          path: ./.flatpak-builder
           key: flatpak-builder
 
       - name: Build
