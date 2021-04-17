@@ -36,8 +36,8 @@ jobs:
       - name: Cache
         uses: actions/cache@v2
         with:
-          path: builddir
-          key: builddir
+          path: .flatpak-builder
+          key: flatpak-builder
 
       - name: Build
         env:
