@@ -13,7 +13,9 @@
         "org.freedesktop.Platform.VAAPI.Intel",
         "org.freedesktop.Platform.Timezones",
         "org.freedesktop.Platform.GStreamer",
-        "org.freedesktop.Platform.openh264",
+        "org.freedesktop.Platform.openh264"
+    ],
+    "inherit-sdk-extensions": [
         "org.freedesktop.Sdk.Extension"
     ],
     "finish-args": [
