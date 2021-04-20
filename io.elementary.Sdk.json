@@ -17,6 +17,8 @@
         "org.freedesktop.Sdk.Extension"
     ],
     "finish-args": [
+        "--env=ALSA_CONFIG_DIR=/usr/share/alsa",
+        "--env=ALSA_CONFIG_PATH=/usr/share/alsa/alsa-flatpak.conf",
         "--env=GI_TYPELIB_PATH=/app/lib/girepository-1.0",
         "--env=XDG_DATA_DIRS=/app/share:/usr/share:/usr/share/runtime/share:/run/host/share",
         "--sdk=io.elementary.Sdk//daily",
