@@ -37,7 +37,10 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ./.flatpak-builder
-          key: flatpak-builder
+          key: flatpak-builder-${{ github.sha }}
+          restore-keys: |
+            flatpak-builder-
+            flatpak-
 
       - name: Build
         env:
