@@ -1,0 +1,87 @@
+---
+
+name: Daily
+
+on:
+  push:
+    branches:
+      - main
+
+  schedule:
+    - cron: "10 2 * * *"
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clean
+        uses: easimon/maximize-build-space@v4
+        with:
+          root-reserve-mb: 25600
+          swap-size-mb: 1024
+          remove-dotnet: 'true'
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup
+        run: |
+          sudo apt update
+          sudo apt install -y ccache flatpak flatpak-builder gir1.2-ostree-1.0 python3-aiohttp python3-gi python3-tenacity xvfb zstd
+          sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
+
+          curl https://raw.githubusercontent.com/flatpak/flat-manager/0.3.7/flat-manager-client > ./flat-manager-client
+          sudo mv ./flat-manager-client /usr/bin/flat-manager-client
+          sudo chown root: /usr/bin/flat-manager-client
+          sudo chmod +x /usr/bin/flat-manager-client
+
+          sudo flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: ./.flatpak-builder
+          key: flatpak-builder-${{ github.sha }}
+          restore-keys: |
+            flatpak-builder-
+            flatpak-
+
+      - name: Build
+        env:
+          DISPLAY: "0:0"
+        run: |
+          sudo xvfb-run --auto-servernum flatpak-builder --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
+
+
+      - name: Fix Permissions
+        run: sudo chown -R runner:docker .
+
+      - name: Create Build
+        env:
+          REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}
+        run: |
+          BUILD_ID=`flat-manager-client create https://flatpak-api.elementary.io elementary`
+          echo "build_id=$BUILD_ID" >> $GITHUB_ENV
+
+      - name: Push Build
+        env:
+          REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}
+        run: flat-manager-client push ${{ env.build_id }} ./elementary
+
+      - name: Commit Build
+        env:
+          REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}
+        run: flat-manager-client commit --wait ${{ env.build_id }}
+
+      - name: Publish Build
+        env:
+          REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}
+        run: flat-manager-client publish --wait ${{ env.build_id }}
+
+      - name: Purge Build
+        if: ${{ always() && env.build_id }}
+        env:
+          REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}
+        run: flat-manager-client purge ${{ env.build_id }}
