@@ -18,6 +18,14 @@
     "inherit-sdk-extensions": [
         "org.freedesktop.Sdk.Extension"
     ],
+    "add-extensions": {
+        "io.elementary.Sdk.Docs" : {
+            "directory": "share/runtime/docs",
+            "bundle": true,
+            "autodelete": true,
+            "no-autodownload": true
+        }
+    },
     "finish-args": [
         "--env=ALSA_CONFIG_DIR=/usr/share/alsa",
         "--env=ALSA_CONFIG_PATH=/usr/share/alsa/alsa-flatpak.conf",
@@ -148,6 +156,10 @@
         {
             "name": "granite",
             "buildsystem": "meson",
+            "config-opts" : [
+                "-Dintrospection=true",
+                "-Ddocumentation=true"
+            ],
             "sources": [
                 {
                     "type": "git",
