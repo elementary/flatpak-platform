@@ -116,7 +116,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/elementary/granite.git
+                    "url": "https://github.com/elementary/granite.git"
                 }
             ]
         },
