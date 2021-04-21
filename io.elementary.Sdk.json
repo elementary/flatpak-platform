@@ -42,6 +42,32 @@
     },
     "modules": [
          {
+            "name": "gtk",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dbroadway_backend=true",
+                "-Dinstalled_tests=true",
+                "-Dtests=false",
+                "-Dx11_backend=true",
+                "-Dwayland-backend=true",
+                "-Dgtk_doc=true",
+                "-Dman=true",
+                "-Dintrospection=true",
+                "-Dtracker3=true"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gtk.git",
+                    "tag": "3.24.28"
+                },
+                {
+                    "type": "patch",
+                    "path": "gtk-default-themes.patch"
+                }
+            ]
+        },
+         {
             "name": "icons",
             "buildsystem": "meson",
             "sources": [
@@ -182,6 +208,28 @@
                     "url": "https://gitlab.gnome.org/GNOME/libhandy.git",
                     "tag": "1.2.0"
                 }
+            ]
+        },
+        {
+            "name" : "platform-settings",
+            "buildsystem" : "simple",
+            "modules": [
+                {
+                    "name" : "default-gtk-settings",
+                    "buildsystem" : "simple",
+                    "sources" : [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/elementary/default-settings.git"
+                        }
+                    ],
+                    "build-commands": [
+                        "install -Dm644 gtk/settings.ini /etc/gtk-3.0/settings.ini"
+                    ]
+                }
+            ],
+            "build-commands": [
+                "ln -S /usr/share/themes/io.elementary.stylesheet.blueberry /usr/share/themes/elementary"
             ]
         }
     ]
