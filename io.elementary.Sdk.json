@@ -41,7 +41,42 @@
         }
     },
     "modules": [
-         {
+        {
+            "name": "graphivz",
+            "config-opts": [
+                "--disable-dependency-tracking",
+                "--disable-silent-rules",
+                "--disable-sharp",
+                "--disable-ocaml",
+                "--disable-r",
+                "--without-lasi",
+                "--without-gts",
+                "--without-ming",
+                "--without-devil",
+                "--without-qt",
+                "--with-pangocairo",
+                "--with-gdk-pixbuf"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.com/graphviz/graphviz.git",
+                    "tag": "2.47.1"
+                }
+            ]
+
+        },
+        {
+            "name": "vala",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/vala.git",
+                    "tag": "0.48.17"
+                }
+            ]
+        },
+        {
             "name": "icons",
             "buildsystem": "meson",
             "sources": [
