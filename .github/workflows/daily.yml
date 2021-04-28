@@ -62,7 +62,7 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}
         run: |
-          BUILD_ID=`flat-manager-client create https://flatpak-api.elementary.io elementary`
+          BUILD_ID=`flat-manager-client create https://flatpak-api.elementary.io appcenter`
           echo "build_id=$BUILD_ID" >> $GITHUB_ENV
 
       - name: Push Build
