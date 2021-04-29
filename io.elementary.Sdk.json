@@ -6,7 +6,11 @@
     "runtime-version": "3.38",
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
-    "sdk-extensions": ["org.gnome.Sdk.Debug", "org.gnome.Sdk.Locale", "org.gnome.Sdk.Docs"],
+    "sdk-extensions": [
+        "org.gnome.Sdk.Debug",
+        "org.gnome.Sdk.Locale",
+        "org.gnome.Sdk.Docs"
+    ],
     "platform-extensions": [ "org.gnome.Platform.Locale"],
     "inherit-extensions": [
         "org.freedesktop.Platform.GL",
