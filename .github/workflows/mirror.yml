@@ -12,8 +12,14 @@ on:
 
 jobs:
   mirror:
-    name: Mirror
+    name: Mirror (${{ matrix.package.name }} ${{ matrix.package.branch}} ${{ matrix.arch }})
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        package:
+          - runtime/org.freedesktop.Platform.GL.default/aarch64/20.08
+          - runtime/org.freedesktop.Platform.GL.default/x86_64/20.08
 
     steps:
       - name: Setup (packages)
@@ -43,11 +49,11 @@ jobs:
       - name: Clone
         run: |
           cd flathub
-          ostree pull --mirror --http-trusted --depth -1 flathub runtime/org.freedesktop.Platform.GL.default/x86_64/20.08
-          ostree commit -b runtime/org.freedesktop.Platform.GL.default/x86_64/20.08
+          ostree pull --mirror --http-trusted --depth -1 flathub ${{ matrix.package }}
+          ostree commit -b ${{ matrix.package }}
 
           cd ..
-          flatpak build-commit-from --untrusted --src-repo ./flathub ./appcenter runtime/org.freedesktop.Platform.GL.default/x86_64/20.08
+          flatpak build-commit-from --untrusted --src-repo ./flathub ./appcenter ${{ matrix.package }}
 
       - name: Create Build
         env:
