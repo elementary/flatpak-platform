@@ -12,7 +12,7 @@ on:
 
 jobs:
   mirror:
-    name: Mirror (${{ matrix.package.name }} ${{ matrix.package.branch}} ${{ matrix.arch }})
+    name: Mirror (${{ matrix.package }})
     runs-on: ubuntu-latest
 
     strategy:
