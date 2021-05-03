@@ -41,7 +41,7 @@ jobs:
           ostree init --repo appcenter --mode=archive-z2
 
       - name: Clone
-        run:
+        run: |
           cd flathub
           ostree pull --mirror --http-trusted --depth -1 flathub runtime/org.freedesktop.Platform.GL.default/x86_64/20.08
           ostree commit -b runtime/org.freedesktop.Platform.GL.default/x86_64/20.08
