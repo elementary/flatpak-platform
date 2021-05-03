@@ -1,0 +1,41 @@
+---
+
+name: Mirror
+
+on:
+  push:
+    branches:
+      - flathub-ext
+
+  schedule:
+    - cron: "0 4 * * 0"
+
+jobs:
+  mirror:
+    name: Mirror
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup (packages)
+        run: |
+          sudo apt update
+          sudo apt install -y ccache flatpak flatpak-builder gir1.2-ostree-1.0 python3-aiohttp python3-gi python3-tenacity xvfb zstd
+          sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
+
+          curl https://raw.githubusercontent.com/flatpak/flat-manager/0.3.7/flat-manager-client > ./flat-manager-client
+          sudo mv ./flat-manager-client /usr/bin/flat-manager-client
+          sudo chown root: /usr/bin/flat-manager-client
+          sudo chmod +x /usr/bin/flat-manager-client
+
+      - name: Setup (mirror)
+        run: |
+          ostree init --repo appcenter --mode=archive-z2
+          cd appcenter
+
+          wget https://flathub.org/repo/flathub.gpg
+
+          ostree remote add flathub https://dl.flathub.org/repo/ --gpg-import ./flathub.gpg
+
+      - name: Clone
+        run: |
+          ostree pull flatpak runtime/org.freedesktop.Platform.GL.default/aarch64/20.08 --mirror --http-trusted
