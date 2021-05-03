@@ -3,10 +3,6 @@
 name: Mirror
 
 on:
-  push:
-    branches:
-      - flathub-ext
-
   schedule:
     - cron: "0 4 * * 0"
 
