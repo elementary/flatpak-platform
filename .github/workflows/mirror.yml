@@ -38,4 +38,6 @@ jobs:
 
       - name: Clone
         run: |
+          cd appcenter
+
           ostree pull flatpak runtime/org.freedesktop.Platform.GL.default/aarch64/20.08 --mirror --http-trusted
