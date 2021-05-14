@@ -1,0 +1,55 @@
+---
+
+name: CI
+
+on:
+  pull_request:
+    paths:
+      - io.elementary.Sdk.json
+
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clean
+        uses: easimon/maximize-build-space@v4
+        with:
+          root-reserve-mb: 20480
+          swap-size-mb: 1024
+          remove-dotnet: 'true'
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup
+        run: |
+          sudo apt update
+          sudo apt install -y ccache flatpak flatpak-builder xvfb zstd
+          sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
+
+          sudo flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: ./.flatpak-builder
+          key: flatpak-builder-${{ github.sha }}
+          restore-keys: |
+            flatpak-builder-
+            flatpak-
+
+      - name: Build
+        env:
+          DISPLAY: "0:0"
+        run: |
+          sudo xvfb-run --auto-servernum flatpak-builder --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
+
+      - name: Fix Permissions
+        run: sudo chown -R runner:docker .
