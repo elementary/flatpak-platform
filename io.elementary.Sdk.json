@@ -51,7 +51,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/elementary/icons.git"
+                    "url": "https://github.com/elementary/icons.git",
+                    "tag": "6.0.0"
                 }
             ],
             "modules": [
@@ -74,7 +75,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/elementary/stylesheet.git"
+                    "url": "https://github.com/elementary/stylesheet.git",
+                    "tag": "6.0.0"
                 }
             ],
             "modules": [
