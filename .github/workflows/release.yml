@@ -99,4 +99,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
           repository: ${{ github.repository }}/runtime
-          tags: daily
+          tags: '6.0.0'
