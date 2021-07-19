@@ -12,6 +12,8 @@ jobs:
     name: Publish Platform
     runs-on: ubuntu-latest
 
+    if: github.event.pull_request.merged == true && true == contains(join(github.event.pull_request.labels.*.name), 'Release')
+
     steps:
       - name: Clean
         uses: easimon/maximize-build-space@v4
