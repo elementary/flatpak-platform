@@ -144,6 +144,16 @@
                     "tag": "1.2.0"
                 }
             ]
+        },
+        {
+            "name" : "appdata",
+            "buildsystem" : "meson",
+            "sources" : [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ]
         }
     ]
 }
