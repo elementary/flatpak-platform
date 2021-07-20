@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2021 elementary, Inc. <contact@elementary.io> -->
+<component>
+  <id>io.elementary.Sdk</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <name>elementary App SDK</name>
+  <summary>Build Flatpak apps for elementary OS</summary>
+  <description>
+    <p>The flatpak SDK for elementary OS and AppCenter.</p>
+  </description>
+  <releases>
+    <release version="6.0.0" date="2021-07-19" urgency="medium">
+      <description>
+        <p>Initial Release</p>
+      </description>
+    </release>
+  </releases>
+  <developer_name>elementary, Inc.</developer_name>
+  <url type="homepage">https://elementary.io</url>
+  <url type="bugtracker">https://github.com/elementary/flatpak-platform/issues</url>
+</component>

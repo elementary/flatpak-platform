@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-20 09:28-0700\n"
+"POT-Creation-Date: 2021-07-20 11:56-0700\n"
 "PO-Revision-Date: 2021-07-20 09:28-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "elementary App Platform"
 msgstr ""
 
-#: data/platform.appdata.xml.in:8
+#: data/platform.appdata.xml.in:8 data/sdk.appdata.xml.in:8
 msgid "Build Flatpak apps for elementary OS"
 msgstr ""
 
@@ -29,10 +29,18 @@ msgstr ""
 msgid "The flatpak platform for elementary OS and AppCenter."
 msgstr ""
 
-#: data/platform.appdata.xml.in:15
+#: data/platform.appdata.xml.in:15 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
 msgstr ""
 
-#: data/platform.appdata.xml.in:19
+#: data/platform.appdata.xml.in:19 data/sdk.appdata.xml.in:19
 msgid "elementary, Inc."
+msgstr ""
+
+#: data/sdk.appdata.xml.in:7
+msgid "elementary App SDK"
+msgstr ""
+
+#: data/sdk.appdata.xml.in:10
+msgid "The flatpak SDK for elementary OS and AppCenter."
 msgstr ""
