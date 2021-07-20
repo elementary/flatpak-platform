@@ -36,4 +36,8 @@ branch is built frequently and is **not recommended for production**.
 
 ### Stable
 
-**TODO**
+To release a new stable version of the platform, simply open up a PR and add the `Release` label to it. Once it is merged,
+a new stable `io.elementary.Platform` version `6` will be created and published.
+
+> **NOTE** If you want to change the version, like release `io.elementary.Platform` version `7`, you will need to make
+> changes in the `release.yml` GitHub action.
