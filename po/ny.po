@@ -1,0 +1,37 @@
+# Nyanja translations for extra package.
+# Copyright (C) 2021 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-20 09:28-0700\n"
+"PO-Revision-Date: 2021-07-20 09:28-0700\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ny\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/platform.appdata.xml.in:7
+msgid "elementary App Platform"
+msgstr ""
+
+#: data/platform.appdata.xml.in:8
+msgid "Build Flatpak apps for elementary OS"
+msgstr ""
+
+#: data/platform.appdata.xml.in:10
+msgid "The flatpak platform for elementary OS and AppCenter."
+msgstr ""
+
+#: data/platform.appdata.xml.in:15
+msgid "Initial Release"
+msgstr ""
+
+#: data/platform.appdata.xml.in:19
+msgid "elementary, Inc."
+msgstr ""
