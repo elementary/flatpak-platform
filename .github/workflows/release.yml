@@ -1,19 +1,18 @@
 ---
 
-name: Daily
+name: Release
 
 on:
-  push:
-    branches:
-      - main
-
-  schedule:
-    - cron: "10 2 * * *"
+  pull_request:
+    branches: main
+    types: closed
 
 jobs:
   publish_platform:
     name: Publish Platform
     runs-on: ubuntu-latest
+
+    if: github.event.pull_request.merged == true && true == contains(join(github.event.pull_request.labels.*.name), 'Release')
 
     steps:
       - name: Clean
@@ -52,7 +51,7 @@ jobs:
         env:
           DISPLAY: "0:0"
         run: |
-          sudo xvfb-run --auto-servernum flatpak-builder --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
+          sudo xvfb-run --auto-servernum flatpak-builder --default-branch="6" --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
 
       - name: Fix Permissions
         run: sudo chown -R runner:docker .
@@ -102,4 +101,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
           repository: ${{ github.repository }}/runtime
-          tags: daily
+          tags: "6"
