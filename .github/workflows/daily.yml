@@ -15,6 +15,11 @@ jobs:
     name: Publish Platform
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        arch: [x86_64, aarch64]
+      fail-fast: false
+
     steps:
       - name: Clean
         uses: easimon/maximize-build-space@v4
@@ -25,6 +30,11 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+        with:
+          platforms: arm64
 
       - name: Setup
         run: |
@@ -52,7 +62,7 @@ jobs:
         env:
           DISPLAY: "0:0"
         run: |
-          sudo xvfb-run --auto-servernum flatpak-builder --default-branch=daily --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
+          sudo xvfb-run --auto-servernum flatpak-builder --arch=${{ matrix.arch }} --default-branch=daily --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
 
       - name: Fix Permissions
         run: sudo chown -R runner:docker .
