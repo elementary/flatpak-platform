@@ -53,7 +53,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ./.flatpak-builder
-          key: flatpak-builder-${{ github.sha }}
+          key: flatpak-builder-${{ github.sha }}-${{ matrix.arch }}
           restore-keys: |
             flatpak-builder-
             flatpak-
