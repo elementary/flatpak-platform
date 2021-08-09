@@ -21,7 +21,7 @@ jobs:
         configuration:
           - name: x86
             platform: false
-            architecture: x64_64
+            architecture: x86_64
         
           - name: ARM
             platform: arm64
