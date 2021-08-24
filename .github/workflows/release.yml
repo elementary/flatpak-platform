@@ -6,6 +6,8 @@ on:
   pull_request:
     branches: main
     types: closed
+  workflow_dispatch:
+    inputs: {}
 
 jobs:
   publish_platform:
