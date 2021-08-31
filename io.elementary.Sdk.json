@@ -2,7 +2,7 @@
     "build-runtime": true,
     "id": "io.elementary.Sdk",
     "id-platform": "io.elementary.Platform",
-    "branch": "daily",
+    "default-branch": "daily",
     "runtime-version": "3.38",
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
@@ -149,7 +149,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "6.1.0"
+                    "tag": "6.1.1"
                 }
             ]
         },
@@ -168,6 +168,16 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libhandy.git",
                     "tag": "1.2.0"
+                }
+            ]
+        },
+        {
+            "name" : "appdata",
+            "buildsystem" : "meson",
+            "sources" : [
+                {
+                    "type": "dir",
+                    "path": "."
                 }
             ]
         },

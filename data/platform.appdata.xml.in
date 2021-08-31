@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2021 elementary, Inc. <contact@elementary.io> -->
+<component>
+  <id>io.elementary.Platform</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <name>elementary App Platform</name>
+  <summary>Build Flatpak apps for elementary OS</summary>
+  <description>
+    <p>The Flatpak platform for elementary OS and AppCenter.</p>
+  </description>
+  <releases>
+    <release version="6.0.2" date="2021-08-24" urgency="medium">
+      <description>
+        <p>Fix localization issues with apps that use Granite</p>
+      </description>
+    </release>
+    <release version="6.0.1" date="2021-08-23" urgency="medium">
+      <description>
+        <p>Add support for ARM (aarch64)</p>
+      </description>
+    </release>
+    <release version="6.0.0" date="2021-07-20" urgency="medium">
+      <description>
+        <p>Initial Release</p>
+      </description>
+    </release>
+  </releases>
+  <developer_name>elementary, Inc.</developer_name>
+  <url type="homepage">https://elementary.io</url>
+  <url type="bugtracker">https://github.com/elementary/flatpak-platform/issues</url>
+</component>

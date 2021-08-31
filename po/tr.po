@@ -1,0 +1,48 @@
+# Turkish translations for extra package.
+# Copyright (C) 2021 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-20 11:56-0700\n"
+"PO-Revision-Date: 2021-07-20 22:48+0000\n"
+"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/"
+"flatpak-platform/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
+
+#: data/platform.appdata.xml.in:7
+msgid "elementary App Platform"
+msgstr "elementary Uygulama Platformu"
+
+#: data/platform.appdata.xml.in:8 data/sdk.appdata.xml.in:8
+msgid "Build Flatpak apps for elementary OS"
+msgstr "elementary OS için Flatpak uygulamaları oluşturun"
+
+#: data/platform.appdata.xml.in:10
+msgid "The flatpak platform for elementary OS and AppCenter."
+msgstr "elementary OS ve Uygulama Merkezi için flatpak platformu."
+
+#: data/platform.appdata.xml.in:15 data/sdk.appdata.xml.in:15
+msgid "Initial Release"
+msgstr "İlk sürüm"
+
+#: data/platform.appdata.xml.in:19 data/sdk.appdata.xml.in:19
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/sdk.appdata.xml.in:7
+msgid "elementary App SDK"
+msgstr "elementary Uygulama SDK'sı"
+
+#: data/sdk.appdata.xml.in:10
+msgid "The flatpak SDK for elementary OS and AppCenter."
+msgstr "elementary OS ve Uygulama Merkezi için flatpak SDK."

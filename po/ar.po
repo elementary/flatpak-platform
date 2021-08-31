@@ -1,0 +1,49 @@
+# Arabic translations for extra package.
+# Copyright (C) 2021 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-20 11:56-0700\n"
+"PO-Revision-Date: 2021-08-27 18:48+0000\n"
+"Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/"
+"flatpak-platform/ar/>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.4.2\n"
+
+#: data/platform.appdata.xml.in:7
+msgid "elementary App Platform"
+msgstr "منصة تطبيقات elementary"
+
+#: data/platform.appdata.xml.in:8 data/sdk.appdata.xml.in:8
+msgid "Build Flatpak apps for elementary OS"
+msgstr "ابن تطبيقات Flatpak ل elementary OS"
+
+#: data/platform.appdata.xml.in:10
+msgid "The flatpak platform for elementary OS and AppCenter."
+msgstr "منصة Flatpak ل elementary OS وآب سنتر."
+
+#: data/platform.appdata.xml.in:15 data/sdk.appdata.xml.in:15
+msgid "Initial Release"
+msgstr "الإصدار الأولي"
+
+#: data/platform.appdata.xml.in:19 data/sdk.appdata.xml.in:19
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/sdk.appdata.xml.in:7
+msgid "elementary App SDK"
+msgstr "حزمة أدوات تطوير التطبيقات (SDK) ل elementary"
+
+#: data/sdk.appdata.xml.in:10
+msgid "The flatpak SDK for elementary OS and AppCenter."
+msgstr "حزمة أدوات تطوير تطبيقات Flatpak ل elementary OS وآب سنتر."
