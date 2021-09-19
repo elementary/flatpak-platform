@@ -22,7 +22,7 @@ jobs:
           - name: x86
             platform: false
             architecture: x86_64
-        
+
           - name: ARM
             platform: arm64
             architecture: aarch64
@@ -106,16 +106,48 @@ jobs:
     runs-on: ubuntu-latest
     needs: publish_platform
 
+    strategy:
+      matrix:
+        runtime:
+          - name: daily-x86_64
+            packages: io.elementary.Platform/x86_64/daily io.elementary.Sdk/x86_64/daily
+            tag-suffix: ''
+          - name: daily-aarch64
+            packages: io.elementary.Platform/aarch64/daily io.elementary.Sdk/aarch64/daily
+            tag-suffix: aarch64
+
+    services:
+      registry:
+        image: registry:latest
+        ports:
+          - 5000:5000
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Publish
+      - name: Build & push the base image to local registry
         uses: docker/build-push-action@v1
         with:
           push: true
+          tags: localhost:5000/fedora-base:latest
+
+      - name: Write the Dockerfile for the ${{ matrix.runtime.name }} runtime
+        run: |
+          cat >> ${{ matrix.runtime.name }}.Dockerfile << EOF
+          # syntax = docker/dockerfile:experimental
+          FROM localhost:5000/fedora-base:latest
+          RUN --security=insecure flatpak install -y --noninteractive appcenter ${{ matrix.runtime.packages }}
+
+      - name: Build & push the ${{ matrix.runtime.name }} image
+        uses: docker/build-push-action@v2.2.2
+        with:
+          allow: security.insecure
+          context: .
+          file: ${{ matrix.runtime.name }}.Dockerfile
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
           repository: ${{ github.repository }}/runtime
-          tags: daily
+          tags: daily${{ matrix.runtime.tag-suffix }}
+
