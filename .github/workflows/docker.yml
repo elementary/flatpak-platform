@@ -3,19 +3,15 @@
 name: Docker
 
 on:
-  workflow_dispatch: {}
-
-  push:
-    branches:
-      - main
-
-  schedule:
-    - cron: "0 5 * * *"
+  workflow_run:
+    workflows: ["Daily", "Release"]
+    types: [completed]
 
 jobs:
   publish_docker:
     name: Publish Docker
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     strategy:
       matrix:
