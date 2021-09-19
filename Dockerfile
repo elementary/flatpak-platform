@@ -3,7 +3,7 @@ FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
-    apt-get -y install flatpak flatpak-builder python3-aiohttp python3-tenacity python3-gi xvfb ccache zstd docker.io && \
+    apt-get -y install flatpak flatpak-builder python3-aiohttp python3-tenacity python3-gi libostree-dev xvfb ccache zstd docker.io && \
     apt-get -y autoremove && \
     apt-get autoclean && \
     rm -rf /var/lib/apt/lists/*
