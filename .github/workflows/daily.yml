@@ -22,7 +22,7 @@ jobs:
           - name: x86
             platform: false
             architecture: x86_64
-        
+
           - name: ARM
             platform: arm64
             architecture: aarch64
@@ -100,22 +100,3 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}
         run: flat-manager-client purge ${{ env.build_id }}
-
-  publish_docker:
-    name: Publish Docker
-    runs-on: ubuntu-latest
-    needs: publish_platform
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Publish
-        uses: docker/build-push-action@v1
-        with:
-          push: true
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: ghcr.io
-          repository: ${{ github.repository }}/runtime
-          tags: daily
