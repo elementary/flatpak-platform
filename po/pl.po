@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-20 11:56-0700\n"
-"PO-Revision-Date: 2021-09-30 10:32+0000\n"
+"PO-Revision-Date: 2021-09-30 10:33+0000\n"
 "Last-Translator: DarkKnightComes <darkknightcomes@gmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/desktop/"
 "flatpak-platform/pl/>\n"
@@ -34,7 +34,7 @@ msgstr "Platforma flatpak dla elementary OS i AppCenter"
 
 #: data/platform.appdata.xml.in:15 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
-msgstr ""
+msgstr "Wstępne wydanie"
 
 #: data/platform.appdata.xml.in:19 data/sdk.appdata.xml.in:19
 msgid "elementary, Inc."
@@ -46,4 +46,4 @@ msgstr "SDK aplikacji elementary"
 
 #: data/sdk.appdata.xml.in:10
 msgid "The flatpak SDK for elementary OS and AppCenter."
-msgstr ""
+msgstr "SDK flatpak dla elementary OS i AppCenter"
