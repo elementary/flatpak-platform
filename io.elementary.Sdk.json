@@ -123,7 +123,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "6.1.1"
+                    "tag": "6.1.2"
                 }
             ]
         },
