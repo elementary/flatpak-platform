@@ -10,9 +10,10 @@
     <p>The Flatpak platform for elementary OS and AppCenter.</p>
   </description>
   <releases>
-    <release version="6.0.2" date="2021-08-24" urgency="medium">
+    <release version="6.0.2" date="2021-10-22" urgency="medium">
       <description>
         <p>Fix localization issues with apps that use Granite</p>
+        <p>Update elementary stylesheet to 6.1.0</p>
       </description>
     </release>
     <release version="6.0.1" date="2021-08-23" urgency="medium">
