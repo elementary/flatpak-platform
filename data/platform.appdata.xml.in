@@ -10,13 +10,19 @@
     <p>The Flatpak platform for elementary OS and AppCenter.</p>
   </description>
   <releases>
-    <release version="6.0.2" date="2021-10-29" urgency="medium">
+    <release version="6.0.2" date="2021-10-26" urgency="medium">
       <description>
-        <p>Fix localization issues with apps that use Granite</p>
-        <p>Use the settings portal for time and date settings</p>
-        <p>Use the settings portal for color scheme preference instead of requiring an AccountsService hole</p>
-        <p>Update elementary stylesheet to 6.1.0</p>
-        <p>Update Granite to 6.1.2</p>
+        <p>Fixes:</p>
+        <ul>
+          <li>Fix localization issues with apps that use Granite</li>
+        </ul>
+        <p>Platform updates:</p>
+        <ul>
+          <li>Use the settings portal for time and date settings</li>
+          <li>Use the settings portal for color scheme preference instead of requiring an AccountsService hole</li>
+          <li>Update elementary stylesheet to 6.1.0</li>
+          <li>Update Granite to 6.1.2</li>
+        </ul>
       </description>
     </release>
     <release version="6.0.1" date="2021-08-23" urgency="medium">
