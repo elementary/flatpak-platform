@@ -13,7 +13,10 @@
     <release version="6.0.2" date="2021-10-22" urgency="medium">
       <description>
         <p>Fix localization issues with apps that use Granite</p>
+        <p>Use the settings portal for time and date settings</p>
+        <p>Use the settings portal for color scheme preference instead of requiring an AccountsService hole</p>
         <p>Update elementary stylesheet to 6.1.0</p>
+        <p>Update Granite to 6.1.2</p>
       </description>
     </release>
     <release version="6.0.1" date="2021-08-23" urgency="medium">
