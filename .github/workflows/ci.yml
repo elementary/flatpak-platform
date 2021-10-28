@@ -14,16 +14,33 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: Build (${{ matrix.configuration.name }})
     runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        configuration:
+          - name: x86
+            platform: false
+            architecture: x86_64
+
+          - name: ARM
+            platform: arm64
+            architecture: aarch64
 
     steps:
       - name: Clean
         uses: easimon/maximize-build-space@v4
         with:
-          root-reserve-mb: 20480
+          # Reserve some space on the / partition to install the needed org.gnome runtimes and their Debug extensions.
+          # This probably needs around 10-12GB, the rest of the free space on / then gets assigned to the build directory
+          # where we need the most space
+          root-reserve-mb: 16000
           swap-size-mb: 1024
           remove-dotnet: 'true'
+          remove-android: 'true'
+          remove-haskell: 'true'
 
       - name: Checkout
         uses: actions/checkout@v2
@@ -36,20 +53,24 @@ jobs:
 
           sudo flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+        if: ${{ matrix.configuration.platform }}
+        with:
+          platforms: ${{ matrix.configuration.platform }}
+
       - name: Cache
         uses: actions/cache@v2
         with:
           path: ./.flatpak-builder
-          key: flatpak-builder-${{ github.sha }}
-          restore-keys: |
-            flatpak-builder-
-            flatpak-
+          key: flatpak-builder-${{ matrix.configuration.name }}-${{ github.sha }}
+          restore-keys: flatpak-builder-${{ matrix.configuration.name }}-
 
       - name: Build
         env:
           DISPLAY: "0:0"
         run: |
-          sudo xvfb-run --auto-servernum flatpak-builder --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
+          sudo xvfb-run --auto-servernum flatpak-builder --arch=${{ matrix.configuration.architecture }} --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
 
       - name: Fix Permissions
         run: sudo chown -R runner:docker .
