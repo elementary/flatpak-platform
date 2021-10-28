@@ -51,7 +51,7 @@ jobs:
         env:
           DISPLAY: "0:0"
         run: |
-          sudo xvfb-run --auto-servernum flatpak-builder --default-branch="6" --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
+          sudo xvfb-run --auto-servernum flatpak-builder --default-branch="6.1" --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
 
       - name: Fix Permissions
         run: sudo chown -R runner:docker .
