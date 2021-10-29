@@ -14,7 +14,7 @@
       <description>
         <p>Platform updates:</p>
         <ul>
-          <li>Rebase on GNOME 42 runtime</li>
+          <li>Rebase on GNOME 41 runtime</li>
           <li>Added elementary and freedesktop sound themes</li>
         </ul>
       </description>
