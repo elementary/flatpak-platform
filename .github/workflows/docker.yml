@@ -4,7 +4,7 @@ name: Docker
 
 on:
   workflow_run:
-    workflows: ["Release"]
+    workflows: ["Release-6"]
     types: [completed]
 
 jobs:
