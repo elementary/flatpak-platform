@@ -10,6 +10,14 @@
     <p>The Flatpak platform for elementary OS and AppCenter.</p>
   </description>
   <releases>
+    <release version="6.0.3" date="2021-10-29" urgency="medium">
+      <description>
+        <p>Platform updates:</p>
+        <ul>
+          <li>Added elementary and freedesktop sound themes</li>
+        </ul>
+      </description>
+    </release>
     <release version="6.0.2" date="2021-10-26" urgency="medium">
       <description>
         <p>Fixes:</p>
