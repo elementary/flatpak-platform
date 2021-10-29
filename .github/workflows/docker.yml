@@ -4,7 +4,7 @@ name: Docker
 
 on:
   workflow_run:
-    workflows: ["Daily", "Release"]
+    workflows: ["Release-6"]
     types: [completed]
 
 jobs:
@@ -16,12 +16,6 @@ jobs:
     strategy:
       matrix:
         runtime:
-          - name: daily-x86_64
-            packages: io.elementary.Platform/x86_64/daily io.elementary.Sdk/x86_64/daily
-            tags: ghcr.io/${{ github.repository }}/runtime:daily,ghcr.io/${{ github.repository }}/runtime:daily-x86_64
-          - name: daily-aarch64
-            packages: io.elementary.Platform/aarch64/daily io.elementary.Sdk/aarch64/daily
-            tags: ghcr.io/${{ github.repository }}/runtime:daily-aarch64
           - name: stable-6-x86_64
             packages: io.elementary.Platform/x86_64/6 io.elementary.Sdk/x86_64/6
             tags: ghcr.io/${{ github.repository }}/runtime:6,ghcr.io/${{ github.repository }}/runtime:6-x86_64
