@@ -128,6 +128,39 @@
             ]
         },
         {
+            "name" : "sound-theme",
+            "buildsystem" : "meson",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/elementary/sound-theme.git",
+                    "tag" : "1.1.0"
+                }
+            ],
+            "modules" : [
+                {
+                    "name" : "intltool",
+                    "sources" : [
+                        {
+                            "type" : "archive",
+                            "url" : "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+                            "md5" : "12e517cac2b57a0121cda351570f1e63"
+                        }
+                    ]
+                },
+                {
+                    "name" : "freedesktop-sound-theme",
+                    "sources" : [
+                        {
+                            "type" : "git",
+                            "url" : "https://gitlab.freedesktop.org/xdg/xdg-sound-theme.git",
+                            "tag" : "0.8"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name" : "appdata",
             "buildsystem" : "meson",
             "sources" : [
