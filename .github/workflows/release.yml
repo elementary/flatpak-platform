@@ -1,10 +1,10 @@
 ---
 
-name: Release
+name: Release-6
 
 on:
   pull_request:
-    branches: main
+    branches: '6'
     types: closed
 
 jobs:
