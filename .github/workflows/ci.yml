@@ -4,9 +4,6 @@ name: CI
 
 on:
   pull_request:
-    paths:
-      - io.elementary.Sdk.json
-
     types:
       - opened
       - reopened
