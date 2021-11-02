@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-20 11:56-0700\n"
-"PO-Revision-Date: 2021-08-06 17:09+0000\n"
+"PO-Revision-Date: 2021-09-17 10:37+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/"
 "flatpak-platform/fi/>\n"
@@ -29,11 +29,11 @@ msgstr "Rakenna Flatpak-sovelluksia elementary OS:lle"
 
 #: data/platform.appdata.xml.in:10
 msgid "The flatpak platform for elementary OS and AppCenter."
-msgstr ""
+msgstr "Flatpak-alusta elementary OS:lle ja Sovelluskeskukselle."
 
 #: data/platform.appdata.xml.in:15 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
-msgstr ""
+msgstr "Ensimmäinen julkaisu"
 
 #: data/platform.appdata.xml.in:19 data/sdk.appdata.xml.in:19
 msgid "elementary, Inc."
@@ -46,3 +46,4 @@ msgstr ""
 #: data/sdk.appdata.xml.in:10
 msgid "The flatpak SDK for elementary OS and AppCenter."
 msgstr ""
+"Flatpak-sovelluskehitysympäristö elementary OS:lle ja Sovelluskeskukselle."

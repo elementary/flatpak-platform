@@ -22,7 +22,7 @@ jobs:
           - name: x86
             platform: false
             architecture: x86_64
-        
+
           - name: ARM
             platform: arm64
             architecture: aarch64
@@ -31,9 +31,14 @@ jobs:
       - name: Clean
         uses: easimon/maximize-build-space@v4
         with:
-          root-reserve-mb: 25600
+          # Reserve some space on the / partition to install the needed org.gnome runtimes and their Debug extensions.
+          # This probably needs around 10-12GB, the rest of the free space on / then gets assigned to the build directory
+          # where we need the most space
+          root-reserve-mb: 16000
           swap-size-mb: 1024
           remove-dotnet: 'true'
+          remove-android: 'true'
+          remove-haskell: 'true'
 
       - name: Checkout
         uses: actions/checkout@v2
@@ -100,22 +105,3 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}
         run: flat-manager-client purge ${{ env.build_id }}
-
-  publish_docker:
-    name: Publish Docker
-    runs-on: ubuntu-latest
-    needs: publish_platform
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Publish
-        uses: docker/build-push-action@v1
-        with:
-          push: true
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: ghcr.io
-          repository: ${{ github.repository }}/runtime
-          tags: daily

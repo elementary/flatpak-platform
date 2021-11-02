@@ -1,0 +1,69 @@
+---
+
+name: Docker
+
+on:
+  workflow_run:
+    workflows: ["Daily", "Release"]
+    types: [completed]
+
+jobs:
+  publish_docker:
+    name: Publish Docker
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    strategy:
+      matrix:
+        runtime:
+          - name: daily-x86_64
+            packages: io.elementary.Platform/x86_64/daily io.elementary.Sdk/x86_64/daily
+            tags: ghcr.io/${{ github.repository }}/runtime:daily,ghcr.io/${{ github.repository }}/runtime:daily-x86_64
+          - name: daily-aarch64
+            packages: io.elementary.Platform/aarch64/daily io.elementary.Sdk/aarch64/daily
+            tags: ghcr.io/${{ github.repository }}/runtime:daily-aarch64
+          - name: stable-6.1-x86_64
+            packages: io.elementary.Platform/x86_64/6.1 io.elementary.Sdk/x86_64/6
+            tags: ghcr.io/${{ github.repository }}/runtime:6.1,ghcr.io/${{ github.repository }}/runtime:6.1-x86_64
+          - name: stable-6.1-aarch64
+            packages: io.elementary.Platform/aarch64/6.1 io.elementary.Sdk/aarch64/6
+            tags: ghcr.io/${{ github.repository }}/runtime:6.1-aarch64
+
+    services:
+      registry:
+        image: registry:latest
+        ports:
+          - 5000:5000
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build & push the base image to local registry
+        uses: docker/build-push-action@v2.2.2
+        with:
+          context: .
+          push: true
+          tags: localhost:5000/ubuntu-base:latest
+
+      - name: Write the Dockerfile for the ${{ matrix.runtime.name }} runtime
+        run: |
+          cat >> ${{ matrix.runtime.name }}.Dockerfile << EOF
+          # syntax = docker/dockerfile:experimental
+          FROM localhost:5000/ubuntu-base:latest
+          RUN flatpak install -y --noninteractive appcenter ${{ matrix.runtime.packages }}
+
+      - name: Build & push the ${{ matrix.runtime.name }} image
+        uses: docker/build-push-action@v2.2.2
+        with:
+          context: .
+          push: true
+          file: ${{ matrix.runtime.name }}.Dockerfile
+          tags: ${{ matrix.runtime.tags }}
