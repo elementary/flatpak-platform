@@ -1,6 +1,6 @@
 project(
     'io.elementary.Platform',
-    version: '6.0.2'
+    version: '6.0.3'
 )
 
 i18n = import('i18n')
