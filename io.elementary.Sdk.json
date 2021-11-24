@@ -52,7 +52,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/icons.git",
-                    "tag": "6.0.0"
+                    "tag": "6.1.0"
                 }
             ],
             "modules": [
@@ -76,7 +76,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/stylesheet.git",
-                    "tag": "6.1.0"
+                    "tag": "6.1.1"
                 }
             ],
             "modules": [
@@ -123,7 +123,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "6.1.2"
+                    "tag": "6.2.0"
                 }
             ]
         },
