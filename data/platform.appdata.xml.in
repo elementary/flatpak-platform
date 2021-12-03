@@ -10,7 +10,7 @@
     <p>The Flatpak platform for elementary OS and AppCenter.</p>
   </description>
   <releases>
-    <release version="6.1.0" date="2021-10-29" urgency="medium">
+    <release version="6.1.0" date="2021-12-25" urgency="medium">
       <description>
         <p>Platform updates:</p>
         <ul>
