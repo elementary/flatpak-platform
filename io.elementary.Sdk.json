@@ -179,7 +179,7 @@
                 }
             ],
             "build-commands": [
-                "ln -S /usr/share/themes/io.elementary.stylesheet.blueberry /usr/share/themes/elementary"
+                "ln -s /usr/share/themes/io.elementary.stylesheet.blueberry /usr/share/themes/elementary"
             ]
         },
         {
