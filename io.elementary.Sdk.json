@@ -161,6 +161,28 @@
             ]
         },
         {
+            "name" : "platform-settings",
+            "buildsystem" : "simple",
+            "modules": [
+                {
+                    "name" : "default-gtk-settings",
+                    "buildsystem" : "simple",
+                    "sources" : [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/elementary/default-settings.git"
+                        }
+                    ],
+                    "build-commands": [
+                        "install -Dm644 gtk/settings.ini /usr/etc/gtk-3.0/settings.ini"
+                    ]
+                }
+            ],
+            "build-commands": [
+                "ln -s /usr/share/themes/io.elementary.stylesheet.blueberry /usr/share/themes/elementary"
+            ]
+        },
+        {
             "name" : "appdata",
             "buildsystem" : "meson",
             "sources" : [
