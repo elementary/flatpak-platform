@@ -128,6 +128,17 @@
             ]
         },
         {
+            "name": "granite-7",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/elementary/granite.git",
+                    "branch": "main"
+                }
+            ]
+        },
+        {
             "name" : "sound-theme",
             "buildsystem" : "meson",
             "sources" : [
