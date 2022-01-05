@@ -52,7 +52,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/icons.git",
-                    "tag": "6.1.0"
+                    "branch": "master"
                 }
             ],
             "modules": [
@@ -61,9 +61,9 @@
                     "cleanup": [ "*" ],
                     "sources": [
                         {
-                            "type": "git",
-                            "url": "https://gitlab.freedesktop.org/xorg/app/xcursorgen.git",
-                            "tag": "xcursorgen-1.0.7"
+                            "type": "archive",
+                            "url": "https://xorg.freedesktop.org/archive/individual/app/xcursorgen-1.0.7.tar.gz",
+                            "sha256": "6bc32d4977ffd60c00583bfd217f1d1245ca54dafbfbbcdbf14f696f9487b83e"
                         }
                     ]
                 }
@@ -76,7 +76,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/stylesheet.git",
-                    "tag": "6.1.1"
+                    "branch": "master"
                 }
             ],
             "modules": [
@@ -124,6 +124,17 @@
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
                     "tag": "6.2.0"
+                }
+            ]
+        },
+        {
+            "name": "granite-7",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/elementary/granite.git",
+                    "branch": "main"
                 }
             ]
         },
