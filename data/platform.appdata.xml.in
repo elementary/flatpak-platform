@@ -10,6 +10,15 @@
     <p>The Flatpak platform for elementary OS and AppCenter.</p>
   </description>
   <releases>
+    <release version="7.0.0" date="2022-04-25" urgency="medium">
+      <description>
+        <p>Platform updates:</p>
+        <ul>
+          <li>Rebase on GNOME 42 runtime</li>
+          <li>Initial support for Gtk4</li>
+        </ul>
+      </description>
+    </release>
     <release version="6.1.0" date="2021-12-07" urgency="medium">
       <description>
         <p>Platform updates:</p>
