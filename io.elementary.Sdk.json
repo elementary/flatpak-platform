@@ -87,7 +87,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/sass/sassc.git",
-                            "tag": "3.6.1"
+                            "tag": "3.6.2"
                         },
                         {
                             "type": "script",
@@ -103,7 +103,7 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/sass/libsass.git",
-                                    "tag": "3.6.4"
+                                    "tag": "3.6.5"
                                 },
                                 {
                                     "type": "script",
