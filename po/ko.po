@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-20 11:56-0700\n"
-"PO-Revision-Date: 2022-08-05 14:42+0000\n"
+"PO-Revision-Date: 2022-08-06 23:36+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/desktop/"
 "flatpak-platform/ko/>\n"
@@ -21,19 +21,19 @@ msgstr ""
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
-msgstr ""
+msgstr "elementary 앱 플랫폼"
 
 #: data/platform.appdata.xml.in:8 data/sdk.appdata.xml.in:8
 msgid "Build Flatpak apps for elementary OS"
-msgstr ""
+msgstr "elementary OS용 Flatpak 앱 빌드"
 
 #: data/platform.appdata.xml.in:10
 msgid "The flatpak platform for elementary OS and AppCenter."
-msgstr ""
+msgstr "elementary OS 와 AppCenter를 위한 플랫팩 플랫폼."
 
 #: data/platform.appdata.xml.in:15 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
-msgstr ""
+msgstr "초판"
 
 #: data/platform.appdata.xml.in:19 data/sdk.appdata.xml.in:19
 msgid "elementary, Inc."
@@ -41,8 +41,8 @@ msgstr "elementary, Inc."
 
 #: data/sdk.appdata.xml.in:7
 msgid "elementary App SDK"
-msgstr ""
+msgstr "elementary App SDK"
 
 #: data/sdk.appdata.xml.in:10
 msgid "The flatpak SDK for elementary OS and AppCenter."
-msgstr ""
+msgstr "elementary OS 와 AppCenter를 위한 플랫팩 SDK."
