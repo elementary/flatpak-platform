@@ -13,7 +13,7 @@ on:
 jobs:
   publish_platform:
     name: Publish Platform (${{ matrix.configuration.name }})
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     strategy:
       fail-fast: false
@@ -41,10 +41,10 @@ jobs:
           remove-haskell: 'true'
 
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
+        uses: docker/setup-qemu-action@v2
         if: ${{ matrix.configuration.platform }}
         with:
           platforms: ${{ matrix.configuration.platform }}
@@ -63,7 +63,7 @@ jobs:
           sudo flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
       - name: Cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ./.flatpak-builder
           key: flatpak-builder-${{ matrix.configuration.name }}-${{ github.sha }}
