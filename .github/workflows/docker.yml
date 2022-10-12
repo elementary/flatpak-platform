@@ -10,7 +10,7 @@ on:
 jobs:
   publish_docker:
     name: Publish Docker
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     strategy:
@@ -37,17 +37,17 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build & push the base image to local registry
-        uses: docker/build-push-action@v2.2.2
+        uses: docker/build-push-action@v3.1.1
         with:
           context: .
           push: true
@@ -61,7 +61,7 @@ jobs:
           RUN flatpak install -y --noninteractive appcenter ${{ matrix.runtime.packages }}
 
       - name: Build & push the ${{ matrix.runtime.name }} image
-        uses: docker/build-push-action@v2.2.2
+        uses: docker/build-push-action@v3.1.1
         with:
           context: .
           push: true
