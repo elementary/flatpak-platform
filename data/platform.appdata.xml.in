@@ -10,6 +10,15 @@
     <p>The Flatpak platform for elementary OS and AppCenter.</p>
   </description>
   <releases>
+    <release version="7.1.0" date="2022-10-13" urgency="medium">
+      <description>
+        <p>Platform updates:</p>
+        <ul>
+          <li>Granite 7.1.0</li>
+          <li>Stylesheet 7.0.1</li>
+        </ul>
+      </description>
+    </release>
     <release version="7.0.0" date="2022-05-03" urgency="medium">
       <description>
         <p>Platform updates:</p>
