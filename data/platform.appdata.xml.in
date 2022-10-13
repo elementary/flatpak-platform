@@ -14,8 +14,9 @@
       <description>
         <p>Platform updates:</p>
         <ul>
-          <li>Granite 7.1.0</li>
-          <li>Stylesheet 7.0.1</li>
+          <li>Update Granite to 7.1.0</li>
+          <li>Update Icons to 7.1.0</li>
+          <li>Update Stylesheet to 7.0.1</li>
         </ul>
       </description>
     </release>
