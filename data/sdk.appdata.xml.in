@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2021 elementary, Inc. <contact@elementary.io> -->
+<!-- Copyright 2022 elementary, Inc. <contact@elementary.io> -->
 <component>
   <id>io.elementary.Sdk</id>
   <metadata_license>CC0-1.0</metadata_license>
@@ -10,6 +10,16 @@
     <p>The Flatpak SDK for elementary OS and AppCenter.</p>
   </description>
   <releases>
+    <release version="7.1.0" date="2022-11-29" urgency="medium">
+      <description>
+        <p>Platform updates:</p>
+        <ul>
+          <li>Update Granite to 7.1.0</li>
+          <li>Update Icons to 7.1.0</li>
+          <li>Update Stylesheet to 7.0.1</li>
+        </ul>
+      </description>
+    </release>
     <release version="6.0.0" date="2021-07-20" urgency="medium">
       <description>
         <p>Initial Release</p>
