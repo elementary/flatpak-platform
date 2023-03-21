@@ -47,7 +47,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build & push the base image to local registry
-        uses: docker/build-push-action@v3.1.1
+        uses: docker/build-push-action@v4.0.0
         with:
           context: .
           push: true
@@ -61,7 +61,7 @@ jobs:
           RUN flatpak install -y --noninteractive appcenter ${{ matrix.runtime.packages }}
 
       - name: Build & push the ${{ matrix.runtime.name }} image
-        uses: docker/build-push-action@v3.1.1
+        uses: docker/build-push-action@v4.0.0
         with:
           context: .
           push: true

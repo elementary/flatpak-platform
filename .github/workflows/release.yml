@@ -57,7 +57,7 @@ jobs:
           sudo flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
+        uses: docker/setup-qemu-action@v2
         if: ${{ matrix.configuration.platform }}
         with:
           platforms: ${{ matrix.configuration.platform }}
