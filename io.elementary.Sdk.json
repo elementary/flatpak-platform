@@ -3,7 +3,7 @@
     "id": "io.elementary.Sdk",
     "id-platform": "io.elementary.Platform",
     "default-branch": "daily",
-    "runtime-version": "43",
+    "runtime-version": "44",
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
@@ -134,7 +134,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "7.1.0"
+                    "tag": "7.2.0"
                 }
             ]
         },
