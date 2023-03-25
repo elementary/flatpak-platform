@@ -75,7 +75,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/elementary/stylesheet/archive/refs/tags/7.1.0.tar.gz",
+                    "url": "https://github.com/elementary/stylesheet/archive/refs/tags/7.1.0.tar.gz"
                 }
             ],
             "modules": [
