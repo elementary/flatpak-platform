@@ -74,8 +74,9 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/elementary/stylesheet/archive/refs/tags/7.1.0.tar.gz"
+                    "type": "git",
+                    "url": "https://github.com/elementary/stylesheet.git",
+                    "tag": "7.1.0"
                 }
             ],
             "modules": [
