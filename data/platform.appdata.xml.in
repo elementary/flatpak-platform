@@ -17,6 +17,7 @@
           <li>Rebase on GNOME 44 runtime</li>
           <li>Update Granite to 7.2.0</li>
           <li>Update Icons to 7.2.0</li>
+          <li>Update Stylesheet to 7.1.0</li>
         </ul>
       </description>
     </release>
