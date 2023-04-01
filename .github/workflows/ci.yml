@@ -61,13 +61,6 @@ jobs:
         with:
           platforms: ${{ matrix.configuration.platform }}
 
-      - name: Cache
-        uses: actions/cache@v3
-        with:
-          path: ./.flatpak-builder
-          key: flatpak-builder-${{ matrix.configuration.name }}-${{ github.sha }}
-          restore-keys: flatpak-builder-${{ matrix.configuration.name }}-
-
       - name: Build
         env:
           DISPLAY: "0:0"

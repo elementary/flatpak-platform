@@ -64,13 +64,6 @@ jobs:
         with:
           platforms: ${{ matrix.configuration.platform }}
 
-      - name: Cache
-        uses: actions/cache@v3
-        with:
-          path: ./.flatpak-builder
-          key: flatpak-builder-${{ matrix.configuration.name }}-${{ github.sha }}
-          restore-keys: flatpak-builder-${{ matrix.configuration.name }}-
-
       - name: Build
         env:
           DISPLAY: "0:0"
@@ -107,6 +100,3 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}
         run: flat-manager-client purge ${{ env.build_id }}
-
-      - name: Cleanup local repository
-        run: rm -rf elementary
