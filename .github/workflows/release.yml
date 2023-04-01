@@ -1,11 +1,11 @@
 ---
 
-name: Release-7.1
+name: Release-7.2
 
 on:
   pull_request:
-    branches: main
-    types: closed
+    branches: [main]
+    types: [closed]
   workflow_dispatch: {}
 
 jobs:
@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Clean
-        uses: easimon/maximize-build-space@v6
+        uses: easimon/maximize-build-space@v7
         with:
           # Reserve some space on the / partition to install the needed org.gnome runtimes and their Debug extensions.
           # This probably needs around 10-12GB, the rest of the free space on / then gets assigned to the build directory
@@ -39,6 +39,8 @@ jobs:
           remove-dotnet: 'true'
           remove-android: 'true'
           remove-haskell: 'true'
+          remove-codeql: 'true'
+          remove-docker-images: 'true'
 
       - name: Checkout
         uses: actions/checkout@v3
@@ -62,18 +64,11 @@ jobs:
         with:
           platforms: ${{ matrix.configuration.platform }}
 
-      - name: Cache
-        uses: actions/cache@v3
-        with:
-          path: ./.flatpak-builder
-          key: flatpak-builder-${{ matrix.configuration.name }}-${{ github.sha }}
-          restore-keys: flatpak-builder-${{ matrix.configuration.name }}-
-
       - name: Build
         env:
           DISPLAY: "0:0"
         run: |
-          sudo xvfb-run --auto-servernum flatpak-builder --arch=${{ matrix.configuration.architecture }} --default-branch="7.1" --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
+          sudo xvfb-run --auto-servernum flatpak-builder --arch=${{ matrix.configuration.architecture }} --default-branch="7.2" --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
 
       - name: Fix Permissions
         run: sudo chown -R runner:docker .
