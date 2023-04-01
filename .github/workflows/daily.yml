@@ -107,3 +107,6 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.FLAT_MANAGER_TOKEN }}
         run: flat-manager-client purge ${{ env.build_id }}
+
+      - name: Cleanup local repository
+        run: rm -rf elementary
