@@ -3,31 +3,26 @@
 name: Docker
 
 on:
-  workflow_run:
-    workflows: ["Daily", "Release-7.2"]
-    types: [completed]
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
 
 jobs:
   publish_docker:
     name: Publish Docker
-    runs-on: ubuntu-22.04
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        runtime:
-          - name: daily-x86_64
-            packages: io.elementary.Platform/x86_64/daily io.elementary.Sdk/x86_64/daily
-            tags: ghcr.io/${{ github.repository }}/runtime:daily,ghcr.io/${{ github.repository }}/runtime:daily-x86_64
-          - name: daily-aarch64
-            packages: io.elementary.Platform/aarch64/daily io.elementary.Sdk/aarch64/daily
-            tags: ghcr.io/${{ github.repository }}/runtime:daily-aarch64
-          - name: stable-7.2-x86_64
-            packages: io.elementary.Platform/x86_64/7.2 io.elementary.Sdk/x86_64/7.2
-            tags: ghcr.io/${{ github.repository }}/runtime:7.2,ghcr.io/${{ github.repository }}/runtime:7.2-x86_64
-          - name: stable-7.2-aarch64
-            packages: io.elementary.Platform/aarch64/7.2 io.elementary.Sdk/aarch64/7.2
-            tags: ghcr.io/${{ github.repository }}/runtime:7.2-aarch64
+        arch:
+          - x86_64
+          - aarch64
+        version:
+          - 'daily'
+          - '6.1'
+          - '7'
+          - '7.1'
+          - '7.2'
 
     services:
       registry:
@@ -53,17 +48,23 @@ jobs:
           push: true
           tags: localhost:5000/ubuntu-base:latest
 
-      - name: Write the Dockerfile for the ${{ matrix.runtime.name }} runtime
+      - name: Write the Dockerfile for the ${{ matrix.version }}-${{ matrix.arch }} runtime
         run: |
-          cat >> ${{ matrix.runtime.name }}.Dockerfile << EOF
-          # syntax = docker/dockerfile:experimental
-          FROM localhost:5000/ubuntu-base:latest
-          RUN flatpak install -y --noninteractive appcenter ${{ matrix.runtime.packages }}
+          cat <<EOF > ${{ matrix.version }}-${{ matrix.arch }}.Dockerfile
+            # syntax = docker/dockerfile:experimental
+            FROM localhost:5000/ubuntu-base:latest
+            RUN flatpak install -y --noninteractive appcenter io.elementary.Platform/${{ matrix.arch }}/${{ matrix.version }} io.elementary.Sdk/${{ matrix.arch }}/${{ matrix.version }}
+          EOF
 
-      - name: Build & push the ${{ matrix.runtime.name }} image
+      - name: Set additional tags for the default x86_64 runtimes
+        if: matrix.arch == 'x86_64'
+        run: |
+          echo "additional_tags=ghcr.io/${{ github.repository }}/runtime:${{ matrix.version }}" >> $GITHUB_ENV
+
+      - name: Build & push the ${{ matrix.version }}-${{ matrix.arch }} image
         uses: docker/build-push-action@v4.0.0
         with:
           context: .
           push: true
-          file: ${{ matrix.runtime.name }}.Dockerfile
-          tags: ${{ matrix.runtime.tags }}
+          file: ${{ matrix.version }}-${{ matrix.arch }}.Dockerfile
+          tags: ${{ ghcr.io/${{ github.repository }}/runtime:${{ matrix.version }}-${{ matrix.arch }} ${{ env.additional_tags }}
