@@ -31,7 +31,7 @@ jobs:
 
     steps:
       - name: Clean
-        uses: easimon/maximize-build-space@v6
+        uses: easimon/maximize-build-space@v7
         with:
           # Reserve some space on the / partition to install the needed org.gnome runtimes and their Debug extensions.
           # This probably needs around 10-12GB, the rest of the free space on / then gets assigned to the build directory
@@ -41,6 +41,8 @@ jobs:
           remove-dotnet: 'true'
           remove-android: 'true'
           remove-haskell: 'true'
+          remove-codeql: 'true'
+          remove-docker:images: 'true'
 
       - name: Checkout
         uses: actions/checkout@v3
