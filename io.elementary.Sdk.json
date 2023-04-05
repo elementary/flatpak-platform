@@ -46,6 +46,32 @@
     },
     "modules": [
          {
+            "name": "gtk",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dbroadway_backend=true",
+                "-Dinstalled_tests=true",
+                "-Dtests=false",
+                "-Dx11_backend=true",
+                "-Dwayland-backend=true",
+                "-Dgtk_doc=true",
+                "-Dman=true",
+                "-Dintrospection=true",
+                "-Dtracker3=true"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gtk.git",
+                    "tag": "3.24.28"
+                },
+                {
+                    "type": "patch",
+                    "path": "gtk-default-themes.patch"
+                }
+            ]
+        },
+         {
             "name": "icons",
             "buildsystem": "meson",
             "sources": [
