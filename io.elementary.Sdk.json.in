@@ -2,7 +2,7 @@
     "build-runtime": true,
     "id": "io.elementary.Sdk",
     "id-platform": "io.elementary.Platform",
-    "default-branch": "daily",
+    "default-branch": "@branch@",
     "runtime-version": "44",
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
@@ -27,8 +27,8 @@
         "--env=ALSA_CONFIG_PATH=/usr/share/alsa/alsa-flatpak.conf",
         "--env=GI_TYPELIB_PATH=/app/lib/girepository-1.0",
         "--env=XDG_DATA_DIRS=/app/share:/usr/share:/usr/share/runtime/share:/run/host/share",
-        "--sdk=io.elementary.Sdk//daily",
-        "--runtime=io.elementary.Platform//daily"
+        "--sdk=io.elementary.Sdk//@branch@",
+        "--runtime=io.elementary.Platform//@branch@"
     ],
     "cleanup-platform": [
         "/share/runtime/docs",
@@ -199,7 +199,7 @@
             "sources" : [
                 {
                     "type": "dir",
-                    "path": "platform-data"
+                    "path": "@source_dir@/platform-data"
                 }
             ]
         }
