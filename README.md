@@ -13,6 +13,7 @@ Next, you will need:
 
 - A lot of space (~ 15 Gb)
 - `flatpak-builder`
+- `meson`
 - `git`
 
 When building locally, you may wish to reduce the build time and disk space required by commenting out the `.Sdk.Debug`
@@ -21,7 +22,8 @@ line in the manifest. You'll only need to include this line if you're debugging 
 And finally, to build and install:
 
 ```sh
-flatpak-builder --force-clean --install-deps-from=flathub --ccache --repo=elementary --install builddir ./io.elementary.Sdk.json
+meson setup build --prefix=/usr
+flatpak-builder --install-deps-from=flathub --ccache --repo=elementary builddir ./build/io.elementary.Sdk.json
 ```
 
 ## Publishing
