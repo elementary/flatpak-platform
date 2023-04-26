@@ -1,0 +1,1 @@
+option('branch', type : 'string', value : 'daily', description : 'The flatpak branch')

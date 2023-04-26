@@ -1,6 +1,6 @@
 ---
 
-name: Release-7.2
+name: Release
 
 on:
   pull_request:
@@ -8,9 +8,12 @@ on:
     types: [closed]
   workflow_dispatch: {}
 
+env:
+  RUNTIME_VERSION: 7.2
+
 jobs:
   publish_platform:
-    name: Publish Platform (${{ matrix.configuration.name }})
+    name: Publish Platform ${{ vars.RUNTIME_VERSION }} (${{ matrix.configuration.name }})
     runs-on: ubuntu-22.04
 
     strategy:
@@ -48,7 +51,7 @@ jobs:
       - name: Setup
         run: |
           sudo apt update
-          sudo apt install -y ccache flatpak flatpak-builder gir1.2-ostree-1.0 python3-aiohttp python3-gi python3-tenacity xvfb zstd
+          sudo apt install -y ccache flatpak flatpak-builder gir1.2-ostree-1.0 meson python3-aiohttp python3-gi python3-tenacity xvfb zstd
           sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
 
           curl https://raw.githubusercontent.com/flatpak/flat-manager/0.3.7/flat-manager-client > ./flat-manager-client
@@ -68,7 +71,8 @@ jobs:
         env:
           DISPLAY: "0:0"
         run: |
-          sudo xvfb-run --auto-servernum flatpak-builder --arch=${{ matrix.configuration.architecture }} --default-branch="7.2" --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./io.elementary.Sdk.json
+          meson setup build -Dbranch=${RUNTIME_VERSION} --cross-file="architectures/${{ matrix.configuration.architecture }}.crossfile"
+          sudo xvfb-run --auto-servernum flatpak-builder --arch=${{ matrix.configuration.architecture }} --default-branch="${RUNTIME_VERSION}" --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./build/io.elementary.Sdk.json
 
       - name: Fix Permissions
         run: sudo chown -R runner:docker .
