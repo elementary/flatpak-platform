@@ -55,7 +55,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/icons.git",
-                    "tag": "7.2.0"
+                    "tag": "7.3.0"
                 }
             ],
             "modules": [
