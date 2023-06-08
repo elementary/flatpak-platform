@@ -67,4 +67,4 @@ jobs:
           context: .
           push: true
           file: ${{ matrix.version }}-${{ matrix.arch }}.Dockerfile
-          tags: ${{ ghcr.io/${{ github.repository }}/runtime:${{ matrix.version }}-${{ matrix.arch }} ${{ env.additional_tags }}
+          tags: ghcr.io/${{ github.repository }}/runtime:${{ matrix.version }}-${{ matrix.arch }} ${{ env.additional_tags }}
