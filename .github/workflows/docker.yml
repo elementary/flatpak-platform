@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
         arch:
           - x86_64
@@ -59,7 +60,7 @@ jobs:
       - name: Set additional tags for the default x86_64 runtimes
         if: matrix.arch == 'x86_64'
         run: |
-          echo "additional_tags=ghcr.io/${{ github.repository }}/runtime:${{ matrix.version }}" >> $GITHUB_ENV
+          echo "additional_tags=,ghcr.io/${{ github.repository }}/runtime:${{ matrix.version }}" >> $GITHUB_ENV
 
       - name: Build & push the ${{ matrix.version }}-${{ matrix.arch }} image
         uses: docker/build-push-action@v4.0.0
@@ -67,4 +68,4 @@ jobs:
           context: .
           push: true
           file: ${{ matrix.version }}-${{ matrix.arch }}.Dockerfile
-          tags: ghcr.io/${{ github.repository }}/runtime:${{ matrix.version }}-${{ matrix.arch }} ${{ env.additional_tags }}
+          tags: ghcr.io/${{ github.repository }}/runtime:${{ matrix.version }}-${{ matrix.arch }}${{ env.additional_tags }}
