@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: 2023-07-08 01:10+0000\n"
+"PO-Revision-Date: 2023-07-10 22:27+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
 "flatpak-platform/nb/>\n"
@@ -37,35 +37,35 @@ msgstr "Flatpak-plattformen for elementary OS og AppSenter."
 #: data/platform.appdata.xml.in:38 data/platform.appdata.xml.in:48
 #: data/platform.appdata.xml.in:57 data/platform.appdata.xml.in:71
 msgid "Platform updates:"
-msgstr ""
+msgstr "Plattformoppdateringer:"
 
 #: data/platform.appdata.xml.in:17
 msgid "Update Granite to 7.3.0"
-msgstr ""
+msgstr "Granite oppgradert til 7.3.0"
 
 #: data/platform.appdata.xml.in:18
 msgid "Update Icons to 7.3.0"
-msgstr ""
+msgstr "Ikoner oppgradert til 7.3.0"
 
 #: data/platform.appdata.xml.in:19
 msgid "Update Stylesheet to 7.2.0"
-msgstr ""
+msgstr "Stylesheet oppgradert til 7.2.0"
 
 #: data/platform.appdata.xml.in:28
 msgid "Rebase on GNOME 44 runtime"
-msgstr ""
+msgstr "Rebasert på GNOME 44-kjøretidsrutine"
 
 #: data/platform.appdata.xml.in:29
 msgid "Update Granite to 7.2.0"
-msgstr ""
+msgstr "Granite oppgradert til 7.2.0"
 
 #: data/platform.appdata.xml.in:30
 msgid "Update Icons to 7.2.0"
-msgstr ""
+msgstr "Ikoner oppgradert til 7.2.0"
 
 #: data/platform.appdata.xml.in:31
 msgid "Update Stylesheet to 7.1.0"
-msgstr ""
+msgstr "Stylesheet oppgradert til 7.1.0"
 
 #: data/platform.appdata.xml.in:40
 msgid "Update Granite to 7.1.0"
@@ -89,7 +89,7 @@ msgstr ""
 
 #: data/platform.appdata.xml.in:59
 msgid "Rebase on GNOME 41 runtime"
-msgstr ""
+msgstr "Rebasert på GNOME 41-kjøretidsrutine"
 
 #: data/platform.appdata.xml.in:60
 msgid "Added elementary and freedesktop sound themes"
@@ -97,11 +97,11 @@ msgstr ""
 
 #: data/platform.appdata.xml.in:61
 msgid "Use the correct stylesheet on OS 5"
-msgstr ""
+msgstr "Korrekt stilark på OS 5"
 
 #: data/platform.appdata.xml.in:67
 msgid "Fixes:"
-msgstr ""
+msgstr "Fikser:"
 
 #: data/platform.appdata.xml.in:69
 msgid "Fix localization issues with apps that use Granite"
@@ -123,11 +123,12 @@ msgstr ""
 
 #: data/platform.appdata.xml.in:76
 msgid "Update Granite to 6.1.2"
-msgstr ""
+msgstr "Granite oppgradert til 6.1.2"
 
 #: data/platform.appdata.xml.in:82
+#, fuzzy
 msgid "Add support for ARM (aarch64)"
-msgstr ""
+msgstr "Støtte for ARM (aarch64)"
 
 #: data/platform.appdata.xml.in:87 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
