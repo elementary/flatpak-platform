@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-20 11:56-0700\n"
+"POT-Creation-Date: 2023-07-09 11:24+0900\n"
 "PO-Revision-Date: 2021-07-21 15:01+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/flatpak-"
@@ -28,15 +28,113 @@ msgid "Build Flatpak apps for elementary OS"
 msgstr "Creeu aplicacions de Flatpak per a l'elementary OS"
 
 #: data/platform.appdata.xml.in:10
-msgid "The flatpak platform for elementary OS and AppCenter."
+#, fuzzy
+#| msgid "The flatpak platform for elementary OS and AppCenter."
+msgid "The Flatpak platform for elementary OS and AppCenter."
 msgstr ""
 "La plataforma de Flatpak per a l'elementary OS i el Centre d'aplicacions"
 
-#: data/platform.appdata.xml.in:15 data/sdk.appdata.xml.in:15
+#: data/platform.appdata.xml.in:15 data/platform.appdata.xml.in:26
+#: data/platform.appdata.xml.in:38 data/platform.appdata.xml.in:48
+#: data/platform.appdata.xml.in:57 data/platform.appdata.xml.in:71
+msgid "Platform updates:"
+msgstr ""
+
+#: data/platform.appdata.xml.in:17
+msgid "Update Granite to 7.3.0"
+msgstr ""
+
+#: data/platform.appdata.xml.in:18
+msgid "Update Icons to 7.3.0"
+msgstr ""
+
+#: data/platform.appdata.xml.in:19
+msgid "Update Stylesheet to 7.2.0"
+msgstr ""
+
+#: data/platform.appdata.xml.in:28
+msgid "Rebase on GNOME 44 runtime"
+msgstr ""
+
+#: data/platform.appdata.xml.in:29
+msgid "Update Granite to 7.2.0"
+msgstr ""
+
+#: data/platform.appdata.xml.in:30
+msgid "Update Icons to 7.2.0"
+msgstr ""
+
+#: data/platform.appdata.xml.in:31
+msgid "Update Stylesheet to 7.1.0"
+msgstr ""
+
+#: data/platform.appdata.xml.in:40
+msgid "Update Granite to 7.1.0"
+msgstr ""
+
+#: data/platform.appdata.xml.in:41
+msgid "Update Icons to 7.1.0"
+msgstr ""
+
+#: data/platform.appdata.xml.in:42
+msgid "Update Stylesheet to 7.0.1"
+msgstr ""
+
+#: data/platform.appdata.xml.in:50
+msgid "Rebase on GNOME 42 runtime"
+msgstr ""
+
+#: data/platform.appdata.xml.in:51
+msgid "Initial support for Gtk4"
+msgstr ""
+
+#: data/platform.appdata.xml.in:59
+msgid "Rebase on GNOME 41 runtime"
+msgstr ""
+
+#: data/platform.appdata.xml.in:60
+msgid "Added elementary and freedesktop sound themes"
+msgstr ""
+
+#: data/platform.appdata.xml.in:61
+msgid "Use the correct stylesheet on OS 5"
+msgstr ""
+
+#: data/platform.appdata.xml.in:67
+msgid "Fixes:"
+msgstr ""
+
+#: data/platform.appdata.xml.in:69
+msgid "Fix localization issues with apps that use Granite"
+msgstr ""
+
+#: data/platform.appdata.xml.in:73
+msgid "Use the settings portal for time and date settings"
+msgstr ""
+
+#: data/platform.appdata.xml.in:74
+msgid ""
+"Use the settings portal for color scheme preference instead of requiring an "
+"AccountsService hole"
+msgstr ""
+
+#: data/platform.appdata.xml.in:75
+msgid "Update elementary stylesheet to 6.1.0"
+msgstr ""
+
+#: data/platform.appdata.xml.in:76
+msgid "Update Granite to 6.1.2"
+msgstr ""
+
+#: data/platform.appdata.xml.in:82
+msgid "Add support for ARM (aarch64)"
+msgstr ""
+
+#: data/platform.appdata.xml.in:87 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
 msgstr "Publicació inicial"
 
-#: data/platform.appdata.xml.in:19 data/sdk.appdata.xml.in:19
+#: data/platform.appdata.xml.in:91 data/sdk.appdata.xml.in:19
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
@@ -45,5 +143,7 @@ msgid "elementary App SDK"
 msgstr "Aplicació SDK de l'elementary"
 
 #: data/sdk.appdata.xml.in:10
-msgid "The flatpak SDK for elementary OS and AppCenter."
+#, fuzzy
+#| msgid "The flatpak SDK for elementary OS and AppCenter."
+msgid "The Flatpak SDK for elementary OS and AppCenter."
 msgstr "El Flatpak SDK per a l'elementary OS i el Centre d'aplicacions"
