@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: 2023-07-10 22:27+0000\n"
+"PO-Revision-Date: 2023-07-12 15:07+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
 "flatpak-platform/nb/>\n"
@@ -69,31 +69,33 @@ msgstr "Stylesheet oppgradert til 7.1.0"
 
 #: data/platform.appdata.xml.in:40
 msgid "Update Granite to 7.1.0"
-msgstr ""
+msgstr "Granite oppgradert til 7.1.0"
 
 #: data/platform.appdata.xml.in:41
 msgid "Update Icons to 7.1.0"
-msgstr ""
+msgstr "Ikoner oppgradert til 7.1.0"
 
 #: data/platform.appdata.xml.in:42
 msgid "Update Stylesheet to 7.0.1"
-msgstr ""
+msgstr "Stylesheet oppgradert til 7.0.1"
 
 #: data/platform.appdata.xml.in:50
 msgid "Rebase on GNOME 42 runtime"
-msgstr ""
+msgstr "Rebasert på GNOME 42-kjøretidsrutine"
 
 #: data/platform.appdata.xml.in:51
+#, fuzzy
 msgid "Initial support for Gtk4"
-msgstr ""
+msgstr "Innledende støtte for Gtk4"
 
 #: data/platform.appdata.xml.in:59
 msgid "Rebase on GNOME 41 runtime"
 msgstr "Rebasert på GNOME 41-kjøretidsrutine"
 
 #: data/platform.appdata.xml.in:60
+#, fuzzy
 msgid "Added elementary and freedesktop sound themes"
-msgstr ""
+msgstr "Støtte for elementary og freedesktop -lyddrakter"
 
 #: data/platform.appdata.xml.in:61
 msgid "Use the correct stylesheet on OS 5"
@@ -105,21 +107,24 @@ msgstr "Fikser:"
 
 #: data/platform.appdata.xml.in:69
 msgid "Fix localization issues with apps that use Granite"
-msgstr ""
+msgstr "Fikset lokaliseringsproblemer for programmer som bruker Granite"
 
 #: data/platform.appdata.xml.in:73
 msgid "Use the settings portal for time and date settings"
-msgstr ""
+msgstr "Bruk av innstillingsportal for tid- og datoinnstillinger"
 
 #: data/platform.appdata.xml.in:74
+#, fuzzy
 msgid ""
 "Use the settings portal for color scheme preference instead of requiring an "
 "AccountsService hole"
 msgstr ""
+"Bruk av innstillingsportal for fargepalettinnstilling, istedenfor å kreve et "
+"AccoutService-hull"
 
 #: data/platform.appdata.xml.in:75
 msgid "Update elementary stylesheet to 6.1.0"
-msgstr ""
+msgstr "elementary-stilark oppgradert til 6.1.0"
 
 #: data/platform.appdata.xml.in:76
 msgid "Update Granite to 6.1.2"
