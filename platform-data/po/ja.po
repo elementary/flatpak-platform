@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: 2021-07-21 03:09+0000\n"
+"PO-Revision-Date: 2023-07-10 22:27+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/flatpak-"
-"platform/ja/>\n"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
+"flatpak-platform/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -28,8 +28,6 @@ msgid "Build Flatpak apps for elementary OS"
 msgstr "elementary OS 向けの Flatpak アプリをビルドします"
 
 #: data/platform.appdata.xml.in:10
-#, fuzzy
-#| msgid "The flatpak platform for elementary OS and AppCenter."
 msgid "The Flatpak platform for elementary OS and AppCenter."
 msgstr "elementary OS と AppCenter 向けの Flatpak プラットフォームです。"
 
@@ -37,97 +35,98 @@ msgstr "elementary OS と AppCenter 向けの Flatpak プラットフォーム�
 #: data/platform.appdata.xml.in:38 data/platform.appdata.xml.in:48
 #: data/platform.appdata.xml.in:57 data/platform.appdata.xml.in:71
 msgid "Platform updates:"
-msgstr ""
+msgstr "プラットフォームのアップデート:"
 
 #: data/platform.appdata.xml.in:17
 msgid "Update Granite to 7.3.0"
-msgstr ""
+msgstr "Granite を 7.3.0 にアップデート"
 
 #: data/platform.appdata.xml.in:18
 msgid "Update Icons to 7.3.0"
-msgstr ""
+msgstr "“アイコン”を 7.3.0 にアップデート"
 
 #: data/platform.appdata.xml.in:19
 msgid "Update Stylesheet to 7.2.0"
-msgstr ""
+msgstr "“スタイルシート”を 7.2.0 にアップデート"
 
 #: data/platform.appdata.xml.in:28
 msgid "Rebase on GNOME 44 runtime"
-msgstr ""
+msgstr "ベースを GNOME 44 ランタイムに変更"
 
 #: data/platform.appdata.xml.in:29
 msgid "Update Granite to 7.2.0"
-msgstr ""
+msgstr "Granite を 7.2.0 にアップデート"
 
 #: data/platform.appdata.xml.in:30
 msgid "Update Icons to 7.2.0"
-msgstr ""
+msgstr "“アイコン”を 7.2.0 にアップデート"
 
 #: data/platform.appdata.xml.in:31
 msgid "Update Stylesheet to 7.1.0"
-msgstr ""
+msgstr "“スタイルシート”を 7.1.0 にアップデート"
 
 #: data/platform.appdata.xml.in:40
 msgid "Update Granite to 7.1.0"
-msgstr ""
+msgstr "Granite を 7.1.0 にアップデート"
 
 #: data/platform.appdata.xml.in:41
 msgid "Update Icons to 7.1.0"
-msgstr ""
+msgstr "“アイコン”を 7.1.0 にアップデート"
 
 #: data/platform.appdata.xml.in:42
 msgid "Update Stylesheet to 7.0.1"
-msgstr ""
+msgstr "“スタイルシート”を 7.0.1 にアップデート"
 
 #: data/platform.appdata.xml.in:50
 msgid "Rebase on GNOME 42 runtime"
-msgstr ""
+msgstr "ベースを GNOME 42 ランタイムに変更"
 
 #: data/platform.appdata.xml.in:51
 msgid "Initial support for Gtk4"
-msgstr ""
+msgstr "Gtk4 に初期対応"
 
 #: data/platform.appdata.xml.in:59
 msgid "Rebase on GNOME 41 runtime"
-msgstr ""
+msgstr "ベースを GNOME 41 ランタイムに変更"
 
 #: data/platform.appdata.xml.in:60
 msgid "Added elementary and freedesktop sound themes"
-msgstr ""
+msgstr "elementary と freedesktop のサウンドテーマを追加"
 
 #: data/platform.appdata.xml.in:61
 msgid "Use the correct stylesheet on OS 5"
-msgstr ""
+msgstr "elementary OS 5 で適切なスタイルシートを使用するように修正"
 
 #: data/platform.appdata.xml.in:67
 msgid "Fixes:"
-msgstr ""
+msgstr "修正点:"
 
 #: data/platform.appdata.xml.in:69
 msgid "Fix localization issues with apps that use Granite"
-msgstr ""
+msgstr "Granite を使用するアプリのローカライゼーションに関する不具合を修正"
 
 #: data/platform.appdata.xml.in:73
 msgid "Use the settings portal for time and date settings"
-msgstr ""
+msgstr "日付と時刻の設定に設定ポータルを使用するように修正"
 
 #: data/platform.appdata.xml.in:74
 msgid ""
 "Use the settings portal for color scheme preference instead of requiring an "
 "AccountsService hole"
-msgstr ""
+msgstr "カラースキームの設定に設定ポータルを使用することで、AccountsService "
+"へのアクセス許可が不要となるように修正"
 
 #: data/platform.appdata.xml.in:75
 msgid "Update elementary stylesheet to 6.1.0"
-msgstr ""
+msgstr "elementary スタイルシートを 6.1.0 にアップデート"
 
 #: data/platform.appdata.xml.in:76
 msgid "Update Granite to 6.1.2"
-msgstr ""
+msgstr "Granite を 6.1.2 にアップデート"
 
 #: data/platform.appdata.xml.in:82
 msgid "Add support for ARM (aarch64)"
-msgstr ""
+msgstr "ARM (aarch64) に対応"
 
 #: data/platform.appdata.xml.in:87 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
@@ -142,7 +141,5 @@ msgid "elementary App SDK"
 msgstr "elementary アプリ SDK"
 
 #: data/sdk.appdata.xml.in:10
-#, fuzzy
-#| msgid "The flatpak SDK for elementary OS and AppCenter."
 msgid "The Flatpak SDK for elementary OS and AppCenter."
 msgstr "elementary OS と AppCenter 向けの Flatpak SDK です。"
