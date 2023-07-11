@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: 2022-01-11 03:35+0000\n"
-"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/desktop/flatpak-"
-"platform/cs/>\n"
+"PO-Revision-Date: 2023-07-12 15:07+0000\n"
+"Last-Translator: Jakub Kyzr <jakubkyzr@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/desktop/"
+"flatpak-platform/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -28,8 +28,6 @@ msgid "Build Flatpak apps for elementary OS"
 msgstr "Sestavování Flatpak aplikací pro elementary OS"
 
 #: data/platform.appdata.xml.in:10
-#, fuzzy
-#| msgid "The flatpak platform for elementary OS and AppCenter."
 msgid "The Flatpak platform for elementary OS and AppCenter."
 msgstr "Flatpak platforma pro elementary OS a Centrum aplikací."
 
