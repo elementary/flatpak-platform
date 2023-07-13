@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: 2023-07-12 15:07+0000\n"
+"PO-Revision-Date: 2023-07-14 18:07+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/desktop/"
 "flatpak-platform/pl/>\n"
@@ -96,37 +96,40 @@ msgstr "Dodano motywy dźwięku elementary oraz freedesktop"
 
 #: data/platform.appdata.xml.in:61
 msgid "Use the correct stylesheet on OS 5"
-msgstr ""
+msgstr "Użyto poprawnych styli dla OS 5"
 
 #: data/platform.appdata.xml.in:67
 msgid "Fixes:"
-msgstr ""
+msgstr "Poprawki:"
 
 #: data/platform.appdata.xml.in:69
 msgid "Fix localization issues with apps that use Granite"
 msgstr ""
+"Naprawiono problemy lokalizacyjne w aplikacjach korzystających z Granite"
 
 #: data/platform.appdata.xml.in:73
 msgid "Use the settings portal for time and date settings"
-msgstr ""
+msgstr "Użyto portalu ustawień dla ustawień czasu i daty"
 
 #: data/platform.appdata.xml.in:74
 msgid ""
 "Use the settings portal for color scheme preference instead of requiring an "
 "AccountsService hole"
 msgstr ""
+"Użyto portalu ustawień dla preferencji motywu kolorów zamiast korzystania z "
+"AccountsService"
 
 #: data/platform.appdata.xml.in:75
 msgid "Update elementary stylesheet to 6.1.0"
-msgstr ""
+msgstr "Zaktualizowano style elementary do 6.1.0"
 
 #: data/platform.appdata.xml.in:76
 msgid "Update Granite to 6.1.2"
-msgstr ""
+msgstr "Zaktualizowano Granite do 6.1.2"
 
 #: data/platform.appdata.xml.in:82
 msgid "Add support for ARM (aarch64)"
-msgstr ""
+msgstr "Dodano wsparcie dla ARM (aarch64)"
 
 #: data/platform.appdata.xml.in:87 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
@@ -141,7 +144,5 @@ msgid "elementary App SDK"
 msgstr "SDK aplikacji elementary"
 
 #: data/sdk.appdata.xml.in:10
-#, fuzzy
-#| msgid "The flatpak SDK for elementary OS and AppCenter."
 msgid "The Flatpak SDK for elementary OS and AppCenter."
-msgstr "SDK flatpak dla elementary OS i AppCenter."
+msgstr "SDK Flatpak dla elementary OS i AppCenter."
