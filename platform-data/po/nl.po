@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: 2023-08-02 18:08+0000\n"
-"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
+"PO-Revision-Date: 2023-08-11 05:08+0000\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/"
 "flatpak-platform/nl/>\n"
 "Language: nl\n"
@@ -28,10 +28,8 @@ msgid "Build Flatpak apps for elementary OS"
 msgstr "Bouw Flatpak applicaties voor elementary OS"
 
 #: data/platform.appdata.xml.in:10
-#, fuzzy
-#| msgid "The flatpak platform for elementary OS and AppCenter."
 msgid "The Flatpak platform for elementary OS and AppCenter."
-msgstr "Het Flatpak platform voor elementary OS en AppCenter."
+msgstr "Het Flatpak-platform voor elementary OS en AppCenter."
 
 #: data/platform.appdata.xml.in:15 data/platform.appdata.xml.in:26
 #: data/platform.appdata.xml.in:38 data/platform.appdata.xml.in:48
@@ -93,41 +91,43 @@ msgstr "Herbaseer op GNOME 41 runtime"
 
 #: data/platform.appdata.xml.in:60
 msgid "Added elementary and freedesktop sound themes"
-msgstr ""
+msgstr "elementary en freedesktop geluidsthema's toegevoegd"
 
 #: data/platform.appdata.xml.in:61
 msgid "Use the correct stylesheet on OS 5"
-msgstr ""
+msgstr "Gebruik de correcte stylesheet op OS 5"
 
 #: data/platform.appdata.xml.in:67
 msgid "Fixes:"
-msgstr ""
+msgstr "Fixes:"
 
 #: data/platform.appdata.xml.in:69
 msgid "Fix localization issues with apps that use Granite"
-msgstr ""
+msgstr "Fix lokalisatieproblemen met apps die Granite gebruiken"
 
 #: data/platform.appdata.xml.in:73
 msgid "Use the settings portal for time and date settings"
-msgstr ""
+msgstr "Gebruik het instellingenportaal voor tijd- en datuminstellingen"
 
 #: data/platform.appdata.xml.in:74
 msgid ""
 "Use the settings portal for color scheme preference instead of requiring an "
 "AccountsService hole"
 msgstr ""
+"Gebruik de instellingenportal voor kleurenschemavoorkeuren in plaats van een "
+"AccountsService-rol te vereisen"
 
 #: data/platform.appdata.xml.in:75
 msgid "Update elementary stylesheet to 6.1.0"
-msgstr ""
+msgstr "Update elementary stylesheet naar 6.1.0"
 
 #: data/platform.appdata.xml.in:76
 msgid "Update Granite to 6.1.2"
-msgstr ""
+msgstr "Update Granite naar 6.1.2"
 
 #: data/platform.appdata.xml.in:82
 msgid "Add support for ARM (aarch64)"
-msgstr ""
+msgstr "Voeg ondersteuning toe voor ARM (aarch64)"
 
 #: data/platform.appdata.xml.in:87 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
@@ -142,7 +142,5 @@ msgid "elementary App SDK"
 msgstr "elementary app SDK"
 
 #: data/sdk.appdata.xml.in:10
-#, fuzzy
-#| msgid "The flatpak SDK for elementary OS and AppCenter."
 msgid "The Flatpak SDK for elementary OS and AppCenter."
 msgstr "De Flatpak SDK voor elementary OS en AppCenter."

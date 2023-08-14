@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: 2023-08-02 18:08+0000\n"
+"PO-Revision-Date: 2023-08-11 05:08+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/desktop/"
 "flatpak-platform/fr/>\n"
@@ -51,7 +51,7 @@ msgstr "Mise à jour de Feuille de style en 7.2.0"
 
 #: data/platform.appdata.xml.in:28
 msgid "Rebase on GNOME 44 runtime"
-msgstr ""
+msgstr "Mise à jour sur l'exécutable GNOME 44"
 
 #: data/platform.appdata.xml.in:29
 msgid "Update Granite to 7.2.0"
@@ -79,7 +79,7 @@ msgstr "Mise à jour de Feuille de style en 7.0.1"
 
 #: data/platform.appdata.xml.in:50
 msgid "Rebase on GNOME 42 runtime"
-msgstr ""
+msgstr "Mise à jour sur l'exécutable GNOME 42"
 
 #: data/platform.appdata.xml.in:51
 msgid "Initial support for Gtk4"
@@ -87,7 +87,7 @@ msgstr "Début de la prise en charge de Gtk4"
 
 #: data/platform.appdata.xml.in:59
 msgid "Rebase on GNOME 41 runtime"
-msgstr ""
+msgstr "Mise à jour sur l'exécutable GNOME 41"
 
 #: data/platform.appdata.xml.in:60
 msgid "Added elementary and freedesktop sound themes"
