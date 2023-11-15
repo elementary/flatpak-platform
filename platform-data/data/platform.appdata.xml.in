@@ -15,6 +15,7 @@
         <p>Platform updates:</p>
         <ul>
           <li>Rebase on GNOME 45 runtime</li>
+          <li>Update Granite to 7.4.0</li>
         </ul>
       </description>
     </release>
