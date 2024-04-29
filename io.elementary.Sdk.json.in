@@ -203,7 +203,7 @@
                 "-Dbackend-gtk3=enabled",
                 "-Dbackend-gtk4=enabled",
                 "-Dbackend-qt5=disabled",
-                "-Dintrospection=false",
+                "-Dintrospection=true",
                 "-Ddocs=false"
             ],
             "sources": [
