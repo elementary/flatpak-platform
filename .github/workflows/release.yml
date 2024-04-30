@@ -9,7 +9,7 @@ on:
   workflow_dispatch: {}
 
 env:
-  RUNTIME_VERSION: 7.3
+  RUNTIME_VERSION: 8.0
 
 jobs:
   publish_platform:
