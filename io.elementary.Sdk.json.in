@@ -66,7 +66,12 @@
                         {
                             "type": "archive",
                             "url": "https://xorg.freedesktop.org/archive/individual/app/xcursorgen-1.0.7.tar.gz",
-                            "sha256": "6bc32d4977ffd60c00583bfd217f1d1245ca54dafbfbbcdbf14f696f9487b83e"
+                            "sha256": "6bc32d4977ffd60c00583bfd217f1d1245ca54dafbfbbcdbf14f696f9487b83e",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 21210,
+                                "url-template": "https://xorg.freedesktop.org/archive/individual/app/xcursorgen-$version.tar.gz"
+                            }
                         }
                     ]
                 }
@@ -177,23 +182,32 @@
         {
             "name" : "platform-settings",
             "buildsystem" : "simple",
-            "modules": [
-                {
-                    "name" : "default-gtk-settings",
-                    "buildsystem" : "simple",
-                    "sources" : [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/elementary/default-settings.git"
-                        }
-                    ],
-                    "build-commands": [
-                        "install -Dm644 gtk/settings.ini /usr/etc/gtk-3.0/settings.ini"
-                    ]
-                }
-            ],
             "build-commands": [
                 "ln -s /usr/share/themes/io.elementary.stylesheet.blueberry /usr/share/themes/elementary"
+            ]
+        },
+        {
+            "name": "libportal",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dbackend-gtk3=enabled",
+                "-Dbackend-gtk4=enabled",
+                "-Dbackend-qt5=disabled",
+                "-Dintrospection=true",
+                "-Ddocs=false"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/flatpak/libportal/releases/download/0.7.1/libportal-0.7.1.tar.xz",
+                    "sha256": "297b90b263fad22190a26b8c7e8ea938fe6b18fb936265e588927179920d3805",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/flatpak/libportal/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"libportal-\" + $version + \".tar.xz\") | .browser_download_url"
+                    }
+                }
             ]
         },
         {
