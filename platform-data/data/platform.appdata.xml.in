@@ -104,7 +104,9 @@
       </description>
     </release>
   </releases>
-  <developer_name>elementary, Inc.</developer_name>
+  <developer id="org.elementaryos">
+    <name>elementary, Inc.</name>
+  </developer>
   <url type="homepage">https://elementary.io</url>
   <url type="bugtracker">https://github.com/elementary/flatpak-platform/issues</url>
 </component>
