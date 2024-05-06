@@ -11,7 +11,9 @@
         "org.gnome.Sdk.Locale",
         "org.gnome.Sdk.Docs"
     ],
-    "platform-extensions": [ "org.gnome.Platform.Locale"],
+    "platform-extensions": [
+        "org.gnome.Platform.Locale"
+    ],
     "inherit-extensions": [
         "org.freedesktop.Platform.GL",
         "org.freedesktop.Platform.VAAPI.Intel",
@@ -42,13 +44,13 @@
         "/share/gir-1.0",
         "/share/vala"
     ],
-    "build-options" : {
+    "build-options": {
         "env": {
             "PYTHON": "python3"
         }
     },
     "modules": [
-         {
+        {
             "name": "icons",
             "buildsystem": "meson",
             "sources": [
@@ -61,12 +63,14 @@
             "modules": [
                 {
                     "name": "xcursorgen",
-                    "cleanup": [ "*" ],
+                    "cleanup": [
+                        "*"
+                    ],
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://xorg.freedesktop.org/archive/individual/app/xcursorgen-1.0.7.tar.gz",
-                            "sha256": "6bc32d4977ffd60c00583bfd217f1d1245ca54dafbfbbcdbf14f696f9487b83e",
+                            "url": "https://xorg.freedesktop.org/archive/individual/app/xcursorgen-1.0.8.tar.gz",
+                            "sha256": "b8bb2756918343b8bc15a4ce875e9efb6c4e7777adba088280e53dd09753b6ac",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 21210,
@@ -90,7 +94,9 @@
             "modules": [
                 {
                     "name": "sassc",
-                    "cleanup": [ "*" ],
+                    "cleanup": [
+                        "*"
+                    ],
                     "sources": [
                         {
                             "type": "git",
@@ -100,13 +106,17 @@
                         {
                             "type": "script",
                             "dest-filename": "autogen.sh",
-                            "commands": [ "autoreconf -si" ]
+                            "commands": [
+                                "autoreconf -si"
+                            ]
                         }
                     ],
                     "modules": [
                         {
                             "name": "libsass",
-                            "cleanup": [ "*" ],
+                            "cleanup": [
+                                "*"
+                            ],
                             "sources": [
                                 {
                                     "type": "git",
@@ -116,7 +126,9 @@
                                 {
                                     "type": "script",
                                     "dest-filename": "autogen.sh",
-                                    "commands": [ "autoreconf -si" ]
+                                    "commands": [
+                                        "autoreconf -si"
+                                    ]
                                 }
                             ]
                         }
@@ -147,41 +159,41 @@
             ]
         },
         {
-            "name" : "sound-theme",
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "sound-theme",
+            "buildsystem": "meson",
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/elementary/sound-theme.git",
-                    "tag" : "1.1.0"
+                    "type": "git",
+                    "url": "https://github.com/elementary/sound-theme.git",
+                    "tag": "1.1.0"
                 }
             ],
-            "modules" : [
+            "modules": [
                 {
-                    "name" : "intltool",
-                    "sources" : [
+                    "name": "intltool",
+                    "sources": [
                         {
-                            "type" : "archive",
-                            "url" : "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
-                            "md5" : "12e517cac2b57a0121cda351570f1e63"
+                            "type": "archive",
+                            "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+                            "md5": "12e517cac2b57a0121cda351570f1e63"
                         }
                     ]
                 },
                 {
-                    "name" : "freedesktop-sound-theme",
-                    "sources" : [
+                    "name": "freedesktop-sound-theme",
+                    "sources": [
                         {
-                            "type" : "git",
-                            "url" : "https://gitlab.freedesktop.org/xdg/xdg-sound-theme.git",
-                            "tag" : "0.8"
+                            "type": "git",
+                            "url": "https://gitlab.freedesktop.org/xdg/xdg-sound-theme.git",
+                            "tag": "0.8"
                         }
                     ]
                 }
             ]
         },
         {
-            "name" : "platform-settings",
-            "buildsystem" : "simple",
+            "name": "platform-settings",
+            "buildsystem": "simple",
             "build-commands": [
                 "ln -s /usr/share/themes/io.elementary.stylesheet.blueberry /usr/share/themes/elementary"
             ]
@@ -211,9 +223,9 @@
             ]
         },
         {
-            "name" : "appdata",
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "appdata",
+            "buildsystem": "meson",
+            "sources": [
                 {
                     "type": "dir",
                     "path": "@source_dir@/platform-data"
