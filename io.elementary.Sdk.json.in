@@ -86,9 +86,15 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/elementary/stylesheet.git",
-                    "tag": "7.3.0"
+                    "type": "archive",
+                    "url": "https://github.com/elementary/stylesheet/archive/refs/tags/8.0.0.tar.gz",
+                    "sha256": "ac49bd69d09099e076c5ee690fac1b9389860b075d5941ddb798c0a8e917e6af",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/elementary/stylesheet/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==$version + \".tar.gz\") | .browser_download_url"
+                    }
                 }
             ],
             "modules": [
