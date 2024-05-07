@@ -57,7 +57,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/icons.git",
-                    "tag": "7.3.1"
+                    "tag": "7.3.1",
+                    "commit": "8598d278c2df21bc3dfb5b5a5a820b31c1845046",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ],
             "modules": [
@@ -86,14 +91,13 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/elementary/stylesheet/archive/refs/tags/8.0.0.tar.gz",
-                    "sha256": "ac49bd69d09099e076c5ee690fac1b9389860b075d5941ddb798c0a8e917e6af",
+                    "type": "git",
+                    "url": "https://github.com/elementary/stylesheet.git",
+                    "tag": "8.0.0",
+                    "commit": "9c713d0f4c35f80a783e5fa6845a39d977c7140c",
                     "x-checker-data": {
-                        "type": "json",
-                        "url": "https://api.github.com/repos/elementary/stylesheet/releases/latest",
-                        "version-query": ".tag_name",
-                        "url-query": ".assets[] | select(.name==$version + \".tar.gz\") | .browser_download_url"
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
                     }
                 }
             ],
@@ -149,7 +153,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "6.2.0"
+                    "tag": "6.2.0",
+                    "commit": "4ab145c28bb3db6372fe519e8bd79c645edfcda3",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$",
+                        "versions": {"<": "7.0.0"}
+                    }
                 }
             ]
         },
@@ -160,7 +170,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "7.4.0"
+                    "tag": "7.4.0",
+                    "commit": "949703f8649013695c6d32eb84a6b541ac0da4db",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ]
         },
@@ -171,7 +186,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/sound-theme.git",
-                    "tag": "1.1.0"
+                    "tag": "1.1.0",
+                    "commit": "88cb3a325995fcd5fe123f189062e3efb69972ca",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ],
             "modules": [
