@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: 2023-08-05 15:08+0000\n"
-"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"PO-Revision-Date: 2024-05-06 21:50+0000\n"
+"Last-Translator: György Viktor <wickdj@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
 "flatpak-platform/hu/>\n"
 "Language: hu\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.5\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -37,7 +37,7 @@ msgstr "Az elementary OS és az Appközpont flatpak platformja."
 #: data/platform.appdata.xml.in:38 data/platform.appdata.xml.in:48
 #: data/platform.appdata.xml.in:57 data/platform.appdata.xml.in:71
 msgid "Platform updates:"
-msgstr ""
+msgstr "Platform frissítések:"
 
 #: data/platform.appdata.xml.in:17
 msgid "Update Granite to 7.3.0"

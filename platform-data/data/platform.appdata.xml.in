@@ -15,6 +15,10 @@
         <p>Platform updates:</p>
         <ul>
           <li>Rebase on GNOME 46 runtime</li>
+          <li>Add LibPortal</li>
+          <li>Update Granite to 7.5.0</li>
+          <li>Update Icons to 8.0.0</li>
+          <li>Update Stylesheet to 8.0.0</li>
         </ul>
       </description>
     </release>
@@ -104,7 +108,9 @@
       </description>
     </release>
   </releases>
-  <developer_name>elementary, Inc.</developer_name>
+  <developer id="org.elementaryos">
+    <name>elementary, Inc.</name>
+  </developer>
   <url type="homepage">https://elementary.io</url>
   <url type="bugtracker">https://github.com/elementary/flatpak-platform/issues</url>
 </component>

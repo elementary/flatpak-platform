@@ -11,7 +11,9 @@
         "org.gnome.Sdk.Locale",
         "org.gnome.Sdk.Docs"
     ],
-    "platform-extensions": [ "org.gnome.Platform.Locale"],
+    "platform-extensions": [
+        "org.gnome.Platform.Locale"
+    ],
     "inherit-extensions": [
         "org.freedesktop.Platform.GL",
         "org.freedesktop.Platform.VAAPI.Intel",
@@ -42,31 +44,38 @@
         "/share/gir-1.0",
         "/share/vala"
     ],
-    "build-options" : {
+    "build-options": {
         "env": {
             "PYTHON": "python3"
         }
     },
     "modules": [
-         {
+        {
             "name": "icons",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/icons.git",
-                    "tag": "7.3.1"
+                    "tag": "8.0.0",
+                    "commit": "3d5dd03c505aaee68a4b2904ae0d00cbcf141e91",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ],
             "modules": [
                 {
                     "name": "xcursorgen",
-                    "cleanup": [ "*" ],
+                    "cleanup": [
+                        "*"
+                    ],
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://xorg.freedesktop.org/archive/individual/app/xcursorgen-1.0.7.tar.gz",
-                            "sha256": "6bc32d4977ffd60c00583bfd217f1d1245ca54dafbfbbcdbf14f696f9487b83e",
+                            "url": "https://xorg.freedesktop.org/archive/individual/app/xcursorgen-1.0.8.tar.gz",
+                            "sha256": "b8bb2756918343b8bc15a4ce875e9efb6c4e7777adba088280e53dd09753b6ac",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 21210,
@@ -84,13 +93,20 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/stylesheet.git",
-                    "tag": "7.3.0"
+                    "tag": "8.0.0",
+                    "commit": "9c713d0f4c35f80a783e5fa6845a39d977c7140c",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ],
             "modules": [
                 {
                     "name": "sassc",
-                    "cleanup": [ "*" ],
+                    "cleanup": [
+                        "*"
+                    ],
                     "sources": [
                         {
                             "type": "git",
@@ -100,13 +116,17 @@
                         {
                             "type": "script",
                             "dest-filename": "autogen.sh",
-                            "commands": [ "autoreconf -si" ]
+                            "commands": [
+                                "autoreconf -si"
+                            ]
                         }
                     ],
                     "modules": [
                         {
                             "name": "libsass",
-                            "cleanup": [ "*" ],
+                            "cleanup": [
+                                "*"
+                            ],
                             "sources": [
                                 {
                                     "type": "git",
@@ -116,7 +136,9 @@
                                 {
                                     "type": "script",
                                     "dest-filename": "autogen.sh",
-                                    "commands": [ "autoreconf -si" ]
+                                    "commands": [
+                                        "autoreconf -si"
+                                    ]
                                 }
                             ]
                         }
@@ -131,7 +153,15 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "6.2.0"
+                    "tag": "6.2.0",
+                    "commit": "4ab145c28bb3db6372fe519e8bd79c645edfcda3",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$",
+                        "versions": {
+                            "<": "7.0.0"
+                        }
+                    }
                 }
             ]
         },
@@ -142,46 +172,56 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "7.4.0"
+                    "tag": "7.5.0",
+                    "commit": "f190e26e1c850b3ab078357f1dcedd6e8278f61f",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ]
         },
         {
-            "name" : "sound-theme",
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "sound-theme",
+            "buildsystem": "meson",
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/elementary/sound-theme.git",
-                    "tag" : "1.1.0"
+                    "type": "git",
+                    "url": "https://github.com/elementary/sound-theme.git",
+                    "tag": "1.1.0",
+                    "commit": "88cb3a325995fcd5fe123f189062e3efb69972ca",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ],
-            "modules" : [
+            "modules": [
                 {
-                    "name" : "intltool",
-                    "sources" : [
+                    "name": "intltool",
+                    "sources": [
                         {
-                            "type" : "archive",
-                            "url" : "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
-                            "md5" : "12e517cac2b57a0121cda351570f1e63"
+                            "type": "archive",
+                            "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+                            "md5": "12e517cac2b57a0121cda351570f1e63"
                         }
                     ]
                 },
                 {
-                    "name" : "freedesktop-sound-theme",
-                    "sources" : [
+                    "name": "freedesktop-sound-theme",
+                    "sources": [
                         {
-                            "type" : "git",
-                            "url" : "https://gitlab.freedesktop.org/xdg/xdg-sound-theme.git",
-                            "tag" : "0.8"
+                            "type": "git",
+                            "url": "https://gitlab.freedesktop.org/xdg/xdg-sound-theme.git",
+                            "tag": "0.8"
                         }
                     ]
                 }
             ]
         },
         {
-            "name" : "platform-settings",
-            "buildsystem" : "simple",
+            "name": "platform-settings",
+            "buildsystem": "simple",
             "build-commands": [
                 "ln -s /usr/share/themes/io.elementary.stylesheet.blueberry /usr/share/themes/elementary"
             ]
@@ -211,9 +251,9 @@
             ]
         },
         {
-            "name" : "appdata",
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "appdata",
+            "buildsystem": "meson",
+            "sources": [
                 {
                     "type": "dir",
                     "path": "@source_dir@/platform-data"
