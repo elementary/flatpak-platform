@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: 2023-08-11 05:08+0000\n"
+"PO-Revision-Date: 2024-05-29 03:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/"
 "flatpak-platform/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.5\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -133,7 +133,7 @@ msgstr "מהדורה ראשונית"
 
 #: data/platform.appdata.xml.in:91 data/sdk.appdata.xml.in:19
 msgid "elementary, Inc."
-msgstr "elementary בע״מ."
+msgstr "elementary בע״מ"
 
 #: data/sdk.appdata.xml.in:7
 msgid "elementary App SDK"
