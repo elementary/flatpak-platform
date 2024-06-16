@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
 "PO-Revision-Date: 2024-06-17 19:16+0000\n"
-"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
+"Last-Translator: Pedro Vergara <xxphiterx@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/"
 "flatpak-platform/es/>\n"
 "Language: es\n"
@@ -35,7 +35,7 @@ msgstr "La plataforma Flatpak para elementary OS y el Centro de Aplicaciones."
 #: data/platform.appdata.xml.in:38 data/platform.appdata.xml.in:48
 #: data/platform.appdata.xml.in:57 data/platform.appdata.xml.in:71
 msgid "Platform updates:"
-msgstr ""
+msgstr "Actualizaciones de la plataforma:"
 
 #: data/platform.appdata.xml.in:17
 msgid "Update Granite to 7.3.0"
@@ -105,7 +105,7 @@ msgstr "Se usan las hojas de estilo correctas para elementary OS 5"
 
 #: data/platform.appdata.xml.in:67
 msgid "Fixes:"
-msgstr ""
+msgstr "Correcciones:"
 
 #: data/platform.appdata.xml.in:69
 msgid "Fix localization issues with apps that use Granite"
