@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: 2022-05-07 16:29+0000\n"
+"PO-Revision-Date: 2024-08-20 11:26+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
-"Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/flatpak-"
-"platform/sk/>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/"
+"flatpak-platform/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -28,8 +28,6 @@ msgid "Build Flatpak apps for elementary OS"
 msgstr "Zostavujte Flatpak aplikácie pre elementary OS"
 
 #: data/platform.appdata.xml.in:10
-#, fuzzy
-#| msgid "The flatpak platform for elementary OS and AppCenter."
 msgid "The Flatpak platform for elementary OS and AppCenter."
 msgstr "Platforma Flatpak pre elementary OS a AppCentrum."
 
@@ -37,97 +35,99 @@ msgstr "Platforma Flatpak pre elementary OS a AppCentrum."
 #: data/platform.appdata.xml.in:38 data/platform.appdata.xml.in:48
 #: data/platform.appdata.xml.in:57 data/platform.appdata.xml.in:71
 msgid "Platform updates:"
-msgstr ""
+msgstr "Aktualizácie platformy:"
 
 #: data/platform.appdata.xml.in:17
 msgid "Update Granite to 7.3.0"
-msgstr ""
+msgstr "Aktualizácia Granite (Granit) na verziu 7.3.0"
 
 #: data/platform.appdata.xml.in:18
 msgid "Update Icons to 7.3.0"
-msgstr ""
+msgstr "Aktualizácia Icons (Ikonky) na verziu 7.3.0"
 
 #: data/platform.appdata.xml.in:19
 msgid "Update Stylesheet to 7.2.0"
-msgstr ""
+msgstr "Aktualizácia Stylesheet (Súpis štýlov) na verziu 7.2.0"
 
 #: data/platform.appdata.xml.in:28
 msgid "Rebase on GNOME 44 runtime"
-msgstr ""
+msgstr "Prestavba na GNOME 44 runtime"
 
 #: data/platform.appdata.xml.in:29
 msgid "Update Granite to 7.2.0"
-msgstr ""
+msgstr "Aktualizácia Granite (Granit) na verziu 7.2.0"
 
 #: data/platform.appdata.xml.in:30
 msgid "Update Icons to 7.2.0"
-msgstr ""
+msgstr "Aktualizácia Icons (Ikonky) na verziu 7.2.0"
 
 #: data/platform.appdata.xml.in:31
 msgid "Update Stylesheet to 7.1.0"
-msgstr ""
+msgstr "Aktualizácia Stylesheet (Súpis štýlov) na verziu 7.1.0"
 
 #: data/platform.appdata.xml.in:40
 msgid "Update Granite to 7.1.0"
-msgstr ""
+msgstr "Aktualizácia Granite (Granit) na verziu 7.1.0"
 
 #: data/platform.appdata.xml.in:41
 msgid "Update Icons to 7.1.0"
-msgstr ""
+msgstr "Aktualizácia Icons (Ikonky) na verziu 7.1.0"
 
 #: data/platform.appdata.xml.in:42
 msgid "Update Stylesheet to 7.0.1"
-msgstr ""
+msgstr "Aktualizácia Stylesheet (Súpis štýlov) na verziu 7.0.1"
 
 #: data/platform.appdata.xml.in:50
 msgid "Rebase on GNOME 42 runtime"
-msgstr ""
+msgstr "Prestavba na GNOME 42 runtime"
 
 #: data/platform.appdata.xml.in:51
 msgid "Initial support for Gtk4"
-msgstr ""
+msgstr "Počiatočná podpora pre Gtk4"
 
 #: data/platform.appdata.xml.in:59
 msgid "Rebase on GNOME 41 runtime"
-msgstr ""
+msgstr "Prestavba na GNOME 41 runtime"
 
 #: data/platform.appdata.xml.in:60
 msgid "Added elementary and freedesktop sound themes"
-msgstr ""
+msgstr "Pridané zvukové témy elementary a freedesktop"
 
 #: data/platform.appdata.xml.in:61
 msgid "Use the correct stylesheet on OS 5"
-msgstr ""
+msgstr "Používať správny súpis štýlov na OS 5"
 
 #: data/platform.appdata.xml.in:67
 msgid "Fixes:"
-msgstr ""
+msgstr "Opravy:"
 
 #: data/platform.appdata.xml.in:69
 msgid "Fix localization issues with apps that use Granite"
-msgstr ""
+msgstr "Oprava problémov s prekladmi pre aplikácie používajúce Granite (Granit)"
 
 #: data/platform.appdata.xml.in:73
 msgid "Use the settings portal for time and date settings"
-msgstr ""
+msgstr "Používať portál nastavení pre nastavenia dátumu a času"
 
 #: data/platform.appdata.xml.in:74
 msgid ""
 "Use the settings portal for color scheme preference instead of requiring an "
 "AccountsService hole"
 msgstr ""
+"Používať portál nastavení pre preferenciu farebnej schémy namiesto "
+"požadovania otvoru AccountsService (Služba účtov)"
 
 #: data/platform.appdata.xml.in:75
 msgid "Update elementary stylesheet to 6.1.0"
-msgstr ""
+msgstr "Aktualizácia súpisu štýlov elementary na verziu 6.1.0"
 
 #: data/platform.appdata.xml.in:76
 msgid "Update Granite to 6.1.2"
-msgstr ""
+msgstr "Aktualizácia Granite (Granit) na verziu 6.1.2"
 
 #: data/platform.appdata.xml.in:82
 msgid "Add support for ARM (aarch64)"
-msgstr ""
+msgstr "Pridaná podpora pre ARM (aarch64)"
 
 #: data/platform.appdata.xml.in:87 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
@@ -142,7 +142,5 @@ msgid "elementary App SDK"
 msgstr "SDK pre aplikácie elementary"
 
 #: data/sdk.appdata.xml.in:10
-#, fuzzy
-#| msgid "The flatpak SDK for elementary OS and AppCenter."
 msgid "The Flatpak SDK for elementary OS and AppCenter."
 msgstr "Flatpak SDK pre elementary OS a AppCentrum."
