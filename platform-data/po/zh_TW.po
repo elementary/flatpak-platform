@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: 2024-08-07 17:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-09-19 10:09+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "desktop/flatpak-platform/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -21,115 +21,115 @@ msgstr ""
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
-msgstr ""
+msgstr "elementary 應用程式平台"
 
 #: data/platform.appdata.xml.in:8 data/sdk.appdata.xml.in:8
 msgid "Build Flatpak apps for elementary OS"
-msgstr ""
+msgstr "為 elementary OS 建置 Flatpak 應用程式"
 
 #: data/platform.appdata.xml.in:10
 msgid "The Flatpak platform for elementary OS and AppCenter."
-msgstr ""
+msgstr "為 elementary OS 和《應用程式中心》打造的 Flatpak 平台。"
 
 #: data/platform.appdata.xml.in:15 data/platform.appdata.xml.in:26
 #: data/platform.appdata.xml.in:38 data/platform.appdata.xml.in:48
 #: data/platform.appdata.xml.in:57 data/platform.appdata.xml.in:71
 msgid "Platform updates:"
-msgstr ""
+msgstr "平台更新："
 
 #: data/platform.appdata.xml.in:17
 msgid "Update Granite to 7.3.0"
-msgstr ""
+msgstr "將 Granite 更新到 7.3.0"
 
 #: data/platform.appdata.xml.in:18
 msgid "Update Icons to 7.3.0"
-msgstr ""
+msgstr "將《圖示》更新到 7.3.0"
 
 #: data/platform.appdata.xml.in:19
 msgid "Update Stylesheet to 7.2.0"
-msgstr ""
+msgstr "將《樣式表》更新到 7.2.0"
 
 #: data/platform.appdata.xml.in:28
 msgid "Rebase on GNOME 44 runtime"
-msgstr ""
+msgstr "重定基底到 GNOME 44 執行環境上"
 
 #: data/platform.appdata.xml.in:29
 msgid "Update Granite to 7.2.0"
-msgstr ""
+msgstr "將 Granite 更新到 7.2.0"
 
 #: data/platform.appdata.xml.in:30
 msgid "Update Icons to 7.2.0"
-msgstr ""
+msgstr "將《圖示》更新到 7.2.0"
 
 #: data/platform.appdata.xml.in:31
 msgid "Update Stylesheet to 7.1.0"
-msgstr ""
+msgstr "將《樣式表》更新到 7.1.0"
 
 #: data/platform.appdata.xml.in:40
 msgid "Update Granite to 7.1.0"
-msgstr ""
+msgstr "將 Granite 更新到 7.1.0"
 
 #: data/platform.appdata.xml.in:41
 msgid "Update Icons to 7.1.0"
-msgstr ""
+msgstr "將《圖示》更新到 7.1.0"
 
 #: data/platform.appdata.xml.in:42
 msgid "Update Stylesheet to 7.0.1"
-msgstr ""
+msgstr "將《樣式表》更新到 7.0.1"
 
 #: data/platform.appdata.xml.in:50
 msgid "Rebase on GNOME 42 runtime"
-msgstr ""
+msgstr "重定基底到 GNOME 42 執行環境上"
 
 #: data/platform.appdata.xml.in:51
 msgid "Initial support for Gtk4"
-msgstr ""
+msgstr "Gtk4 的初期支援"
 
 #: data/platform.appdata.xml.in:59
 msgid "Rebase on GNOME 41 runtime"
-msgstr ""
+msgstr "重定基底到 GNOME 41 執行環境上"
 
 #: data/platform.appdata.xml.in:60
 msgid "Added elementary and freedesktop sound themes"
-msgstr ""
+msgstr "新增 elementary 和 freedesktop 音效主題"
 
 #: data/platform.appdata.xml.in:61
 msgid "Use the correct stylesheet on OS 5"
-msgstr ""
+msgstr "在 elementary OS 5 上使用正確的樣式表"
 
 #: data/platform.appdata.xml.in:67
 msgid "Fixes:"
-msgstr ""
+msgstr "修正："
 
 #: data/platform.appdata.xml.in:69
 msgid "Fix localization issues with apps that use Granite"
-msgstr ""
+msgstr "修正使用 Granite 的應用程式中發生的本地化問題"
 
 #: data/platform.appdata.xml.in:73
 msgid "Use the settings portal for time and date settings"
-msgstr ""
+msgstr "透過設定值桌面入口來存取時間與日期設定值"
 
 #: data/platform.appdata.xml.in:74
 msgid ""
 "Use the settings portal for color scheme preference instead of requiring an "
 "AccountsService hole"
-msgstr ""
+msgstr "透過設定值桌面入口來存取配色方案偏好，而非要求存取 AccountsService"
 
 #: data/platform.appdata.xml.in:75
 msgid "Update elementary stylesheet to 6.1.0"
-msgstr ""
+msgstr "將 elementary 樣式表更新到 6.1.0"
 
 #: data/platform.appdata.xml.in:76
 msgid "Update Granite to 6.1.2"
-msgstr ""
+msgstr "將 Granite 更新到 6.1.2"
 
 #: data/platform.appdata.xml.in:82
 msgid "Add support for ARM (aarch64)"
-msgstr ""
+msgstr "新增對 ARM (aarch64) 的支援"
 
 #: data/platform.appdata.xml.in:87 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
-msgstr ""
+msgstr "初次發佈"
 
 #: data/platform.appdata.xml.in:91 data/sdk.appdata.xml.in:19
 msgid "elementary, Inc."
@@ -137,8 +137,8 @@ msgstr "elementary, Inc."
 
 #: data/sdk.appdata.xml.in:7
 msgid "elementary App SDK"
-msgstr ""
+msgstr "elementary 應用程式 SDK"
 
 #: data/sdk.appdata.xml.in:10
 msgid "The Flatpak SDK for elementary OS and AppCenter."
-msgstr ""
+msgstr "為 elementary OS 和《應用程式中心》打造的 Flatpak SDK。"
