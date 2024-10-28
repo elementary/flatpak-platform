@@ -57,8 +57,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/icons.git",
-                    "tag": "8.0.0",
-                    "commit": "3d5dd03c505aaee68a4b2904ae0d00cbcf141e91",
+                    "tag": "8.1.0",
+                    "commit": "241be59c7f75ba186d0beba376ae44574f52372b",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
