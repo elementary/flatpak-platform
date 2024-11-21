@@ -93,8 +93,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/stylesheet.git",
-                    "tag": "8.1.0",
-                    "commit": "64587483a126b1fed7a3d3a0470ada6c70e96c71",
+                    "tag": "8.2.0",
+                    "commit": "039492a3b1cfb99524dd2982dd2dc4d3cb9c78d6",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -172,8 +172,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "7.5.0",
-                    "commit": "f190e26e1c850b3ab078357f1dcedd6e8278f61f",
+                    "tag": "7.6.0",
+                    "commit": "065ba1f245b60ef867a6ca145e0891cf84eddcc7",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
