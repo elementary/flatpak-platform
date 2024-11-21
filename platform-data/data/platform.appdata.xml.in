@@ -10,6 +10,18 @@
     <p>The Flatpak platform for elementary OS and AppCenter.</p>
   </description>
   <releases>
+    <release version="8.0.1" date="2024-11-20" urgency="medium">
+      <description>
+        <p>Platform updates:</p>
+        <ul>
+          <li>Update Granite to 7.6.0</li>
+          <li>Update Icons to 8.1.0</li>
+          <li>Update Stylesheet to 8.2.0</li>
+          <li>Update LibPortal to 0.8.1</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="8.0.0" date="2024-05-07" urgency="medium">
       <description>
         <p>Platform updates:</p>
