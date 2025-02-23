@@ -13,18 +13,18 @@ on:
 jobs:
   publish_platform:
     name: Publish Platform (${{ matrix.configuration.name }})
-    runs-on: ubuntu-22.04
+    runs-on: ${{ matrix.configuration.runs-on }}
 
     strategy:
       fail-fast: false
       matrix:
         configuration:
           - name: x86
-            platform: false
+            runs-on: ubuntu-22.04
             architecture: x86_64
 
           - name: ARM
-            platform: arm64
+            runs-on: ubuntu-22.04-arm
             architecture: aarch64
 
     steps:
@@ -44,12 +44,6 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-        if: ${{ matrix.configuration.platform }}
-        with:
-          platforms: ${{ matrix.configuration.platform }}
 
       - name: Setup
         run: |
