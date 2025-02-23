@@ -10,6 +10,14 @@
     <p>The Flatpak platform for elementary OS and AppCenter.</p>
   </description>
   <releases>
+    <release version="8.1.0" date="2024-12-26" urgency="medium">
+      <description>
+        <p>Platform updates:</p>
+        <ul>
+          <li>Rebase on GNOME 47 runtime</li>
+        </ul>
+      </description>
+    </release>
     <release version="8.0.1" date="2024-11-21" urgency="medium">
       <description>
         <p>Platform updates:</p>
@@ -21,7 +29,6 @@
         </ul>
       </description>
     </release>
-
     <release version="8.0.0" date="2024-05-07" urgency="medium">
       <description>
         <p>Platform updates:</p>
