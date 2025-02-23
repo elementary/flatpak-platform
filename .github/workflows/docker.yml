@@ -40,11 +40,22 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm64
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+        with:
+          driver-opts: network=host
+
       - name: Build & push the base image to local registry
         uses: docker/build-push-action@v6.14.0
         with:
           context: .
           push: true
+          platforms: linux/amd64,linux/arm64
           tags: localhost:5000/ubuntu-base:latest
 
       - name: Write the Dockerfile for the ${{ matrix.version }}-${{ matrix.arch }} runtime
@@ -65,5 +76,6 @@ jobs:
         with:
           context: .
           push: true
+          platforms: linux/amd64,linux/arm64
           file: ${{ matrix.version }}-${{ matrix.arch }}.Dockerfile
           tags: ghcr.io/${{ github.repository }}/runtime:${{ matrix.version }}-${{ matrix.arch }}${{ env.additional_tags }}
