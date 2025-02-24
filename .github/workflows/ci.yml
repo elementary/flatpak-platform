@@ -6,6 +6,7 @@ on:
   pull_request:
     paths:
       - io.elementary.Sdk.json.in
+      - .github/workflows/ci.yml
 
     types:
       - opened
@@ -15,18 +16,18 @@ on:
 jobs:
   build:
     name: Build (${{ matrix.configuration.name }})
-    runs-on: ubuntu-22.04
+    runs-on: ${{ matrix.configuration.runs-on }}
 
     strategy:
       fail-fast: false
       matrix:
         configuration:
           - name: x86
-            platform: false
+            runs-on: ubuntu-22.04
             architecture: x86_64
 
           - name: ARM
-            platform: arm64
+            runs-on: ubuntu-22.04-arm
             architecture: aarch64
 
     steps:
@@ -54,12 +55,6 @@ jobs:
           sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
 
           sudo flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-        if: ${{ matrix.configuration.platform }}
-        with:
-          platforms: ${{ matrix.configuration.platform }}
 
       - name: Build
         env:
