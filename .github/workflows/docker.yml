@@ -22,6 +22,7 @@ jobs:
           - 'daily'
           - '7.3'
           - '8'
+          - '8.1'
 
     services:
       registry:
