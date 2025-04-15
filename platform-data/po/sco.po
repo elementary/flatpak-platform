@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-16 14:55+0000\n"
+"Last-Translator: Ben Gordon Agnew <ben.gordon@posteo.de>\n"
+"Language-Team: Scots <https://l10n.elementaryos.org/projects/desktop/"
+"flatpak-platform/sco/>\n"
 "Language: sco\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -130,7 +133,7 @@ msgstr ""
 
 #: data/platform.appdata.xml.in:91 data/sdk.appdata.xml.in:19
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/sdk.appdata.xml.in:7
 msgid "elementary App SDK"
