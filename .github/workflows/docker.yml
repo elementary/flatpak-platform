@@ -23,6 +23,7 @@ jobs:
           - '7.3'
           - '8'
           - '8.1'
+          - '8.2'
 
     services:
       registry:
