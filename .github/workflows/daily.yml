@@ -37,15 +37,19 @@ jobs:
           sudo df -h
           echo
 
-          # Remove Removes .NET runtime and libraries
+          echo "Removing Removes .NET runtime and libraries..."
           sudo rm -rf /usr/share/dotnet
-          # Removes Android SDKs and Tools
+
+          echo "Removing Android SDKs and Tools..."
           sudo rm -rf /usr/local/lib/android
-          # Removes GHC (Haskell) artifacts
+
+          echo "Removing GHC (Haskell) artifacts..."
           sudo rm -rf /opt/ghc
-          # Removes CodeQL Action Bundles
+
+          echo "Removing CodeQL Action Bundles..."
           sudo rm -rf /opt/hostedtoolcache/CodeQL
-          # Removes cached Docker images
+
+          echo "Removing cached Docker images..."
           sudo docker image prune --all --force
 
           echo "Available storage after:"
