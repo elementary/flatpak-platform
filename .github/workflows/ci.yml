@@ -32,18 +32,28 @@ jobs:
 
     steps:
       - name: Clean
-        uses: easimon/maximize-build-space@v10
-        with:
-          # Reserve some space on the / partition to install the needed org.gnome runtimes and their Debug extensions.
-          # This probably needs around 10-12GB, the rest of the free space on / then gets assigned to the build directory
-          # where we need the most space
-          root-reserve-mb: 16000
-          swap-size-mb: 1024
-          remove-dotnet: 'true'
-          remove-android: 'true'
-          remove-haskell: 'true'
-          remove-codeql: 'true'
-          remove-docker-images: 'true'
+        # Reserve some space on the / partition to install the needed org.gnome runtimes and their Debug extensions.
+        # This probably needs around 10-12GB, the rest of the free space on / then gets assigned to the build directory
+        # where we need the most space
+        run: |
+          echo "Available storage before:"
+          sudo df -h
+          echo
+
+          # Remove Removes .NET runtime and libraries
+          sudo rm -rf /usr/share/dotnet
+          # Removes Android SDKs and Tools
+          sudo rm -rf /usr/local/lib/android
+          # Removes GHC (Haskell) artifacts
+          sudo rm -rf /opt/ghc
+          # Removes CodeQL Action Bundles
+          sudo rm -rf /opt/hostedtoolcache/CodeQL
+          # Removes cached Docker images
+          sudo docker image prune --all --force
+
+          echo "Available storage after:"
+          sudo df -h
+          echo
 
       - name: Checkout
         uses: actions/checkout@v4
