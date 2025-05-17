@@ -75,7 +75,7 @@ jobs:
           DISPLAY: "0:0"
         run: |
           meson setup build --cross-file="architectures/${{ matrix.configuration.architecture }}.crossfile"
-          sudo xvfb-run --auto-servernum flatpak-builder --arch=${{ matrix.configuration.architecture }} --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary builddir ./build/io.elementary.Sdk.json
+          sudo xvfb-run --auto-servernum flatpak-builder --arch=${{ matrix.configuration.architecture }} --disable-rofiles-fuse --keep-build-dirs --install-deps-from=flathub --ccache --repo=elementary /mnt/builddir ./build/io.elementary.Sdk.json
 
       - name: Fix Permissions
         run: sudo chown -R runner:docker .
