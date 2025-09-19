@@ -20,7 +20,7 @@
         "org.freedesktop.Platform.VulkanLayer",
         "org.freedesktop.Platform.Timezones",
         "org.freedesktop.Platform.GStreamer",
-        "org.freedesktop.Platform.openh264"
+        "org.freedesktop.Platform.codecs-extra"
     ],
     "inherit-sdk-extensions": [
         "org.freedesktop.Sdk.Extension"
