@@ -3,7 +3,7 @@
     "id": "io.elementary.Sdk",
     "id-platform": "io.elementary.Platform",
     "default-branch": "@branch@",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
