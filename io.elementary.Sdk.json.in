@@ -3,7 +3,7 @@
     "id": "io.elementary.Sdk",
     "id-platform": "io.elementary.Platform",
     "default-branch": "@branch@",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "runtime": "org.gnome.Platform",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
@@ -20,7 +20,7 @@
         "org.freedesktop.Platform.VulkanLayer",
         "org.freedesktop.Platform.Timezones",
         "org.freedesktop.Platform.GStreamer",
-        "org.freedesktop.Platform.openh264"
+        "org.freedesktop.Platform.codecs-extra"
     ],
     "inherit-sdk-extensions": [
         "org.freedesktop.Sdk.Extension"
