@@ -168,6 +168,9 @@
         {
             "name": "granite-7",
             "buildsystem": "meson",
+            "config-opts": [
+                "-Ddemo=false"
+            ],
             "sources": [
                 {
                     "type": "git",
