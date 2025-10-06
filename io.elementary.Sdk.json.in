@@ -168,12 +168,15 @@
         {
             "name": "granite-7",
             "buildsystem": "meson",
+            "config-opts": [
+                "-Ddemo=false"
+            ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "7.6.0",
-                    "commit": "065ba1f245b60ef867a6ca145e0891cf84eddcc7",
+                    "tag": "7.7.0",
+                    "commit": "ae94e9123bbf1dea8db38bedd8a925dbd5a8f812",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
