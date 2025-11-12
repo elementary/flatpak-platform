@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-11 22:23+0900\n"
-"PO-Revision-Date: 2021-07-20 09:28-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-13 08:55+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Marathi <https://l10n.elementaryos.org/projects/desktop/"
+"flatpak-platform/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -218,7 +221,7 @@ msgstr ""
 
 #: data/platform.appdata.xml.in:164 data/sdk.appdata.xml.in:20
 msgid "elementary, Inc."
-msgstr ""
+msgstr "एलिमेंटरी, Inc ."
 
 #: data/sdk.appdata.xml.in:7
 msgid "elementary App SDK"
