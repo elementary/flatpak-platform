@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-11 22:23+0900\n"
-"PO-Revision-Date: 2023-07-12 15:07+0000\n"
+"PO-Revision-Date: 2025-11-13 08:55+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/flatpak-"
-"platform/ca/>\n"
+"Language-Team: Catalan <https://l10n.elementaryos.org/projects/desktop/"
+"flatpak-platform/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -43,136 +43,96 @@ msgid "Platform updates:"
 msgstr "Actualitzacions de la plataforma:"
 
 #: data/platform.appdata.xml.in:18
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 49 runtime"
-msgstr "Rebase sobre l'entorn d'execució de GNOME 44"
+msgstr "Rebase en l'entorn d'execució del GNOME 49"
 
 #: data/platform.appdata.xml.in:19
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.7.0"
-msgstr "Actualització de Granite a 7.3.0"
+msgstr "Actualització de Granite a 7.7.0"
 
 #: data/platform.appdata.xml.in:20
-#, fuzzy
-#| msgid "Update Icons to 7.2.0"
 msgid "Update Icons to 8.2.0"
-msgstr "Actualització de les icones a la 7.2.0"
+msgstr "Actualització de les icones a 8.2.0"
 
 #: data/platform.appdata.xml.in:29
 msgid "Fix ARM (aarch64) builds not available"
-msgstr ""
+msgstr "Correcció de compilacions ARM (aarch64) no disponibles"
 
 #: data/platform.appdata.xml.in:30
-#, fuzzy
-#| msgid "Update Icons to 7.1.0"
 msgid "Update xcursorgen to 1.0.9"
-msgstr "Actualització de les icones a la 7.1.0"
+msgstr "Actualització d'xcursorgen a la versió 1.0.9"
 
 #: data/platform.appdata.xml.in:39
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 48 runtime"
-msgstr "Rebase sobre l'entorn d'execució de GNOME 44"
+msgstr "Rebase en l'entorn d'execució del GNOME 48"
 
 #: data/platform.appdata.xml.in:40
-#, fuzzy
-#| msgid "Update Stylesheet to 7.2.0"
 msgid "Update Stylesheet to 8.2.1"
-msgstr "Actualització del full d'estils a 7.2.0"
+msgstr "Actualització del full d'estils a la versió 8.2.1"
 
 #: data/platform.appdata.xml.in:49
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 47 runtime"
-msgstr "Rebase sobre l'entorn d'execució de GNOME 44"
+msgstr "Rebase en l'entorn d'execució del GNOME 47"
 
 #: data/platform.appdata.xml.in:50
-#, fuzzy
-#| msgid "Update Stylesheet to 7.0.1"
 msgid "Update LibPortal to 0.9.1"
-msgstr "Actualització del full d'estils a 7.0.1"
+msgstr "Actualització de LibPortal a la versió 0.9.1"
 
 #: data/platform.appdata.xml.in:58
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.6.0"
-msgstr "Actualització de Granite a 7.3.0"
+msgstr "Actualització de Granite a la versió 7.6.0"
 
 #: data/platform.appdata.xml.in:59
-#, fuzzy
-#| msgid "Update Icons to 7.1.0"
 msgid "Update Icons to 8.1.0"
-msgstr "Actualització de les icones a la 7.1.0"
+msgstr "Actualització de les icones a la versió 8.1.0"
 
 #: data/platform.appdata.xml.in:60
-#, fuzzy
-#| msgid "Update Stylesheet to 7.2.0"
 msgid "Update Stylesheet to 8.2.0"
-msgstr "Actualització del full d'estils a 7.2.0"
+msgstr "Actualització del full d'estils a la versió 8.2.0"
 
 #: data/platform.appdata.xml.in:61
-#, fuzzy
-#| msgid "Update Stylesheet to 7.0.1"
 msgid "Update LibPortal to 0.8.1"
-msgstr "Actualització del full d'estils a 7.0.1"
+msgstr "Actualització de LibPortal a la versió 0.8.1"
 
 #: data/platform.appdata.xml.in:69
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 46 runtime"
-msgstr "Rebase sobre l'entorn d'execució de GNOME 44"
+msgstr "Rebase en l'entorn d'execució del GNOME 46"
 
 #: data/platform.appdata.xml.in:70
 msgid "Add LibPortal"
-msgstr ""
+msgstr "Afegeix LibPortal"
 
 #: data/platform.appdata.xml.in:71
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.5.0"
-msgstr "Actualització de Granite a 7.3.0"
+msgstr "Actualització de Granite a la versió 7.5.0"
 
 #: data/platform.appdata.xml.in:72
-#, fuzzy
-#| msgid "Update Icons to 7.3.0"
 msgid "Update Icons to 8.0.0"
-msgstr "Actualització de les icones a la 7.3.0"
+msgstr "Actualització de les icones a la versió 8.0.0"
 
 #: data/platform.appdata.xml.in:73
-#, fuzzy
-#| msgid "Update Stylesheet to 7.2.0"
 msgid "Update Stylesheet to 8.0.0"
-msgstr "Actualització del full d'estils a 7.2.0"
+msgstr "Actualització del full d'estils a la versió 8.0.0"
 
 #: data/platform.appdata.xml.in:81
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 45 runtime"
-msgstr "Rebase sobre l'entorn d'execució de GNOME 44"
+msgstr "Rebase en l'entorn d'execució del GNOME 45"
 
 #: data/platform.appdata.xml.in:82
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.4.0"
-msgstr "Actualització de Granite a 7.3.0"
+msgstr "Actualització del Granite a la versió 7.4.0"
 
 #: data/platform.appdata.xml.in:83
-#, fuzzy
-#| msgid "Update Stylesheet to 7.2.0"
 msgid "Update Stylesheet to 7.3.0"
-msgstr "Actualització del full d'estils a 7.2.0"
+msgstr "Actualització del full d'estils a la versió 7.3.0"
 
 #: data/platform.appdata.xml.in:91
 msgid "Update Granite to 7.3.0"
 msgstr "Actualització de Granite a 7.3.0"
 
 #: data/platform.appdata.xml.in:92
-#, fuzzy
-#| msgid "Update Icons to 7.3.0"
 msgid "Update Icons to 7.3.1"
-msgstr "Actualització de les icones a la 7.3.0"
+msgstr "Actualització de les icones a la versió 7.3.1"
 
 #: data/platform.appdata.xml.in:93
 msgid "Update Stylesheet to 7.2.0"
