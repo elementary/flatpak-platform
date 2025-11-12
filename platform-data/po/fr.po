@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 11:24+0900\n"
+"POT-Creation-Date: 2025-11-11 22:23+0900\n"
 "PO-Revision-Date: 2025-02-07 17:16+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/desktop/"
-"flatpak-platform/fr/>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/desktop/flatpak-"
+"platform/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,89 +31,217 @@ msgstr "Compile les applications Flatpak pour elementary OS"
 msgid "The Flatpak platform for elementary OS and AppCenter."
 msgstr "La plateforme Flatpak pour elementary OS et le Centre d'Applications."
 
-#: data/platform.appdata.xml.in:15 data/platform.appdata.xml.in:26
-#: data/platform.appdata.xml.in:38 data/platform.appdata.xml.in:48
-#: data/platform.appdata.xml.in:57 data/platform.appdata.xml.in:71
+#: data/platform.appdata.xml.in:16 data/platform.appdata.xml.in:27
+#: data/platform.appdata.xml.in:37 data/platform.appdata.xml.in:47
+#: data/platform.appdata.xml.in:56 data/platform.appdata.xml.in:67
+#: data/platform.appdata.xml.in:79 data/platform.appdata.xml.in:89
+#: data/platform.appdata.xml.in:99 data/platform.appdata.xml.in:110
+#: data/platform.appdata.xml.in:120 data/platform.appdata.xml.in:129
+#: data/platform.appdata.xml.in:143
 msgid "Platform updates:"
 msgstr "Mises à jour de la plateforme :"
 
-#: data/platform.appdata.xml.in:17
+#: data/platform.appdata.xml.in:18
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 49 runtime"
+msgstr "Mise à jour sur l'exécutable GNOME 44"
+
+#: data/platform.appdata.xml.in:19
+#, fuzzy
+#| msgid "Update Granite to 7.3.0"
+msgid "Update Granite to 7.7.0"
+msgstr "Mise à jour de Granite en 7.3.0"
+
+#: data/platform.appdata.xml.in:20
+#, fuzzy
+#| msgid "Update Icons to 7.2.0"
+msgid "Update Icons to 8.2.0"
+msgstr "Mise à jour de Icônes en 7.2.0"
+
+#: data/platform.appdata.xml.in:29
+msgid "Fix ARM (aarch64) builds not available"
+msgstr ""
+
+#: data/platform.appdata.xml.in:30
+#, fuzzy
+#| msgid "Update Icons to 7.1.0"
+msgid "Update xcursorgen to 1.0.9"
+msgstr "Mise à jour de Icônes en 7.1.0"
+
+#: data/platform.appdata.xml.in:39
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 48 runtime"
+msgstr "Mise à jour sur l'exécutable GNOME 44"
+
+#: data/platform.appdata.xml.in:40
+#, fuzzy
+#| msgid "Update Stylesheet to 7.2.0"
+msgid "Update Stylesheet to 8.2.1"
+msgstr "Mise à jour de Feuille de style en 7.2.0"
+
+#: data/platform.appdata.xml.in:49
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 47 runtime"
+msgstr "Mise à jour sur l'exécutable GNOME 44"
+
+#: data/platform.appdata.xml.in:50
+#, fuzzy
+#| msgid "Update Stylesheet to 7.0.1"
+msgid "Update LibPortal to 0.9.1"
+msgstr "Mise à jour de Feuille de style en 7.0.1"
+
+#: data/platform.appdata.xml.in:58
+#, fuzzy
+#| msgid "Update Granite to 7.3.0"
+msgid "Update Granite to 7.6.0"
+msgstr "Mise à jour de Granite en 7.3.0"
+
+#: data/platform.appdata.xml.in:59
+#, fuzzy
+#| msgid "Update Icons to 7.1.0"
+msgid "Update Icons to 8.1.0"
+msgstr "Mise à jour de Icônes en 7.1.0"
+
+#: data/platform.appdata.xml.in:60
+#, fuzzy
+#| msgid "Update Stylesheet to 7.2.0"
+msgid "Update Stylesheet to 8.2.0"
+msgstr "Mise à jour de Feuille de style en 7.2.0"
+
+#: data/platform.appdata.xml.in:61
+#, fuzzy
+#| msgid "Update Stylesheet to 7.0.1"
+msgid "Update LibPortal to 0.8.1"
+msgstr "Mise à jour de Feuille de style en 7.0.1"
+
+#: data/platform.appdata.xml.in:69
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 46 runtime"
+msgstr "Mise à jour sur l'exécutable GNOME 44"
+
+#: data/platform.appdata.xml.in:70
+msgid "Add LibPortal"
+msgstr ""
+
+#: data/platform.appdata.xml.in:71
+#, fuzzy
+#| msgid "Update Granite to 7.3.0"
+msgid "Update Granite to 7.5.0"
+msgstr "Mise à jour de Granite en 7.3.0"
+
+#: data/platform.appdata.xml.in:72
+#, fuzzy
+#| msgid "Update Icons to 7.3.0"
+msgid "Update Icons to 8.0.0"
+msgstr "Mise à jour de Icônes en 7.3.0"
+
+#: data/platform.appdata.xml.in:73
+#, fuzzy
+#| msgid "Update Stylesheet to 7.2.0"
+msgid "Update Stylesheet to 8.0.0"
+msgstr "Mise à jour de Feuille de style en 7.2.0"
+
+#: data/platform.appdata.xml.in:81
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 45 runtime"
+msgstr "Mise à jour sur l'exécutable GNOME 44"
+
+#: data/platform.appdata.xml.in:82
+#, fuzzy
+#| msgid "Update Granite to 7.3.0"
+msgid "Update Granite to 7.4.0"
+msgstr "Mise à jour de Granite en 7.3.0"
+
+#: data/platform.appdata.xml.in:83
+#, fuzzy
+#| msgid "Update Stylesheet to 7.2.0"
+msgid "Update Stylesheet to 7.3.0"
+msgstr "Mise à jour de Feuille de style en 7.2.0"
+
+#: data/platform.appdata.xml.in:91
 msgid "Update Granite to 7.3.0"
 msgstr "Mise à jour de Granite en 7.3.0"
 
-#: data/platform.appdata.xml.in:18
-msgid "Update Icons to 7.3.0"
+#: data/platform.appdata.xml.in:92
+#, fuzzy
+#| msgid "Update Icons to 7.3.0"
+msgid "Update Icons to 7.3.1"
 msgstr "Mise à jour de Icônes en 7.3.0"
 
-#: data/platform.appdata.xml.in:19
+#: data/platform.appdata.xml.in:93
 msgid "Update Stylesheet to 7.2.0"
 msgstr "Mise à jour de Feuille de style en 7.2.0"
 
-#: data/platform.appdata.xml.in:28
+#: data/platform.appdata.xml.in:101
 msgid "Rebase on GNOME 44 runtime"
 msgstr "Mise à jour sur l'exécutable GNOME 44"
 
-#: data/platform.appdata.xml.in:29
+#: data/platform.appdata.xml.in:102
 msgid "Update Granite to 7.2.0"
 msgstr "Mise à jour de Granite en 7.2.0"
 
-#: data/platform.appdata.xml.in:30
+#: data/platform.appdata.xml.in:103
 msgid "Update Icons to 7.2.0"
 msgstr "Mise à jour de Icônes en 7.2.0"
 
-#: data/platform.appdata.xml.in:31
+#: data/platform.appdata.xml.in:104
 msgid "Update Stylesheet to 7.1.0"
 msgstr "Mise à jour de Feuille de style en 7.1.0"
 
-#: data/platform.appdata.xml.in:40
+#: data/platform.appdata.xml.in:112
 msgid "Update Granite to 7.1.0"
 msgstr "Mise à jour de Granite en 7.1.0"
 
-#: data/platform.appdata.xml.in:41
+#: data/platform.appdata.xml.in:113
 msgid "Update Icons to 7.1.0"
 msgstr "Mise à jour de Icônes en 7.1.0"
 
-#: data/platform.appdata.xml.in:42
+#: data/platform.appdata.xml.in:114
 msgid "Update Stylesheet to 7.0.1"
 msgstr "Mise à jour de Feuille de style en 7.0.1"
 
-#: data/platform.appdata.xml.in:50
+#: data/platform.appdata.xml.in:122
 msgid "Rebase on GNOME 42 runtime"
 msgstr "Mise à jour sur l'exécutable GNOME 42"
 
-#: data/platform.appdata.xml.in:51
+#: data/platform.appdata.xml.in:123
 msgid "Initial support for Gtk4"
 msgstr "Début de la prise en charge de Gtk4"
 
-#: data/platform.appdata.xml.in:59
+#: data/platform.appdata.xml.in:131
 msgid "Rebase on GNOME 41 runtime"
 msgstr "Mise à jour sur l'exécutable GNOME 41"
 
-#: data/platform.appdata.xml.in:60
+#: data/platform.appdata.xml.in:132
 msgid "Added elementary and freedesktop sound themes"
 msgstr "Ajout des thèmes audio d'elementary et de freedesktop"
 
-#: data/platform.appdata.xml.in:61
+#: data/platform.appdata.xml.in:133
 msgid "Use the correct stylesheet on OS 5"
 msgstr "Utilisation correcte de la feuille de style sur OS 5"
 
-#: data/platform.appdata.xml.in:67
+#: data/platform.appdata.xml.in:139
 msgid "Fixes:"
 msgstr "Corrections :"
 
-#: data/platform.appdata.xml.in:69
+#: data/platform.appdata.xml.in:141
 msgid "Fix localization issues with apps that use Granite"
 msgstr ""
 "Correction des problèmes de traduction avec les applications qui utilisent "
 "Granite"
 
-#: data/platform.appdata.xml.in:73
+#: data/platform.appdata.xml.in:145
 msgid "Use the settings portal for time and date settings"
 msgstr ""
 "Utilisation du portail des paramètres pour les paramètres de la date et de "
 "l'heure"
 
-#: data/platform.appdata.xml.in:74
+#: data/platform.appdata.xml.in:146
 msgid ""
 "Use the settings portal for color scheme preference instead of requiring an "
 "AccountsService hole"
@@ -121,23 +249,23 @@ msgstr ""
 "Utilisez le portail des paramètres de thème au lieu d'exiger une exception "
 "pour AccountsService"
 
-#: data/platform.appdata.xml.in:75
+#: data/platform.appdata.xml.in:147
 msgid "Update elementary stylesheet to 6.1.0"
 msgstr "Mise à jour de la feuille de style d'elementary en 6.1.0"
 
-#: data/platform.appdata.xml.in:76
+#: data/platform.appdata.xml.in:148
 msgid "Update Granite to 6.1.2"
 msgstr "Mise à jour de Granite en 6.1.2"
 
-#: data/platform.appdata.xml.in:82
+#: data/platform.appdata.xml.in:154
 msgid "Add support for ARM (aarch64)"
 msgstr "Ajout de la prise en charge d'ARM (aarch64)"
 
-#: data/platform.appdata.xml.in:87 data/sdk.appdata.xml.in:15
+#: data/platform.appdata.xml.in:159 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
 msgstr "Version initiale"
 
-#: data/platform.appdata.xml.in:91 data/sdk.appdata.xml.in:19
+#: data/platform.appdata.xml.in:164 data/sdk.appdata.xml.in:20
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

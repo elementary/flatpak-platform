@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 11:24+0900\n"
+"POT-Creation-Date: 2025-11-11 22:23+0900\n"
 "PO-Revision-Date: 2024-08-07 17:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/desktop/"
@@ -33,87 +33,215 @@ msgstr "Bygging av Flatpak-programmer for elementary OS"
 msgid "The Flatpak platform for elementary OS and AppCenter."
 msgstr "Flatpak-plattformen for elementary OS og AppSenter."
 
-#: data/platform.appdata.xml.in:15 data/platform.appdata.xml.in:26
-#: data/platform.appdata.xml.in:38 data/platform.appdata.xml.in:48
-#: data/platform.appdata.xml.in:57 data/platform.appdata.xml.in:71
+#: data/platform.appdata.xml.in:16 data/platform.appdata.xml.in:27
+#: data/platform.appdata.xml.in:37 data/platform.appdata.xml.in:47
+#: data/platform.appdata.xml.in:56 data/platform.appdata.xml.in:67
+#: data/platform.appdata.xml.in:79 data/platform.appdata.xml.in:89
+#: data/platform.appdata.xml.in:99 data/platform.appdata.xml.in:110
+#: data/platform.appdata.xml.in:120 data/platform.appdata.xml.in:129
+#: data/platform.appdata.xml.in:143
 msgid "Platform updates:"
 msgstr "Plattformoppdateringer:"
 
-#: data/platform.appdata.xml.in:17
+#: data/platform.appdata.xml.in:18
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 49 runtime"
+msgstr "Rebasert på GNOME 44-kjøretidsrutine"
+
+#: data/platform.appdata.xml.in:19
+#, fuzzy
+#| msgid "Update Granite to 7.3.0"
+msgid "Update Granite to 7.7.0"
+msgstr "Granite oppgradert til 7.3.0"
+
+#: data/platform.appdata.xml.in:20
+#, fuzzy
+#| msgid "Update Icons to 7.2.0"
+msgid "Update Icons to 8.2.0"
+msgstr "Ikoner oppgradert til 7.2.0"
+
+#: data/platform.appdata.xml.in:29
+msgid "Fix ARM (aarch64) builds not available"
+msgstr ""
+
+#: data/platform.appdata.xml.in:30
+#, fuzzy
+#| msgid "Update Icons to 7.1.0"
+msgid "Update xcursorgen to 1.0.9"
+msgstr "Ikoner oppgradert til 7.1.0"
+
+#: data/platform.appdata.xml.in:39
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 48 runtime"
+msgstr "Rebasert på GNOME 44-kjøretidsrutine"
+
+#: data/platform.appdata.xml.in:40
+#, fuzzy
+#| msgid "Update Stylesheet to 7.2.0"
+msgid "Update Stylesheet to 8.2.1"
+msgstr "Stylesheet oppgradert til 7.2.0"
+
+#: data/platform.appdata.xml.in:49
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 47 runtime"
+msgstr "Rebasert på GNOME 44-kjøretidsrutine"
+
+#: data/platform.appdata.xml.in:50
+#, fuzzy
+#| msgid "Update Stylesheet to 7.0.1"
+msgid "Update LibPortal to 0.9.1"
+msgstr "Stylesheet oppgradert til 7.0.1"
+
+#: data/platform.appdata.xml.in:58
+#, fuzzy
+#| msgid "Update Granite to 7.3.0"
+msgid "Update Granite to 7.6.0"
+msgstr "Granite oppgradert til 7.3.0"
+
+#: data/platform.appdata.xml.in:59
+#, fuzzy
+#| msgid "Update Icons to 7.1.0"
+msgid "Update Icons to 8.1.0"
+msgstr "Ikoner oppgradert til 7.1.0"
+
+#: data/platform.appdata.xml.in:60
+#, fuzzy
+#| msgid "Update Stylesheet to 7.2.0"
+msgid "Update Stylesheet to 8.2.0"
+msgstr "Stylesheet oppgradert til 7.2.0"
+
+#: data/platform.appdata.xml.in:61
+#, fuzzy
+#| msgid "Update Stylesheet to 7.0.1"
+msgid "Update LibPortal to 0.8.1"
+msgstr "Stylesheet oppgradert til 7.0.1"
+
+#: data/platform.appdata.xml.in:69
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 46 runtime"
+msgstr "Rebasert på GNOME 44-kjøretidsrutine"
+
+#: data/platform.appdata.xml.in:70
+msgid "Add LibPortal"
+msgstr ""
+
+#: data/platform.appdata.xml.in:71
+#, fuzzy
+#| msgid "Update Granite to 7.3.0"
+msgid "Update Granite to 7.5.0"
+msgstr "Granite oppgradert til 7.3.0"
+
+#: data/platform.appdata.xml.in:72
+#, fuzzy
+#| msgid "Update Icons to 7.3.0"
+msgid "Update Icons to 8.0.0"
+msgstr "Ikoner oppgradert til 7.3.0"
+
+#: data/platform.appdata.xml.in:73
+#, fuzzy
+#| msgid "Update Stylesheet to 7.2.0"
+msgid "Update Stylesheet to 8.0.0"
+msgstr "Stylesheet oppgradert til 7.2.0"
+
+#: data/platform.appdata.xml.in:81
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 45 runtime"
+msgstr "Rebasert på GNOME 44-kjøretidsrutine"
+
+#: data/platform.appdata.xml.in:82
+#, fuzzy
+#| msgid "Update Granite to 7.3.0"
+msgid "Update Granite to 7.4.0"
+msgstr "Granite oppgradert til 7.3.0"
+
+#: data/platform.appdata.xml.in:83
+#, fuzzy
+#| msgid "Update Stylesheet to 7.2.0"
+msgid "Update Stylesheet to 7.3.0"
+msgstr "Stylesheet oppgradert til 7.2.0"
+
+#: data/platform.appdata.xml.in:91
 msgid "Update Granite to 7.3.0"
 msgstr "Granite oppgradert til 7.3.0"
 
-#: data/platform.appdata.xml.in:18
-msgid "Update Icons to 7.3.0"
+#: data/platform.appdata.xml.in:92
+#, fuzzy
+#| msgid "Update Icons to 7.3.0"
+msgid "Update Icons to 7.3.1"
 msgstr "Ikoner oppgradert til 7.3.0"
 
-#: data/platform.appdata.xml.in:19
+#: data/platform.appdata.xml.in:93
 msgid "Update Stylesheet to 7.2.0"
 msgstr "Stylesheet oppgradert til 7.2.0"
 
-#: data/platform.appdata.xml.in:28
+#: data/platform.appdata.xml.in:101
 msgid "Rebase on GNOME 44 runtime"
 msgstr "Rebasert på GNOME 44-kjøretidsrutine"
 
-#: data/platform.appdata.xml.in:29
+#: data/platform.appdata.xml.in:102
 msgid "Update Granite to 7.2.0"
 msgstr "Granite oppgradert til 7.2.0"
 
-#: data/platform.appdata.xml.in:30
+#: data/platform.appdata.xml.in:103
 msgid "Update Icons to 7.2.0"
 msgstr "Ikoner oppgradert til 7.2.0"
 
-#: data/platform.appdata.xml.in:31
+#: data/platform.appdata.xml.in:104
 msgid "Update Stylesheet to 7.1.0"
 msgstr "Stylesheet oppgradert til 7.1.0"
 
-#: data/platform.appdata.xml.in:40
+#: data/platform.appdata.xml.in:112
 msgid "Update Granite to 7.1.0"
 msgstr "Granite oppgradert til 7.1.0"
 
-#: data/platform.appdata.xml.in:41
+#: data/platform.appdata.xml.in:113
 msgid "Update Icons to 7.1.0"
 msgstr "Ikoner oppgradert til 7.1.0"
 
-#: data/platform.appdata.xml.in:42
+#: data/platform.appdata.xml.in:114
 msgid "Update Stylesheet to 7.0.1"
 msgstr "Stylesheet oppgradert til 7.0.1"
 
-#: data/platform.appdata.xml.in:50
+#: data/platform.appdata.xml.in:122
 msgid "Rebase on GNOME 42 runtime"
 msgstr "Rebasert på GNOME 42-kjøretidsrutine"
 
-#: data/platform.appdata.xml.in:51
+#: data/platform.appdata.xml.in:123
 #, fuzzy
 msgid "Initial support for Gtk4"
 msgstr "Innledende støtte for Gtk4"
 
-#: data/platform.appdata.xml.in:59
+#: data/platform.appdata.xml.in:131
 msgid "Rebase on GNOME 41 runtime"
 msgstr "Rebasert på GNOME 41-kjøretidsrutine"
 
-#: data/platform.appdata.xml.in:60
+#: data/platform.appdata.xml.in:132
 #, fuzzy
 msgid "Added elementary and freedesktop sound themes"
 msgstr "Støtte for elementary og freedesktop -lyddrakter"
 
-#: data/platform.appdata.xml.in:61
+#: data/platform.appdata.xml.in:133
 msgid "Use the correct stylesheet on OS 5"
 msgstr "Korrekt stilark på OS 5"
 
-#: data/platform.appdata.xml.in:67
+#: data/platform.appdata.xml.in:139
 msgid "Fixes:"
 msgstr "Fikser:"
 
-#: data/platform.appdata.xml.in:69
+#: data/platform.appdata.xml.in:141
 msgid "Fix localization issues with apps that use Granite"
 msgstr "Fikset lokaliseringsproblemer for programmer som bruker Granite"
 
-#: data/platform.appdata.xml.in:73
+#: data/platform.appdata.xml.in:145
 msgid "Use the settings portal for time and date settings"
 msgstr "Bruk av innstillingsportal for tid- og datoinnstillinger"
 
-#: data/platform.appdata.xml.in:74
+#: data/platform.appdata.xml.in:146
 #, fuzzy
 msgid ""
 "Use the settings portal for color scheme preference instead of requiring an "
@@ -122,24 +250,24 @@ msgstr ""
 "Bruk av innstillingsportal for fargepalettinnstilling, istedenfor å kreve et "
 "AccoutService-hull"
 
-#: data/platform.appdata.xml.in:75
+#: data/platform.appdata.xml.in:147
 msgid "Update elementary stylesheet to 6.1.0"
 msgstr "elementary-stilark oppgradert til 6.1.0"
 
-#: data/platform.appdata.xml.in:76
+#: data/platform.appdata.xml.in:148
 msgid "Update Granite to 6.1.2"
 msgstr "Granite oppgradert til 6.1.2"
 
-#: data/platform.appdata.xml.in:82
+#: data/platform.appdata.xml.in:154
 #, fuzzy
 msgid "Add support for ARM (aarch64)"
 msgstr "Støtte for ARM (aarch64)"
 
-#: data/platform.appdata.xml.in:87 data/sdk.appdata.xml.in:15
+#: data/platform.appdata.xml.in:159 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
 msgstr "Opprinnelig utgave"
 
-#: data/platform.appdata.xml.in:91 data/sdk.appdata.xml.in:19
+#: data/platform.appdata.xml.in:164 data/sdk.appdata.xml.in:20
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

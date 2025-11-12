@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 11:24+0900\n"
+"POT-Creation-Date: 2025-11-11 22:23+0900\n"
 "PO-Revision-Date: 2024-09-19 10:09+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -31,107 +31,235 @@ msgstr "為 elementary OS 建置 Flatpak 應用程式"
 msgid "The Flatpak platform for elementary OS and AppCenter."
 msgstr "為 elementary OS 和《應用程式中心》打造的 Flatpak 平台。"
 
-#: data/platform.appdata.xml.in:15 data/platform.appdata.xml.in:26
-#: data/platform.appdata.xml.in:38 data/platform.appdata.xml.in:48
-#: data/platform.appdata.xml.in:57 data/platform.appdata.xml.in:71
+#: data/platform.appdata.xml.in:16 data/platform.appdata.xml.in:27
+#: data/platform.appdata.xml.in:37 data/platform.appdata.xml.in:47
+#: data/platform.appdata.xml.in:56 data/platform.appdata.xml.in:67
+#: data/platform.appdata.xml.in:79 data/platform.appdata.xml.in:89
+#: data/platform.appdata.xml.in:99 data/platform.appdata.xml.in:110
+#: data/platform.appdata.xml.in:120 data/platform.appdata.xml.in:129
+#: data/platform.appdata.xml.in:143
 msgid "Platform updates:"
 msgstr "平台更新："
 
-#: data/platform.appdata.xml.in:17
+#: data/platform.appdata.xml.in:18
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 49 runtime"
+msgstr "重定基底到 GNOME 44 執行環境上"
+
+#: data/platform.appdata.xml.in:19
+#, fuzzy
+#| msgid "Update Granite to 7.3.0"
+msgid "Update Granite to 7.7.0"
+msgstr "將 Granite 更新到 7.3.0"
+
+#: data/platform.appdata.xml.in:20
+#, fuzzy
+#| msgid "Update Icons to 7.2.0"
+msgid "Update Icons to 8.2.0"
+msgstr "將《圖示》更新到 7.2.0"
+
+#: data/platform.appdata.xml.in:29
+msgid "Fix ARM (aarch64) builds not available"
+msgstr ""
+
+#: data/platform.appdata.xml.in:30
+#, fuzzy
+#| msgid "Update Icons to 7.1.0"
+msgid "Update xcursorgen to 1.0.9"
+msgstr "將《圖示》更新到 7.1.0"
+
+#: data/platform.appdata.xml.in:39
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 48 runtime"
+msgstr "重定基底到 GNOME 44 執行環境上"
+
+#: data/platform.appdata.xml.in:40
+#, fuzzy
+#| msgid "Update Stylesheet to 7.2.0"
+msgid "Update Stylesheet to 8.2.1"
+msgstr "將《樣式表》更新到 7.2.0"
+
+#: data/platform.appdata.xml.in:49
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 47 runtime"
+msgstr "重定基底到 GNOME 44 執行環境上"
+
+#: data/platform.appdata.xml.in:50
+#, fuzzy
+#| msgid "Update Stylesheet to 7.0.1"
+msgid "Update LibPortal to 0.9.1"
+msgstr "將《樣式表》更新到 7.0.1"
+
+#: data/platform.appdata.xml.in:58
+#, fuzzy
+#| msgid "Update Granite to 7.3.0"
+msgid "Update Granite to 7.6.0"
+msgstr "將 Granite 更新到 7.3.0"
+
+#: data/platform.appdata.xml.in:59
+#, fuzzy
+#| msgid "Update Icons to 7.1.0"
+msgid "Update Icons to 8.1.0"
+msgstr "將《圖示》更新到 7.1.0"
+
+#: data/platform.appdata.xml.in:60
+#, fuzzy
+#| msgid "Update Stylesheet to 7.2.0"
+msgid "Update Stylesheet to 8.2.0"
+msgstr "將《樣式表》更新到 7.2.0"
+
+#: data/platform.appdata.xml.in:61
+#, fuzzy
+#| msgid "Update Stylesheet to 7.0.1"
+msgid "Update LibPortal to 0.8.1"
+msgstr "將《樣式表》更新到 7.0.1"
+
+#: data/platform.appdata.xml.in:69
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 46 runtime"
+msgstr "重定基底到 GNOME 44 執行環境上"
+
+#: data/platform.appdata.xml.in:70
+msgid "Add LibPortal"
+msgstr ""
+
+#: data/platform.appdata.xml.in:71
+#, fuzzy
+#| msgid "Update Granite to 7.3.0"
+msgid "Update Granite to 7.5.0"
+msgstr "將 Granite 更新到 7.3.0"
+
+#: data/platform.appdata.xml.in:72
+#, fuzzy
+#| msgid "Update Icons to 7.3.0"
+msgid "Update Icons to 8.0.0"
+msgstr "將《圖示》更新到 7.3.0"
+
+#: data/platform.appdata.xml.in:73
+#, fuzzy
+#| msgid "Update Stylesheet to 7.2.0"
+msgid "Update Stylesheet to 8.0.0"
+msgstr "將《樣式表》更新到 7.2.0"
+
+#: data/platform.appdata.xml.in:81
+#, fuzzy
+#| msgid "Rebase on GNOME 44 runtime"
+msgid "Rebase on GNOME 45 runtime"
+msgstr "重定基底到 GNOME 44 執行環境上"
+
+#: data/platform.appdata.xml.in:82
+#, fuzzy
+#| msgid "Update Granite to 7.3.0"
+msgid "Update Granite to 7.4.0"
+msgstr "將 Granite 更新到 7.3.0"
+
+#: data/platform.appdata.xml.in:83
+#, fuzzy
+#| msgid "Update Stylesheet to 7.2.0"
+msgid "Update Stylesheet to 7.3.0"
+msgstr "將《樣式表》更新到 7.2.0"
+
+#: data/platform.appdata.xml.in:91
 msgid "Update Granite to 7.3.0"
 msgstr "將 Granite 更新到 7.3.0"
 
-#: data/platform.appdata.xml.in:18
-msgid "Update Icons to 7.3.0"
+#: data/platform.appdata.xml.in:92
+#, fuzzy
+#| msgid "Update Icons to 7.3.0"
+msgid "Update Icons to 7.3.1"
 msgstr "將《圖示》更新到 7.3.0"
 
-#: data/platform.appdata.xml.in:19
+#: data/platform.appdata.xml.in:93
 msgid "Update Stylesheet to 7.2.0"
 msgstr "將《樣式表》更新到 7.2.0"
 
-#: data/platform.appdata.xml.in:28
+#: data/platform.appdata.xml.in:101
 msgid "Rebase on GNOME 44 runtime"
 msgstr "重定基底到 GNOME 44 執行環境上"
 
-#: data/platform.appdata.xml.in:29
+#: data/platform.appdata.xml.in:102
 msgid "Update Granite to 7.2.0"
 msgstr "將 Granite 更新到 7.2.0"
 
-#: data/platform.appdata.xml.in:30
+#: data/platform.appdata.xml.in:103
 msgid "Update Icons to 7.2.0"
 msgstr "將《圖示》更新到 7.2.0"
 
-#: data/platform.appdata.xml.in:31
+#: data/platform.appdata.xml.in:104
 msgid "Update Stylesheet to 7.1.0"
 msgstr "將《樣式表》更新到 7.1.0"
 
-#: data/platform.appdata.xml.in:40
+#: data/platform.appdata.xml.in:112
 msgid "Update Granite to 7.1.0"
 msgstr "將 Granite 更新到 7.1.0"
 
-#: data/platform.appdata.xml.in:41
+#: data/platform.appdata.xml.in:113
 msgid "Update Icons to 7.1.0"
 msgstr "將《圖示》更新到 7.1.0"
 
-#: data/platform.appdata.xml.in:42
+#: data/platform.appdata.xml.in:114
 msgid "Update Stylesheet to 7.0.1"
 msgstr "將《樣式表》更新到 7.0.1"
 
-#: data/platform.appdata.xml.in:50
+#: data/platform.appdata.xml.in:122
 msgid "Rebase on GNOME 42 runtime"
 msgstr "重定基底到 GNOME 42 執行環境上"
 
-#: data/platform.appdata.xml.in:51
+#: data/platform.appdata.xml.in:123
 msgid "Initial support for Gtk4"
 msgstr "Gtk4 的初期支援"
 
-#: data/platform.appdata.xml.in:59
+#: data/platform.appdata.xml.in:131
 msgid "Rebase on GNOME 41 runtime"
 msgstr "重定基底到 GNOME 41 執行環境上"
 
-#: data/platform.appdata.xml.in:60
+#: data/platform.appdata.xml.in:132
 msgid "Added elementary and freedesktop sound themes"
 msgstr "新增 elementary 和 freedesktop 音效主題"
 
-#: data/platform.appdata.xml.in:61
+#: data/platform.appdata.xml.in:133
 msgid "Use the correct stylesheet on OS 5"
 msgstr "在 elementary OS 5 上使用正確的樣式表"
 
-#: data/platform.appdata.xml.in:67
+#: data/platform.appdata.xml.in:139
 msgid "Fixes:"
 msgstr "修正："
 
-#: data/platform.appdata.xml.in:69
+#: data/platform.appdata.xml.in:141
 msgid "Fix localization issues with apps that use Granite"
 msgstr "修正使用 Granite 的應用程式中發生的本地化問題"
 
-#: data/platform.appdata.xml.in:73
+#: data/platform.appdata.xml.in:145
 msgid "Use the settings portal for time and date settings"
 msgstr "透過設定值桌面入口來存取時間與日期設定值"
 
-#: data/platform.appdata.xml.in:74
+#: data/platform.appdata.xml.in:146
 msgid ""
 "Use the settings portal for color scheme preference instead of requiring an "
 "AccountsService hole"
 msgstr "透過設定值桌面入口來存取配色方案偏好，而非要求存取 AccountsService"
 
-#: data/platform.appdata.xml.in:75
+#: data/platform.appdata.xml.in:147
 msgid "Update elementary stylesheet to 6.1.0"
 msgstr "將 elementary 樣式表更新到 6.1.0"
 
-#: data/platform.appdata.xml.in:76
+#: data/platform.appdata.xml.in:148
 msgid "Update Granite to 6.1.2"
 msgstr "將 Granite 更新到 6.1.2"
 
-#: data/platform.appdata.xml.in:82
+#: data/platform.appdata.xml.in:154
 msgid "Add support for ARM (aarch64)"
 msgstr "新增對 ARM (aarch64) 的支援"
 
-#: data/platform.appdata.xml.in:87 data/sdk.appdata.xml.in:15
+#: data/platform.appdata.xml.in:159 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
 msgstr "初次發佈"
 
-#: data/platform.appdata.xml.in:91 data/sdk.appdata.xml.in:19
+#: data/platform.appdata.xml.in:164 data/sdk.appdata.xml.in:20
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
