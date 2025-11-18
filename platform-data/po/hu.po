@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-11 22:23+0900\n"
-"PO-Revision-Date: 2024-05-07 22:13+0000\n"
-"Last-Translator: György Viktor <wickdj@gmail.com>\n"
-"Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
+"PO-Revision-Date: 2025-11-19 08:55+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Language-Team: Hungarian <https://l10n.elementaryos.org/projects/desktop/"
 "flatpak-platform/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -28,10 +28,8 @@ msgid "Build Flatpak apps for elementary OS"
 msgstr "Készítsen Flatpak alkalmazásokat elementary OS-hez"
 
 #: data/platform.appdata.xml.in:10
-#, fuzzy
-#| msgid "The flatpak platform for elementary OS and AppCenter."
 msgid "The Flatpak platform for elementary OS and AppCenter."
-msgstr "Az elementary OS és az Appközpont flatpak platformja."
+msgstr "Az elementary OS és az Appközpont Flatpak platformja."
 
 #: data/platform.appdata.xml.in:16 data/platform.appdata.xml.in:27
 #: data/platform.appdata.xml.in:37 data/platform.appdata.xml.in:47
@@ -45,29 +43,23 @@ msgstr "Platformfrissítések:"
 
 #: data/platform.appdata.xml.in:18
 msgid "Rebase on GNOME 49 runtime"
-msgstr ""
+msgstr "Újraalapozva GNOME 49 futtatókörnyezetre"
 
 #: data/platform.appdata.xml.in:19
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.7.0"
-msgstr "Granite frissítve 7.3.0-ra"
+msgstr "Granite frissítve 7.7.0-ra"
 
 #: data/platform.appdata.xml.in:20
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Icons to 8.2.0"
-msgstr "Granite frissítve 7.3.0-ra"
+msgstr "Ikonok frissítve 8.2.0-ra"
 
 #: data/platform.appdata.xml.in:29
 msgid "Fix ARM (aarch64) builds not available"
 msgstr ""
 
 #: data/platform.appdata.xml.in:30
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update xcursorgen to 1.0.9"
-msgstr "Granite frissítve 7.3.0-ra"
+msgstr "xcursorgen frissítve 1.0.9-re"
 
 #: data/platform.appdata.xml.in:39
 msgid "Rebase on GNOME 48 runtime"
