@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-11 22:23+0900\n"
-"PO-Revision-Date: 2024-07-19 17:16+0000\n"
-"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
-"Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/flatpak-"
-"platform/es/>\n"
+"PO-Revision-Date: 2025-11-20 21:55+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <italo@gp-mail.com>\n"
+"Language-Team: Spanish <https://l10n.elementaryos.org/projects/desktop/"
+"flatpak-platform/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -42,146 +42,101 @@ msgid "Platform updates:"
 msgstr "Actualizaciones de la plataforma:"
 
 #: data/platform.appdata.xml.in:18
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 49 runtime"
 msgstr ""
-"Se unificó y reorganizó (rebase) el repositorio con el entorno de ejecución "
-"de GNOME 44"
+"Se reorganizó (rebase) el repositorio con el entorno de ejecución de GNOME 49"
 
 #: data/platform.appdata.xml.in:19
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.7.0"
-msgstr "Se actualizó Granite a 7.3.0"
+msgstr "Se actualizó Granite a 7.7.0"
 
 #: data/platform.appdata.xml.in:20
-#, fuzzy
-#| msgid "Update Icons to 7.2.0"
 msgid "Update Icons to 8.2.0"
-msgstr "Se actualizaron los iconos a 7.2.0"
+msgstr "Se actualizaron los iconos a 8.2.0"
 
 #: data/platform.appdata.xml.in:29
 msgid "Fix ARM (aarch64) builds not available"
-msgstr ""
+msgstr "Se corrigió para que los archivos para ARM (aarch64) estén disponibles"
 
 #: data/platform.appdata.xml.in:30
-#, fuzzy
-#| msgid "Update Icons to 7.1.0"
 msgid "Update xcursorgen to 1.0.9"
-msgstr "Se actualizaron los iconos a 7.1.0"
+msgstr "Se actualizó «xcursorgen» a 1.0.9"
 
 #: data/platform.appdata.xml.in:39
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 48 runtime"
 msgstr ""
-"Se unificó y reorganizó (rebase) el repositorio con el entorno de ejecución "
-"de GNOME 44"
+"Se reorganizó (rebase) el repositorio con el entorno de ejecución de GNOME 48"
 
 #: data/platform.appdata.xml.in:40
-#, fuzzy
-#| msgid "Update Stylesheet to 7.2.0"
 msgid "Update Stylesheet to 8.2.1"
-msgstr "Se actualizaron las hojas de estilo a 7.2.0"
+msgstr "Se actualizaron las hojas de estilo a 8.2.1"
 
 #: data/platform.appdata.xml.in:49
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 47 runtime"
 msgstr ""
-"Se unificó y reorganizó (rebase) el repositorio con el entorno de ejecución "
-"de GNOME 44"
+"Se reorganizó (rebase) el repositorio con el entorno de ejecución de GNOME 47"
 
 #: data/platform.appdata.xml.in:50
-#, fuzzy
-#| msgid "Update Stylesheet to 7.0.1"
 msgid "Update LibPortal to 0.9.1"
-msgstr "Se actualizaron las hojas de estilo a 7.0.1"
+msgstr "Se actualizó LibPortal a 0.9.1"
 
 #: data/platform.appdata.xml.in:58
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.6.0"
-msgstr "Se actualizó Granite a 7.3.0"
+msgstr "Se actualizó Granite a 7.6.0"
 
 #: data/platform.appdata.xml.in:59
-#, fuzzy
-#| msgid "Update Icons to 7.1.0"
 msgid "Update Icons to 8.1.0"
-msgstr "Se actualizaron los iconos a 7.1.0"
+msgstr "Se actualizaron los iconos a 8.1.0"
 
 #: data/platform.appdata.xml.in:60
-#, fuzzy
-#| msgid "Update Stylesheet to 7.2.0"
 msgid "Update Stylesheet to 8.2.0"
-msgstr "Se actualizaron las hojas de estilo a 7.2.0"
+msgstr "Se actualizaron las hojas de estilo a 8.2.0"
 
 #: data/platform.appdata.xml.in:61
-#, fuzzy
-#| msgid "Update Stylesheet to 7.0.1"
 msgid "Update LibPortal to 0.8.1"
-msgstr "Se actualizaron las hojas de estilo a 7.0.1"
+msgstr "Se actualizó LibPortal a 0.8.1"
 
 #: data/platform.appdata.xml.in:69
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 46 runtime"
 msgstr ""
-"Se unificó y reorganizó (rebase) el repositorio con el entorno de ejecución "
-"de GNOME 44"
+"Se reorganizó (rebase) el repositorio con el entorno de ejecución de GNOME 46"
 
 #: data/platform.appdata.xml.in:70
 msgid "Add LibPortal"
-msgstr ""
+msgstr "Se agregó LibPortal"
 
 #: data/platform.appdata.xml.in:71
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.5.0"
-msgstr "Se actualizó Granite a 7.3.0"
+msgstr "Se actualizó Granite a 7.5.0"
 
 #: data/platform.appdata.xml.in:72
-#, fuzzy
-#| msgid "Update Icons to 7.3.0"
 msgid "Update Icons to 8.0.0"
-msgstr "Se actualizaron los iconos a 7.3.0"
+msgstr "Se actualizaron los iconos a 8.0.0"
 
 #: data/platform.appdata.xml.in:73
-#, fuzzy
-#| msgid "Update Stylesheet to 7.2.0"
 msgid "Update Stylesheet to 8.0.0"
-msgstr "Se actualizaron las hojas de estilo a 7.2.0"
+msgstr "Se actualizaron las hojas de estilo a 8.0.0"
 
 #: data/platform.appdata.xml.in:81
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 45 runtime"
 msgstr ""
-"Se unificó y reorganizó (rebase) el repositorio con el entorno de ejecución "
-"de GNOME 44"
+"Se reorganizó (rebase) el repositorio con el entorno de ejecución de GNOME 45"
 
 #: data/platform.appdata.xml.in:82
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.4.0"
-msgstr "Se actualizó Granite a 7.3.0"
+msgstr "Se actualizó Granite a 7.4.0"
 
 #: data/platform.appdata.xml.in:83
-#, fuzzy
-#| msgid "Update Stylesheet to 7.2.0"
 msgid "Update Stylesheet to 7.3.0"
-msgstr "Se actualizaron las hojas de estilo a 7.2.0"
+msgstr "Se actualizaron las hojas de estilo a 7.3.0"
 
 #: data/platform.appdata.xml.in:91
 msgid "Update Granite to 7.3.0"
 msgstr "Se actualizó Granite a 7.3.0"
 
 #: data/platform.appdata.xml.in:92
-#, fuzzy
-#| msgid "Update Icons to 7.3.0"
 msgid "Update Icons to 7.3.1"
-msgstr "Se actualizaron los iconos a 7.3.0"
+msgstr "Se actualizaron los iconos a 7.3.1"
 
 #: data/platform.appdata.xml.in:93
 msgid "Update Stylesheet to 7.2.0"
