@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-11 22:23+0900\n"
-"PO-Revision-Date: 2025-08-02 18:55+0000\n"
+"PO-Revision-Date: 2025-12-04 10:55+0000\n"
 "Last-Translator: lenify <lenify@tutanota.com>\n"
 "Language-Team: Belarusian <https://l10n.elementaryos.org/projects/desktop/"
 "flatpak-platform/be/>\n"
@@ -43,136 +43,96 @@ msgid "Platform updates:"
 msgstr "Абнаўленні платформы:"
 
 #: data/platform.appdata.xml.in:18
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 49 runtime"
-msgstr "Змена асяроддзя выканання на GNOME 44"
+msgstr "Змена асяроддзя выканання на GNOME 49"
 
 #: data/platform.appdata.xml.in:19
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.7.0"
-msgstr "Абнаўленне Granite да 7.3.0"
+msgstr "Абнаўленне Granite да 7.7.0"
 
 #: data/platform.appdata.xml.in:20
-#, fuzzy
-#| msgid "Update Icons to 7.2.0"
 msgid "Update Icons to 8.2.0"
-msgstr "Абнаўленне значкоў да 7.2.0"
+msgstr "Абнаўленне значкоў да 8.2.0"
 
 #: data/platform.appdata.xml.in:29
 msgid "Fix ARM (aarch64) builds not available"
-msgstr ""
+msgstr "Выпраўленне недаступнасці выпускаў ARM (aarch64)"
 
 #: data/platform.appdata.xml.in:30
-#, fuzzy
-#| msgid "Update Icons to 7.1.0"
 msgid "Update xcursorgen to 1.0.9"
-msgstr "Абнаўленне значкоў да 7.1.0"
+msgstr "Абнаўленне xcursorgen да 1.0.9"
 
 #: data/platform.appdata.xml.in:39
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 48 runtime"
-msgstr "Змена асяроддзя выканання на GNOME 44"
+msgstr "Змена асяроддзя выканання на GNOME 48"
 
 #: data/platform.appdata.xml.in:40
-#, fuzzy
-#| msgid "Update Stylesheet to 7.2.0"
 msgid "Update Stylesheet to 8.2.1"
-msgstr "Абнаўленне табліцы стыляў да 7.2.0"
+msgstr "Абнаўленне табліцы стыляў да 8.2.1"
 
 #: data/platform.appdata.xml.in:49
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 47 runtime"
-msgstr "Змена асяроддзя выканання на GNOME 44"
+msgstr "Змена асяроддзя выканання на GNOME 47"
 
 #: data/platform.appdata.xml.in:50
-#, fuzzy
-#| msgid "Update Stylesheet to 7.0.1"
 msgid "Update LibPortal to 0.9.1"
-msgstr "Абнаўленне табліцы стыляў да 7.0.1"
+msgstr "Абнаўленне LibPortal стыляў да 0.9.1"
 
 #: data/platform.appdata.xml.in:58
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.6.0"
-msgstr "Абнаўленне Granite да 7.3.0"
+msgstr "Абнаўленне Granite да 7.6.0"
 
 #: data/platform.appdata.xml.in:59
-#, fuzzy
-#| msgid "Update Icons to 7.1.0"
 msgid "Update Icons to 8.1.0"
-msgstr "Абнаўленне значкоў да 7.1.0"
+msgstr "Абнаўленне значкоў да 8.1.0"
 
 #: data/platform.appdata.xml.in:60
-#, fuzzy
-#| msgid "Update Stylesheet to 7.2.0"
 msgid "Update Stylesheet to 8.2.0"
-msgstr "Абнаўленне табліцы стыляў да 7.2.0"
+msgstr "Абнаўленне табліцы стыляў да 8.2.0"
 
 #: data/platform.appdata.xml.in:61
-#, fuzzy
-#| msgid "Update Stylesheet to 7.0.1"
 msgid "Update LibPortal to 0.8.1"
-msgstr "Абнаўленне табліцы стыляў да 7.0.1"
+msgstr "Абнаўленне LibPortal да 0.8.1"
 
 #: data/platform.appdata.xml.in:69
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 46 runtime"
-msgstr "Змена асяроддзя выканання на GNOME 44"
+msgstr "Змена асяроддзя выканання на GNOME 46"
 
 #: data/platform.appdata.xml.in:70
 msgid "Add LibPortal"
-msgstr ""
+msgstr "Даданы LibPortal"
 
 #: data/platform.appdata.xml.in:71
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.5.0"
-msgstr "Абнаўленне Granite да 7.3.0"
+msgstr "Абнаўленне Granite да 7.5.0"
 
 #: data/platform.appdata.xml.in:72
-#, fuzzy
-#| msgid "Update Icons to 7.3.0"
 msgid "Update Icons to 8.0.0"
-msgstr "Абнаўленне значкоў да 7.3.0"
+msgstr "Абнаўленне значкоў да 8.0.0"
 
 #: data/platform.appdata.xml.in:73
-#, fuzzy
-#| msgid "Update Stylesheet to 7.2.0"
 msgid "Update Stylesheet to 8.0.0"
-msgstr "Абнаўленне табліцы стыляў да 7.2.0"
+msgstr "Абнаўленне табліцы стыляў да 8.0.0"
 
 #: data/platform.appdata.xml.in:81
-#, fuzzy
-#| msgid "Rebase on GNOME 44 runtime"
 msgid "Rebase on GNOME 45 runtime"
-msgstr "Змена асяроддзя выканання на GNOME 44"
+msgstr "Змена асяроддзя выканання на GNOME 45"
 
 #: data/platform.appdata.xml.in:82
-#, fuzzy
-#| msgid "Update Granite to 7.3.0"
 msgid "Update Granite to 7.4.0"
-msgstr "Абнаўленне Granite да 7.3.0"
+msgstr "Абнаўленне Granite да 7.4.0"
 
 #: data/platform.appdata.xml.in:83
-#, fuzzy
-#| msgid "Update Stylesheet to 7.2.0"
 msgid "Update Stylesheet to 7.3.0"
-msgstr "Абнаўленне табліцы стыляў да 7.2.0"
+msgstr "Абнаўленне табліцы стыляў да 7.3.0"
 
 #: data/platform.appdata.xml.in:91
 msgid "Update Granite to 7.3.0"
 msgstr "Абнаўленне Granite да 7.3.0"
 
 #: data/platform.appdata.xml.in:92
-#, fuzzy
-#| msgid "Update Icons to 7.3.0"
 msgid "Update Icons to 7.3.1"
-msgstr "Абнаўленне значкоў да 7.3.0"
+msgstr "Абнаўленне значкоў да 7.3.1"
 
 #: data/platform.appdata.xml.in:93
 msgid "Update Stylesheet to 7.2.0"
