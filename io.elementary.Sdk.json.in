@@ -3,16 +3,16 @@
     "id": "io.elementary.Sdk",
     "id-platform": "io.elementary.Platform",
     "default-branch": "@branch@",
-    "runtime-version": "49",
-    "runtime": "org.gnome.Platform",
-    "sdk": "org.gnome.Sdk",
+    "runtime-version": "25.08",
+    "runtime": "org.freedesktop.Platform",
+    "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
-        "org.gnome.Sdk.Debug",
-        "org.gnome.Sdk.Locale",
-        "org.gnome.Sdk.Docs"
+        "org.freedesktop.Sdk.Debug",
+        "org.freedesktop.Sdk.Locale",
+        "org.freedesktop.Sdk.Docs"
     ],
     "platform-extensions": [
-        "org.gnome.Platform.Locale"
+        "org.freedesktop.Platform.Locale"
     ],
     "inherit-extensions": [
         "org.freedesktop.Platform.GL",
