@@ -51,6 +51,47 @@
     },
     "modules": [
         {
+            "name": "vala",
+            "cleanup": [
+                "*"
+            ],
+            "buildsystem": "autotools",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/vala.git",
+                    "tag": "0.56.18",
+                    "commit": "0996c1b8604c77f854854daa874a08579d1b9c1a",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
+                }
+            ],
+            "modules": [
+                {
+                    "name": "graphviz",
+                    "cleanup": [
+                        "/include",
+                        "/bin",
+                        "/share/graphviz"
+                    ],
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://gitlab.com/graphviz/graphviz.git",
+                            "tag": "14.1.0",
+                            "commit": "dc69e2feb5d8e621b4eaf01f208906503ef9b973",
+                            "x-checker-data": {
+                                "type": "git",
+                                "tag-pattern": "^([\\d.]+)$"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "icons",
             "buildsystem": "meson",
             "sources": [
