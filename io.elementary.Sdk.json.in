@@ -93,8 +93,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/stylesheet.git",
-                    "tag": "8.2.1",
-                    "commit": "5bd252f584929be05e3a0cef23aba4d006c3c133",
+                    "tag": "8.2.2",
+                    "commit": "9cfb767873d583f6ed29e96cf27728bb69fd9237",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
