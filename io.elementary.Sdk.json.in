@@ -79,7 +79,7 @@
                         {
                             "type": "archive",
                             "url": "https://gitlab.com/graphviz/graphviz/-/archive/14.1.0/graphviz-14.1.0.tar.gz",
-                            "sha256": "094e87ed6946ff71f5d27cd754d46bd62429ac7ff3ca20b5648a3977c62df556",
+                            "sha256": "71fc8b295d51847e66844ab41825cfb653ef8b5671b5cd2ab36cd14d28a03cfb",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 1249,
