@@ -53,7 +53,7 @@ jobs:
           driver-opts: network=host
 
       - name: Build & push the base image to local registry
-        uses: docker/build-push-action@v6.18.0
+        uses: docker/build-push-action@v6.19.2
         with:
           context: .
           push: true
@@ -74,7 +74,7 @@ jobs:
           echo "additional_tags=,ghcr.io/${{ github.repository }}/runtime:${{ matrix.version }}" >> $GITHUB_ENV
 
       - name: Build & push the ${{ matrix.version }}-${{ matrix.arch }} image
-        uses: docker/build-push-action@v6.18.0
+        uses: docker/build-push-action@v6.19.2
         with:
           context: .
           push: true
