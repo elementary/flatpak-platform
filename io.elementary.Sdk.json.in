@@ -3,16 +3,16 @@
     "id": "io.elementary.Sdk",
     "id-platform": "io.elementary.Platform",
     "default-branch": "@branch@",
-    "runtime-version": "49",
-    "runtime": "org.gnome.Platform",
-    "sdk": "org.gnome.Sdk",
+    "runtime-version": "25.08",
+    "runtime": "org.freedesktop.Platform",
+    "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
-        "org.gnome.Sdk.Debug",
-        "org.gnome.Sdk.Locale",
-        "org.gnome.Sdk.Docs"
+        "org.freedesktop.Sdk.Debug",
+        "org.freedesktop.Sdk.Locale",
+        "org.freedesktop.Sdk.Docs"
     ],
     "platform-extensions": [
-        "org.gnome.Platform.Locale"
+        "org.freedesktop.Platform.Locale"
     ],
     "inherit-extensions": [
         "org.freedesktop.Platform.GL",
@@ -50,6 +50,153 @@
         }
     },
     "modules": [
+        {
+            "name": "vala",
+            "cleanup": [
+                "*"
+            ],
+            "buildsystem": "autotools",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/vala/0.56/vala-0.56.18.tar.xz",
+                    "sha256": "f2affe7d40ab63db8e7b9ecc3f6bdc9c2fc7e3134c84ff2d795f482fe926a382",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "vala"
+                    }
+                }
+            ],
+            "modules": [
+                {
+                    "name": "graphviz",
+                    "cleanup": [
+                        "/include",
+                        "/bin",
+                        "/share/graphviz"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://gitlab.com/graphviz/graphviz/-/archive/14.1.0/graphviz-14.1.0.tar.gz",
+                            "sha256": "71fc8b295d51847e66844ab41825cfb653ef8b5671b5cd2ab36cd14d28a03cfb",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 1249,
+                                "url-template": "https://gitlab.com/graphviz/graphviz/-/archive/$version/graphviz-$version.tar.gz"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "libgee",
+            "buildsystem": "autotools",
+            "build-options": {
+                "cflags": "-Wno-error=incompatible-pointer-types"
+            },
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz",
+                    "sha256": "189815ac143d89867193b0c52b7dc31f3aa108a15f04d6b5dca2b6adfad0b0ee",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "libgee"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "gtk",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dintrospection=enabled",
+                "-Dbuild-demos=false",
+                "-Dbuild-testsuite=false",
+                "-Dbuild-examples=false",
+                "-Dbuild-tests=false"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gtk/4.18/gtk-4.18.6.tar.xz",
+                    "sha256": "e1817c650ddc3261f9a8345b3b22a26a5d80af154630dedc03cc7becefffd0fa",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gtk",
+                        "versions": {
+                            "<": "4.19"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "sassc",
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/sass/sassc.git",
+                    "tag": "3.6.2"
+                },
+                {
+                    "type": "script",
+                    "dest-filename": "autogen.sh",
+                    "commands": [
+                        "autoreconf -si"
+                    ]
+                }
+            ],
+            "modules": [
+                {
+                    "name": "libsass",
+                    "cleanup": [
+                        "*"
+                    ],
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/sass/libsass.git",
+                            "tag": "3.6.5"
+                        },
+                        {
+                            "type": "script",
+                            "dest-filename": "autogen.sh",
+                            "commands": [
+                                "autoreconf -si"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "libadwaita",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dtests=false",
+                "-Dexamples=false"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libadwaita/1.7/libadwaita-1.7.10.tar.xz",
+                    "sha256": "50435b2b2d49be19cd9b0b84d2bb775b8741e71e2555d26a73f81d1ab1e29033",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "libadwaita",
+                        "versions": {
+                            "<": "1.8"
+                        }
+                    }
+                }
+            ]
+        },
         {
             "name": "icons",
             "buildsystem": "meson",
@@ -99,50 +246,6 @@
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
                     }
-                }
-            ],
-            "modules": [
-                {
-                    "name": "sassc",
-                    "cleanup": [
-                        "*"
-                    ],
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/sass/sassc.git",
-                            "tag": "3.6.2"
-                        },
-                        {
-                            "type": "script",
-                            "dest-filename": "autogen.sh",
-                            "commands": [
-                                "autoreconf -si"
-                            ]
-                        }
-                    ],
-                    "modules": [
-                        {
-                            "name": "libsass",
-                            "cleanup": [
-                                "*"
-                            ],
-                            "sources": [
-                                {
-                                    "type": "git",
-                                    "url": "https://github.com/sass/libsass.git",
-                                    "tag": "3.6.5"
-                                },
-                                {
-                                    "type": "script",
-                                    "dest-filename": "autogen.sh",
-                                    "commands": [
-                                        "autoreconf -si"
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
                 }
             ]
         },
