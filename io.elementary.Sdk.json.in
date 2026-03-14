@@ -52,7 +52,7 @@
     "modules": [
         {
             "name": "vala",
-            "cleanup": [
+            "cleanup-platform": [
                 "*"
             ],
             "buildsystem": "autotools",
