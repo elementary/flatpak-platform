@@ -175,8 +175,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "7.8.0",
-                    "commit": "9d59c4a348de7f69c312ce9eabc154dcdc6c550f",
+                    "tag": "7.8.1",
+                    "commit": "4cd5188619e65f2f2410c9af834df903f6e4f85e",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
