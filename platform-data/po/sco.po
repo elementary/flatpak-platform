@@ -8,28 +8,28 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-11 22:23+0900\n"
-"PO-Revision-Date: 2025-04-16 14:55+0000\n"
-"Last-Translator: Ben Gordon Agnew <ben.gordon@posteo.de>\n"
-"Language-Team: Scots <https://l10n.elementaryos.org/projects/desktop/flatpak-"
-"platform/sco/>\n"
+"PO-Revision-Date: 2026-04-04 02:32+0000\n"
+"Last-Translator: Buni <ben.gordon@posteo.de>\n"
+"Language-Team: Scots <https://l10n.elementaryos.org/projects/desktop/"
+"flatpak-platform/sco/>\n"
 "Language: sco\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
-msgstr ""
+msgstr "elementary App Platform"
 
 #: data/platform.appdata.xml.in:8 data/sdk.appdata.xml.in:8
 msgid "Build Flatpak apps for elementary OS"
-msgstr ""
+msgstr "Big Flatpak apps fur elementary OS"
 
 #: data/platform.appdata.xml.in:10
 msgid "The Flatpak platform for elementary OS and AppCenter."
-msgstr ""
+msgstr "The Flatpak platform fur elementary OS an AppCenter."
 
 #: data/platform.appdata.xml.in:16 data/platform.appdata.xml.in:27
 #: data/platform.appdata.xml.in:37 data/platform.appdata.xml.in:47
@@ -39,39 +39,39 @@ msgstr ""
 #: data/platform.appdata.xml.in:120 data/platform.appdata.xml.in:129
 #: data/platform.appdata.xml.in:143
 msgid "Platform updates:"
-msgstr ""
+msgstr "Platform updates:"
 
 #: data/platform.appdata.xml.in:18
 msgid "Rebase on GNOME 49 runtime"
-msgstr ""
+msgstr "Rebase on GNOME 49 rintime"
 
 #: data/platform.appdata.xml.in:19
 msgid "Update Granite to 7.7.0"
-msgstr ""
+msgstr "Update Granite tae 7.7.0"
 
 #: data/platform.appdata.xml.in:20
 msgid "Update Icons to 8.2.0"
-msgstr ""
+msgstr "Update Icons tae 8.2.0"
 
 #: data/platform.appdata.xml.in:29
 msgid "Fix ARM (aarch64) builds not available"
-msgstr ""
+msgstr "Fix ARM (aarch64) builds arna available"
 
 #: data/platform.appdata.xml.in:30
 msgid "Update xcursorgen to 1.0.9"
-msgstr ""
+msgstr "Update xcursorgen tae 1.0.9"
 
 #: data/platform.appdata.xml.in:39
 msgid "Rebase on GNOME 48 runtime"
-msgstr ""
+msgstr "Rebase on GNOME 48 rintime"
 
 #: data/platform.appdata.xml.in:40
 msgid "Update Stylesheet to 8.2.1"
-msgstr ""
+msgstr "Update Stylesheet tae 8.2.1"
 
 #: data/platform.appdata.xml.in:49
 msgid "Rebase on GNOME 47 runtime"
-msgstr ""
+msgstr "Rebase on GNOME 47 rintime"
 
 #: data/platform.appdata.xml.in:50
 msgid "Update LibPortal to 0.9.1"
