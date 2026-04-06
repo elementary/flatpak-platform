@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+ARG TARGETARCH
+
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
@@ -10,5 +12,5 @@ RUN apt-get update && \
 
 RUN flatpak remote-add --if-not-exists appcenter https://flatpak.elementary.io/repo.flatpakrepo
 
-ADD https://raw.githubusercontent.com/flatpak/flat-manager/master/flat-manager-client /usr/bin
+ADD https://github.com/flatpak/flat-manager/releases/download/0.5.0/flat-manager-client.$TARGETARCH /usr/bin/flat-manager-client
 RUN chmod +x /usr/bin/flat-manager-client
