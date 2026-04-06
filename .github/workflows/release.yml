@@ -23,17 +23,19 @@ jobs:
           - name: x86
             runs-on: ubuntu-22.04
             architecture: x86_64
+            flat-manager-suffix: amd64
 
           - name: ARM
             runs-on: ubuntu-22.04-arm
             architecture: aarch64
+            flat-manager-suffix: arm64
 
     if: github.event.pull_request.merged == true && true == contains(join(github.event.pull_request.labels.*.name), 'Release')
 
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-        
+
       - name: Clean
         uses: ./.github/actions/maximize-build-space
 
@@ -43,7 +45,7 @@ jobs:
           sudo apt install -y ccache flatpak flatpak-builder gir1.2-ostree-1.0 meson python3-aiohttp python3-gi python3-tenacity xvfb zstd
           sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
 
-          curl https://raw.githubusercontent.com/flatpak/flat-manager/0.3.7/flat-manager-client > ./flat-manager-client
+          curl https://github.com/flatpak/flat-manager/releases/download/0.5.0/flat-manager-client.${{ matrix.configuration.flat-manager-suffix }} > ./flat-manager-client
           sudo mv ./flat-manager-client /usr/bin/flat-manager-client
           sudo chown root: /usr/bin/flat-manager-client
           sudo chmod +x /usr/bin/flat-manager-client
