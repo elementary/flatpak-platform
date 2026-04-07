@@ -24,11 +24,13 @@ jobs:
             runs-on: ubuntu-22.04
             architecture: x86_64
             flat-manager-suffix: amd64
+            flat-manager-sha256: 9733a148ac185bc8d7fb0429a43f9ad7d934635760bb71933658642c697f87c9
 
           - name: ARM
             runs-on: ubuntu-22.04-arm
             architecture: aarch64
             flat-manager-suffix: arm64
+            flat-manager-sha256: fa9a916badc539ff7319895789f004dc99b81eb8e90a75857232121650335956
 
     if: github.event.pull_request.merged == true && true == contains(join(github.event.pull_request.labels.*.name), 'Release')
 
@@ -46,6 +48,11 @@ jobs:
           sudo rm -rf /var/lib/{apt,dpkg,cache,log}/
 
           curl -L https://github.com/flatpak/flat-manager/releases/download/0.5.0/flat-manager-client.${{ matrix.configuration.flat-manager-suffix }} -o ./flat-manager-client
+          SHA256_CALC=$(sha256sum ./flat-manager-client | awk '{ print $1 }')
+          if [ "$SHA256_CALC" != "${{ matrix.configuration.flat-manager-sha256 }}" ]; then
+            echo "flat-manager-client verify error! got $SHA256_CALC"
+            exit 1
+          fi
           sudo mv ./flat-manager-client /usr/bin/flat-manager-client
           sudo chown root: /usr/bin/flat-manager-client
           sudo chmod +x /usr/bin/flat-manager-client
