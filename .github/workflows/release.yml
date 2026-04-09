@@ -21,13 +21,13 @@ jobs:
       matrix:
         configuration:
           - name: x86
-            runs-on: ubuntu-22.04
+            runs-on: ubuntu-24.04
             architecture: x86_64
             flat-manager-suffix: amd64
             flat-manager-sha256: 9733a148ac185bc8d7fb0429a43f9ad7d934635760bb71933658642c697f87c9
 
           - name: ARM
-            runs-on: ubuntu-22.04-arm
+            runs-on: ubuntu-24.04-arm
             architecture: aarch64
             flat-manager-suffix: arm64
             flat-manager-sha256: fa9a916badc539ff7319895789f004dc99b81eb8e90a75857232121650335956
