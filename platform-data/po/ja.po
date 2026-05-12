@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-12 07:54+0900\n"
-"PO-Revision-Date: 2025-11-13 08:55+0000\n"
+"PO-Revision-Date: 2026-05-12 16:56+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementaryos.org/projects/desktop/"
 "flatpak-platform/ja/>\n"
@@ -42,26 +42,20 @@ msgid "Platform updates:"
 msgstr "プラットフォームのアップデート:"
 
 #: data/platform.appdata.xml.in:18
-#, fuzzy
-#| msgid "Rebase on GNOME 45 runtime"
 msgid "Rebase on GNOME 50 runtime"
-msgstr "ベースを GNOME 45 ランタイムに変更"
+msgstr "ベースを GNOME 50 ランタイムに変更"
 
 #: data/platform.appdata.xml.in:19
-#, fuzzy
-#| msgid "Update Granite to 7.7.0"
 msgid "Update Granite to 7.8.1"
-msgstr "Granite を 7.7.0 にアップデート"
+msgstr "Granite を 7.8.1 にアップデート"
 
 #: data/platform.appdata.xml.in:20
 msgid "Update Icons to 8.2.0"
 msgstr "“アイコン”を 8.2.0 にアップデート"
 
 #: data/platform.appdata.xml.in:21
-#, fuzzy
-#| msgid "Update Stylesheet to 8.2.1"
 msgid "Update Stylesheet to 8.2.2"
-msgstr "“スタイルシート”を 8.2.1 にアップデート"
+msgstr "“スタイルシート”を 8.2.2 にアップデート"
 
 #: data/platform.appdata.xml.in:30
 msgid "Fix ARM (aarch64) builds not available"
