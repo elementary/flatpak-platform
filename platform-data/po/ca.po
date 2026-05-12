@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-12 07:54+0900\n"
-"PO-Revision-Date: 2025-11-13 08:55+0000\n"
+"PO-Revision-Date: 2026-05-12 08:55+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementaryos.org/projects/desktop/"
 "flatpak-platform/ca/>\n"
@@ -43,26 +43,20 @@ msgid "Platform updates:"
 msgstr "Actualitzacions de la plataforma:"
 
 #: data/platform.appdata.xml.in:18
-#, fuzzy
-#| msgid "Rebase on GNOME 45 runtime"
 msgid "Rebase on GNOME 50 runtime"
-msgstr "Rebase en l'entorn d'execució del GNOME 45"
+msgstr "Rebase en l'entorn d'execució del GNOME 50"
 
 #: data/platform.appdata.xml.in:19
-#, fuzzy
-#| msgid "Update Granite to 7.7.0"
 msgid "Update Granite to 7.8.1"
-msgstr "Actualització de Granite a 7.7.0"
+msgstr "Actualització de Granite a 7.8.1"
 
 #: data/platform.appdata.xml.in:20
 msgid "Update Icons to 8.2.0"
 msgstr "Actualització de les icones a 8.2.0"
 
 #: data/platform.appdata.xml.in:21
-#, fuzzy
-#| msgid "Update Stylesheet to 8.2.1"
 msgid "Update Stylesheet to 8.2.2"
-msgstr "Actualització del full d'estils a la versió 8.2.1"
+msgstr "Actualització del full d'estils a la versió 8.2.2"
 
 #: data/platform.appdata.xml.in:30
 msgid "Fix ARM (aarch64) builds not available"
