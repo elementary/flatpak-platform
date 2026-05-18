@@ -23,16 +23,16 @@ jobs:
       matrix:
         configuration:
           - name: x86
-            runs-on: ubuntu-22.04
+            runs-on: ubuntu-24.04
             architecture: x86_64
 
           - name: ARM
-            runs-on: ubuntu-22.04-arm
+            runs-on: ubuntu-24.04-arm
             architecture: aarch64
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Clean
         uses: ./.github/actions/maximize-build-space

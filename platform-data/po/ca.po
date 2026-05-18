@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 11:24+0900\n"
-"PO-Revision-Date: 2023-07-12 15:07+0000\n"
+"POT-Creation-Date: 2026-05-12 07:54+0900\n"
+"PO-Revision-Date: 2026-05-12 08:55+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/"
+"Language-Team: Catalan <https://l10n.elementaryos.org/projects/desktop/"
 "flatpak-platform/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -32,87 +32,179 @@ msgid "The Flatpak platform for elementary OS and AppCenter."
 msgstr ""
 "La plataforma de Flatpak per a l'elementary OS i el Centre d'aplicacions"
 
-#: data/platform.appdata.xml.in:15 data/platform.appdata.xml.in:26
+#: data/platform.appdata.xml.in:16 data/platform.appdata.xml.in:28
 #: data/platform.appdata.xml.in:38 data/platform.appdata.xml.in:48
-#: data/platform.appdata.xml.in:57 data/platform.appdata.xml.in:71
+#: data/platform.appdata.xml.in:57 data/platform.appdata.xml.in:68
+#: data/platform.appdata.xml.in:80 data/platform.appdata.xml.in:90
+#: data/platform.appdata.xml.in:100 data/platform.appdata.xml.in:111
+#: data/platform.appdata.xml.in:121 data/platform.appdata.xml.in:130
+#: data/platform.appdata.xml.in:144
 msgid "Platform updates:"
 msgstr "Actualitzacions de la plataforma:"
 
-#: data/platform.appdata.xml.in:17
+#: data/platform.appdata.xml.in:18
+msgid "Rebase on GNOME 50 runtime"
+msgstr "Rebase en l'entorn d'execució del GNOME 50"
+
+#: data/platform.appdata.xml.in:19
+msgid "Update Granite to 7.8.1"
+msgstr "Actualització de Granite a 7.8.1"
+
+#: data/platform.appdata.xml.in:20
+msgid "Update Icons to 8.2.0"
+msgstr "Actualització de les icones a 8.2.0"
+
+#: data/platform.appdata.xml.in:21
+msgid "Update Stylesheet to 8.2.2"
+msgstr "Actualització del full d'estils a la versió 8.2.2"
+
+#: data/platform.appdata.xml.in:30
+msgid "Fix ARM (aarch64) builds not available"
+msgstr "Correcció de compilacions ARM (aarch64) no disponibles"
+
+#: data/platform.appdata.xml.in:31
+msgid "Update xcursorgen to 1.0.9"
+msgstr "Actualització d'xcursorgen a la versió 1.0.9"
+
+#: data/platform.appdata.xml.in:40
+msgid "Rebase on GNOME 48 runtime"
+msgstr "Rebase en l'entorn d'execució del GNOME 48"
+
+#: data/platform.appdata.xml.in:41
+msgid "Update Stylesheet to 8.2.1"
+msgstr "Actualització del full d'estils a la versió 8.2.1"
+
+#: data/platform.appdata.xml.in:50
+msgid "Rebase on GNOME 47 runtime"
+msgstr "Rebase en l'entorn d'execució del GNOME 47"
+
+#: data/platform.appdata.xml.in:51
+msgid "Update LibPortal to 0.9.1"
+msgstr "Actualització de LibPortal a la versió 0.9.1"
+
+#: data/platform.appdata.xml.in:59
+msgid "Update Granite to 7.6.0"
+msgstr "Actualització de Granite a la versió 7.6.0"
+
+#: data/platform.appdata.xml.in:60
+msgid "Update Icons to 8.1.0"
+msgstr "Actualització de les icones a la versió 8.1.0"
+
+#: data/platform.appdata.xml.in:61
+msgid "Update Stylesheet to 8.2.0"
+msgstr "Actualització del full d'estils a la versió 8.2.0"
+
+#: data/platform.appdata.xml.in:62
+msgid "Update LibPortal to 0.8.1"
+msgstr "Actualització de LibPortal a la versió 0.8.1"
+
+#: data/platform.appdata.xml.in:70
+msgid "Rebase on GNOME 46 runtime"
+msgstr "Rebase en l'entorn d'execució del GNOME 46"
+
+#: data/platform.appdata.xml.in:71
+msgid "Add LibPortal"
+msgstr "Afegeix LibPortal"
+
+#: data/platform.appdata.xml.in:72
+msgid "Update Granite to 7.5.0"
+msgstr "Actualització de Granite a la versió 7.5.0"
+
+#: data/platform.appdata.xml.in:73
+msgid "Update Icons to 8.0.0"
+msgstr "Actualització de les icones a la versió 8.0.0"
+
+#: data/platform.appdata.xml.in:74
+msgid "Update Stylesheet to 8.0.0"
+msgstr "Actualització del full d'estils a la versió 8.0.0"
+
+#: data/platform.appdata.xml.in:82
+msgid "Rebase on GNOME 45 runtime"
+msgstr "Rebase en l'entorn d'execució del GNOME 45"
+
+#: data/platform.appdata.xml.in:83
+msgid "Update Granite to 7.4.0"
+msgstr "Actualització del Granite a la versió 7.4.0"
+
+#: data/platform.appdata.xml.in:84
+msgid "Update Stylesheet to 7.3.0"
+msgstr "Actualització del full d'estils a la versió 7.3.0"
+
+#: data/platform.appdata.xml.in:92
 msgid "Update Granite to 7.3.0"
 msgstr "Actualització de Granite a 7.3.0"
 
-#: data/platform.appdata.xml.in:18
-msgid "Update Icons to 7.3.0"
-msgstr "Actualització de les icones a la 7.3.0"
+#: data/platform.appdata.xml.in:93
+msgid "Update Icons to 7.3.1"
+msgstr "Actualització de les icones a la versió 7.3.1"
 
-#: data/platform.appdata.xml.in:19
+#: data/platform.appdata.xml.in:94
 msgid "Update Stylesheet to 7.2.0"
 msgstr "Actualització del full d'estils a 7.2.0"
 
-#: data/platform.appdata.xml.in:28
+#: data/platform.appdata.xml.in:102
 msgid "Rebase on GNOME 44 runtime"
 msgstr "Rebase sobre l'entorn d'execució de GNOME 44"
 
-#: data/platform.appdata.xml.in:29
+#: data/platform.appdata.xml.in:103
 msgid "Update Granite to 7.2.0"
 msgstr "Actualització de Granite a 7.2.0"
 
-#: data/platform.appdata.xml.in:30
+#: data/platform.appdata.xml.in:104
 msgid "Update Icons to 7.2.0"
 msgstr "Actualització de les icones a la 7.2.0"
 
-#: data/platform.appdata.xml.in:31
+#: data/platform.appdata.xml.in:105
 msgid "Update Stylesheet to 7.1.0"
 msgstr "Actualització del full d'estils a 7.1.0"
 
-#: data/platform.appdata.xml.in:40
+#: data/platform.appdata.xml.in:113
 msgid "Update Granite to 7.1.0"
 msgstr "Actualització de Granite a 7.1.0"
 
-#: data/platform.appdata.xml.in:41
+#: data/platform.appdata.xml.in:114
 msgid "Update Icons to 7.1.0"
 msgstr "Actualització de les icones a la 7.1.0"
 
-#: data/platform.appdata.xml.in:42
+#: data/platform.appdata.xml.in:115
 msgid "Update Stylesheet to 7.0.1"
 msgstr "Actualització del full d'estils a 7.0.1"
 
-#: data/platform.appdata.xml.in:50
+#: data/platform.appdata.xml.in:123
 msgid "Rebase on GNOME 42 runtime"
 msgstr "Rebase sobre l'entorn d'execució de GNOME 42"
 
-#: data/platform.appdata.xml.in:51
+#: data/platform.appdata.xml.in:124
 msgid "Initial support for Gtk4"
 msgstr "Suport inicial per a Gtk4"
 
-#: data/platform.appdata.xml.in:59
+#: data/platform.appdata.xml.in:132
 msgid "Rebase on GNOME 41 runtime"
 msgstr "Rebase sobre l'entorn d'execució de GNOME 41"
 
-#: data/platform.appdata.xml.in:60
+#: data/platform.appdata.xml.in:133
 msgid "Added elementary and freedesktop sound themes"
 msgstr "S'han afegit temes de so d'elementary i de freedesktop."
 
-#: data/platform.appdata.xml.in:61
+#: data/platform.appdata.xml.in:134
 msgid "Use the correct stylesheet on OS 5"
 msgstr "Ús del full d'estil correcte a OS 5"
 
-#: data/platform.appdata.xml.in:67
+#: data/platform.appdata.xml.in:140
 msgid "Fixes:"
 msgstr "Correccions:"
 
-#: data/platform.appdata.xml.in:69
+#: data/platform.appdata.xml.in:142
 msgid "Fix localization issues with apps that use Granite"
 msgstr ""
 "Solució de problemes de localització amb les aplicacions que utilitzen "
 "Granite"
 
-#: data/platform.appdata.xml.in:73
+#: data/platform.appdata.xml.in:146
 msgid "Use the settings portal for time and date settings"
 msgstr "Useu el portal de configuració per a la configuració de data i hora"
 
-#: data/platform.appdata.xml.in:74
+#: data/platform.appdata.xml.in:147
 msgid ""
 "Use the settings portal for color scheme preference instead of requiring an "
 "AccountsService hole"
@@ -120,23 +212,23 @@ msgstr ""
 "Useu el portal de configuració per a la preferència d'esquemes de colors en "
 "lloc de requerir un forat de AccountsService"
 
-#: data/platform.appdata.xml.in:75
+#: data/platform.appdata.xml.in:148
 msgid "Update elementary stylesheet to 6.1.0"
 msgstr "Actualització del full d'estil d'elementary a 6.1.0"
 
-#: data/platform.appdata.xml.in:76
+#: data/platform.appdata.xml.in:149
 msgid "Update Granite to 6.1.2"
 msgstr "Actualització de Granite a 6.1.2"
 
-#: data/platform.appdata.xml.in:82
+#: data/platform.appdata.xml.in:155
 msgid "Add support for ARM (aarch64)"
 msgstr "Addició de suport per a ARM (aarch64)"
 
-#: data/platform.appdata.xml.in:87 data/sdk.appdata.xml.in:15
+#: data/platform.appdata.xml.in:160 data/sdk.appdata.xml.in:15
 msgid "Initial Release"
 msgstr "Publicació inicial"
 
-#: data/platform.appdata.xml.in:91 data/sdk.appdata.xml.in:19
+#: data/platform.appdata.xml.in:165 data/sdk.appdata.xml.in:20
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
@@ -147,3 +239,6 @@ msgstr "Aplicació SDK de l'elementary"
 #: data/sdk.appdata.xml.in:10
 msgid "The Flatpak SDK for elementary OS and AppCenter."
 msgstr "El Flatpak SDK per a l'elementary OS i el Centre d'aplicacions"
+
+#~ msgid "Rebase on GNOME 49 runtime"
+#~ msgstr "Rebase en l'entorn d'execució del GNOME 49"
