@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-12 07:54+0900\n"
-"PO-Revision-Date: 2025-11-20 21:55+0000\n"
+"PO-Revision-Date: 2026-06-30 20:56+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <italo@gp-mail.com>\n"
 "Language-Team: Spanish <https://l10n.elementaryos.org/projects/desktop/"
 "flatpak-platform/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -42,27 +42,20 @@ msgid "Platform updates:"
 msgstr "Actualizaciones de la plataforma:"
 
 #: data/platform.appdata.xml.in:18
-#, fuzzy
-#| msgid "Rebase on GNOME 45 runtime"
 msgid "Rebase on GNOME 50 runtime"
-msgstr ""
-"Se reorganizó (rebase) el repositorio con el entorno de ejecución de GNOME 45"
+msgstr "Se hizo «rebase» el repositorio con el entorno de ejecución de GNOME 50"
 
 #: data/platform.appdata.xml.in:19
-#, fuzzy
-#| msgid "Update Granite to 7.7.0"
 msgid "Update Granite to 7.8.1"
-msgstr "Se actualizó Granite a 7.7.0"
+msgstr "Se actualizó Granite a 7.8.1"
 
 #: data/platform.appdata.xml.in:20
 msgid "Update Icons to 8.2.0"
 msgstr "Se actualizaron los iconos a 8.2.0"
 
 #: data/platform.appdata.xml.in:21
-#, fuzzy
-#| msgid "Update Stylesheet to 8.2.1"
 msgid "Update Stylesheet to 8.2.2"
-msgstr "Se actualizaron las hojas de estilo a 8.2.1"
+msgstr "Se actualizaron las hojas de estilo a 8.2.2"
 
 #: data/platform.appdata.xml.in:30
 msgid "Fix ARM (aarch64) builds not available"
