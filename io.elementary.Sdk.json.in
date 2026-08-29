@@ -236,8 +236,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/icons.git",
-                    "tag": "8.2.0",
-                    "commit": "6ddbb535af70a5ceeff5e1fec05d9b0562641b2a",
+                    "tag": "9.0.0",
+                    "commit": "31c7285a1d10170abd363a2553a7f377a031bb33",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -377,8 +377,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/flatpak/libportal/releases/download/0.9.1/libportal-0.9.1.tar.xz",
-                    "sha256": "de801ee349ed3c255a9af3c01b1a401fab5b3fc1c35eb2fd7dfb35d4b8194d7f",
+                    "url": "https://github.com/flatpak/libportal/releases/download/0.10.0/libportal-0.10.0.tar.xz",
+                    "sha256": "1c74a3f7becbd4ff745d7f565afd06e97e50eb080a0e268cb14bb55289a745bf",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/flatpak/libportal/releases/latest",
