@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-24 12:44+0900\n"
-"PO-Revision-Date: 2026-06-29 05:56+0000\n"
+"PO-Revision-Date: 2026-09-04 15:01+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementaryos.org/projects/desktop/"
 "flatpak-platform/ru/>\n"
@@ -51,20 +51,16 @@ msgid "Update Granite to 7.8.1"
 msgstr "Granite обновлён до 7.8.1"
 
 #: data/platform.appdata.xml.in:20
-#, fuzzy
-#| msgid "Update Icons to 8.0.0"
 msgid "Update Icons to 9.0.0"
-msgstr "Значки обновлены до 8.0.0"
+msgstr "Значки обновлены до 9.0.0"
 
 #: data/platform.appdata.xml.in:21
 msgid "Update Stylesheet to 8.2.2"
 msgstr "Таблица стилей обновлена до 8.2.2"
 
 #: data/platform.appdata.xml.in:22
-#, fuzzy
-#| msgid "Update LibPortal to 0.9.1"
 msgid "Update LibPortal to 0.10.0"
-msgstr "LibPortal обновлён до 0.9.1"
+msgstr "LibPortal обновлён до 0.10.0"
 
 #: data/platform.appdata.xml.in:31
 msgid "Fix ARM (aarch64) builds not available"
