@@ -125,9 +125,6 @@
         {
             "name": "libgee",
             "buildsystem": "autotools",
-            "build-options": {
-                "cflags": "-Wno-error=incompatible-pointer-types"
-            },
             "sources": [
                 {
                     "type": "archive",
