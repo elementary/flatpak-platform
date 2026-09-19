@@ -120,13 +120,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtk/4.22/gtk-4.22.4.tar.xz",
-                    "sha256": "51bd9f60c7d23a665a556c7364c21fb2e4e282566b3e7e092455e8f910330893",
+                    "url": "https://download.gnome.org/sources/gtk/4.22/gtk-4.22.5.tar.xz",
+                    "sha256": "7fd725deb2cb3f8dc218ad862c5056ff8548f49d3b0e4081796e444c22d19686",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gtk",
                         "stable-only": true,
-                        "version-scheme": "odd-minor-is-unstable"
+                        "version-scheme": "odd-minor-is-unstable",
+                        "versions": {
+                            "<": "2.24.0"
+                        }
                     }
                 }
             ]
@@ -183,11 +186,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libadwaita/1.9/libadwaita-1.9.3.tar.xz",
-                    "sha256": "fc59b37028fe0126308e7b805d2f6e4e80227080a1797715e5e6286b8111e723",
+                    "url": "https://download.gnome.org/sources/libadwaita/1.9/libadwaita-1.9.4.tar.xz",
+                    "sha256": "f5ab3453ee743dc293cdf96d6821789cd20e8d125d9b41637703c12bfa4162ee",
                     "x-checker-data": {
                         "type": "gnome",
-                        "name": "libadwaita"
+                        "name": "libadwaita",
+                        "versions": {
+                            "<": "1.10.0"
+                        }
                     }
                 }
             ],
