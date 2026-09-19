@@ -3,7 +3,7 @@
     "id": "io.elementary.Sdk",
     "id-platform": "io.elementary.Platform",
     "default-branch": "@branch@",
-    "runtime-version": "25.08",
+    "runtime-version": "26.08",
     "runtime": "org.freedesktop.Platform",
     "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
@@ -190,6 +190,9 @@
                         "name": "libadwaita"
                     }
                 }
+            ],
+            "modules": [
+                "../shared-modules/appstream/appstream-compose.json"
             ]
         },
         {
