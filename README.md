@@ -23,7 +23,7 @@ And finally, to build and install:
 
 ```sh
 meson setup build --prefix=/usr
-flatpak-builder --install-deps-from=flathub --ccache --repo=elementary builddir ./build/io.elementary.Sdk.json
+flatpak-builder --force-clean --install-deps-from=flathub --ccache --repo=elementary builddir ./build/io.elementary.Sdk.json
 ```
 
 ## Publishing
