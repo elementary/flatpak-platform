@@ -54,38 +54,6 @@
     },
     "modules": [
         {
-            "name": "pygobject",
-            "buildsystem": "meson",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/pygobject/3.58/pygobject-3.58.0.tar.gz",
-                    "sha256": "45068697de3ffe46840ca369705f23118b34db4f7deb63f6eff079a6734ddcca",
-                    "x-checker-data": {
-                        "type": "gnome",
-                        "name": "pygobject"
-                    }
-                }
-            ],
-            "modules": [
-                {
-                    "name": "pycairo",
-                    "cleanup": [
-                        "*"
-                    ],
-                    "buildsystem": "meson",
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/pygobject/pycairo.git",
-                            "tag": "v1.29.0",
-                            "commit": "f2c40870be2d5e9d15ecee339e1d5e30d82c7959"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "libgee",
             "buildsystem": "autotools",
             "sources": [
