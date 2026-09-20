@@ -11,6 +11,16 @@
   </description>
 
   <releases>
+    <release version="9.1.0" date="2026-09-27" urgency="medium">
+      <description>
+        <p>Platform updates:</p>
+        <ul>
+          <li>Rebase on GNOME 51 runtime</li>
+          <li>Update LibPortal to 0.11.0</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="9.0.0" date="2026-08-28" urgency="medium">
       <description>
         <p>Platform updates:</p>
