@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-20 13:01+0900\n"
-"PO-Revision-Date: 2026-08-25 15:01+0000\n"
+"PO-Revision-Date: 2026-09-22 00:03+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementaryos.org/projects/desktop/"
 "flatpak-platform/ja/>\n"
@@ -42,16 +42,12 @@ msgid "Platform updates:"
 msgstr "プラットフォームのアップデート:"
 
 #: data/platform.appdata.xml.in:18
-#, fuzzy
-#| msgid "Rebase on GNOME 50 runtime"
 msgid "Rebase on GNOME 51 runtime"
-msgstr "ベースを GNOME 50 ランタイムに変更"
+msgstr "ベースを GNOME 51 ランタイムに変更"
 
 #: data/platform.appdata.xml.in:19
-#, fuzzy
-#| msgid "Update LibPortal to 0.10.0"
 msgid "Update LibPortal to 0.11.0"
-msgstr "LibPortal を 0.10.0 にアップデート"
+msgstr "LibPortal を 0.11.0 にアップデート"
 
 #: data/platform.appdata.xml.in:28
 msgid "Rebase on GNOME 50 runtime"
