@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-20 13:01+0900\n"
-"PO-Revision-Date: 2026-08-03 20:01+0000\n"
+"PO-Revision-Date: 2026-10-18 20:04+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://"
 "l10n.elementaryos.org/projects/desktop/flatpak-platform/zh_TW/>\n"
@@ -42,16 +42,12 @@ msgid "Platform updates:"
 msgstr "平台更新："
 
 #: data/platform.appdata.xml.in:18
-#, fuzzy
-#| msgid "Rebase on GNOME 50 runtime"
 msgid "Rebase on GNOME 51 runtime"
-msgstr "重定基底到 GNOME 50 執行環境上"
+msgstr "重定基底到 GNOME 51 執行環境上"
 
 #: data/platform.appdata.xml.in:19
-#, fuzzy
-#| msgid "Update LibPortal to 0.9.1"
 msgid "Update LibPortal to 0.11.0"
-msgstr "將 LibPortal 更新到 0.9.1"
+msgstr "將 LibPortal 更新到 0.11.0"
 
 #: data/platform.appdata.xml.in:28
 msgid "Rebase on GNOME 50 runtime"
@@ -62,20 +58,16 @@ msgid "Update Granite to 7.8.1"
 msgstr "將 Granite 更新到 7.8.1"
 
 #: data/platform.appdata.xml.in:30
-#, fuzzy
-#| msgid "Update Icons to 8.0.0"
 msgid "Update Icons to 9.0.0"
-msgstr "將《圖示》更新到 8.0.0"
+msgstr "將《圖示》更新到 9.0.0"
 
 #: data/platform.appdata.xml.in:31
 msgid "Update Stylesheet to 8.2.2"
 msgstr "將《樣式表》更新到 8.2.2"
 
 #: data/platform.appdata.xml.in:32
-#, fuzzy
-#| msgid "Update LibPortal to 0.9.1"
 msgid "Update LibPortal to 0.10.0"
-msgstr "將 LibPortal 更新到 0.9.1"
+msgstr "將 LibPortal 更新到 0.10.0"
 
 #: data/platform.appdata.xml.in:41
 msgid "Fix ARM (aarch64) builds not available"
