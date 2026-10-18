@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-20 13:01+0900\n"
-"PO-Revision-Date: 2025-11-13 08:55+0000\n"
+"PO-Revision-Date: 2026-10-18 20:04+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
 "flatpak-platform/sv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: data/platform.appdata.xml.in:7
 msgid "elementary App Platform"
@@ -42,46 +42,32 @@ msgid "Platform updates:"
 msgstr "Plattformsuppdateringar:"
 
 #: data/platform.appdata.xml.in:18
-#, fuzzy
-#| msgid "Rebase on GNOME 45 runtime"
 msgid "Rebase on GNOME 51 runtime"
-msgstr "Rebase på GNOME 45 körtid"
+msgstr "Byt bas till GNOME 51-körtiden"
 
 #: data/platform.appdata.xml.in:19
-#, fuzzy
-#| msgid "Update LibPortal to 0.9.1"
 msgid "Update LibPortal to 0.11.0"
-msgstr "Uppdatera LibPortal till 0.9.1"
+msgstr "Uppdatera LibPortal till 0.11.0"
 
 #: data/platform.appdata.xml.in:28
-#, fuzzy
-#| msgid "Rebase on GNOME 45 runtime"
 msgid "Rebase on GNOME 50 runtime"
-msgstr "Rebase på GNOME 45 körtid"
+msgstr "Byt bas till GNOME 50-körtiden"
 
 #: data/platform.appdata.xml.in:29
-#, fuzzy
-#| msgid "Update Granite to 7.7.0"
 msgid "Update Granite to 7.8.1"
-msgstr "Uppdatera Granite till 7.7.0"
+msgstr "Uppdatera Granite till 7.8.1"
 
 #: data/platform.appdata.xml.in:30
-#, fuzzy
-#| msgid "Update Icons to 8.0.0"
 msgid "Update Icons to 9.0.0"
-msgstr "Uppdatera ikoner till 8.0.0"
+msgstr "Uppdatera ikoner till 9.0.0"
 
 #: data/platform.appdata.xml.in:31
-#, fuzzy
-#| msgid "Update Stylesheet to 8.2.1"
 msgid "Update Stylesheet to 8.2.2"
-msgstr "Uppdatera Stylesheet till 8.2.1"
+msgstr "Uppdatera Stylesheet till 8.2.2"
 
 #: data/platform.appdata.xml.in:32
-#, fuzzy
-#| msgid "Update LibPortal to 0.9.1"
 msgid "Update LibPortal to 0.10.0"
-msgstr "Uppdatera LibPortal till 0.9.1"
+msgstr "Uppdatera LibPortal till 0.10.0"
 
 #: data/platform.appdata.xml.in:41
 msgid "Fix ARM (aarch64) builds not available"
